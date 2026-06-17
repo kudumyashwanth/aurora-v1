@@ -1,0 +1,16 @@
+SBY 14:33:03 [async_fifo] Removing directory '/home/yashwanth/aurora_v1/formal/async_fifo/async_fifo'.
+SBY 14:33:03 [async_fifo] Copy '/home/yashwanth/aurora_v1/formal/async_fifo/async_fifo_formal.sv' to '/home/yashwanth/aurora_v1/formal/async_fifo/async_fifo/src/async_fifo_formal.sv'.
+SBY 14:33:03 [async_fifo] Copy '/home/yashwanth/aurora_v1/formal/async_fifo/../../rtl/interconnect/async_fifo.sv' to '/home/yashwanth/aurora_v1/formal/async_fifo/async_fifo/src/async_fifo.sv'.
+SBY 14:33:03 [async_fifo] engine_0: smtbmc z3
+SBY 14:33:03 [async_fifo] base: starting process "cd async_fifo/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 14:33:03 [async_fifo] base: Warning: Replacing memory \mem with list of registers. See async_fifo.sv:37
+SBY 14:33:03 [async_fifo] base: finished (returncode=0)
+SBY 14:33:03 [async_fifo] prep: starting process "cd async_fifo/model; yosys -ql design_prep.log design_prep.ys"
+SBY 14:33:03 [async_fifo] prep: finished (returncode=0)
+SBY 14:33:03 [async_fifo] smt2: starting process "cd async_fifo/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 14:33:03 [async_fifo] smt2: finished (returncode=0)
+SBY 14:33:03 [async_fifo] engine_0: starting process "cd async_fifo; yosys-smtbmc -s z3 --presat --noprogress -t 20  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 14:33:03 [async_fifo] engine_0: ##   0:00:00  Solver: z3
+SBY 14:33:03 [async_fifo] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 14:34:03 [async_fifo] engine_0: ##   0:01:00  waiting for solver (1 minute)
+SBY 14:37:16 [async_fifo] engine_0: terminating process

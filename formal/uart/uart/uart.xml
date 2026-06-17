@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2026-05-12T11:17:46" hostname="yashwanth-LOQ-15ARP9" package="uart" id="0" name="default" tests="1" errors="1" failures="0" time="0" skipped="0">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="ERROR"/>
+</properties>
+<testcase classname="default" name="default" time="0">
+<error type="ERROR"/>
+</testcase>
+<system-out>SBY 11:17:46 [formal/uart/uart] Removing directory '/home/yashwanth/aurora_v1/formal/uart/uart'.
+SBY 11:17:46 [formal/uart/uart] Copy '/home/yashwanth/aurora_v1/rtl/peripherals/uart.sv' to '/home/yashwanth/aurora_v1/formal/uart/uart/src/uart.sv'.
+SBY 11:17:46 [formal/uart/uart] Copy '/home/yashwanth/aurora_v1/formal/uart/uart_formal.sv' to '/home/yashwanth/aurora_v1/formal/uart/uart/src/uart_formal.sv'.
+SBY 11:17:46 [formal/uart/uart] engine_0: smtbmc z3
+SBY 11:17:46 [formal/uart/uart] base: starting process &quot;cd formal/uart/uart/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 11:17:46 [formal/uart/uart] base: ERROR: File `formal/uart/uart_formal.sv' not found or is a directory
+SBY 11:17:46 [formal/uart/uart] base: finished (returncode=1)
+SBY 11:17:46 [formal/uart/uart] base: task failed. ERROR.
+SBY 11:17:46 [formal/uart/uart] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 11:17:46 [formal/uart/uart] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 11:17:46 [formal/uart/uart] summary: engine_0 (smtbmc z3) did not return a status
+SBY 11:17:46 [formal/uart/uart] summary: engine_0 did not produce any traces
+SBY 11:17:46 [formal/uart/uart] DONE (ERROR, rc=16)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

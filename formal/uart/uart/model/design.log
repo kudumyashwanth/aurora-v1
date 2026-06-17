@@ -1,0 +1,10 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.62+0 (git sha1 8bbde80e0, g++ 11.4.0-1ubuntu1~22.04.2 -fPIC -O3)
+
+-- Executing script file `../model/design.ys' --
+ERROR: File `formal/uart/uart_formal.sv' not found or is a directory

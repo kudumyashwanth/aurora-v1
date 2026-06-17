@@ -1,0 +1,4 @@
+read_systemverilog -defer -noassert -f /home/yashwanth/aurora_v1/openlane/synlig/cva6.f
+read_systemverilog -link
+hierarchy -top cva6_axi_wrapper
+stat

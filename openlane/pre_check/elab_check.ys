@@ -1,0 +1,47 @@
+# Yosys elaboration check — no synthesis mapping
+# Just parse + elaborate to catch syntax/hierarchy errors
+
+# CVA6 config packages
+read_verilog -sv -I ~/aurora_v1/rtl/cpu_cluster/cva6/core/include \
+    ~/aurora_v1/rtl/cpu_cluster/cva6/core/include/riscv_pkg.sv \
+    ~/aurora_v1/rtl/cpu_cluster/cva6/core/include/ariane_pkg.sv \
+    ~/aurora_v1/rtl/cpu_cluster/cva6/core/include/config_pkg.sv \
+    ~/aurora_v1/rtl/cpu_cluster/cva6/core/include/cv64a6_imafdc_sv39_config_pkg.sv \
+    ~/aurora_v1/rtl/cpu_cluster/cva6/core/include/std_cache_pkg.sv \
+    ~/aurora_v1/rtl/cpu_cluster/cva6/core/include/wt_cache_pkg.sv \
+    ~/aurora_v1/rtl/cpu_cluster/cva6/core/include/build_config_pkg.sv \
+    ~/aurora_v1/rtl/cpu_cluster/cva6/core/include/triggers_pkg.sv
+
+# Aurora custom RTL (in dependency order)
+read_verilog -sv \
+    ~/aurora_v1/rtl/clock/clock_reset_controller.sv \
+    ~/aurora_v1/rtl/boot/boot_rom.sv \
+    ~/aurora_v1/rtl/memory/sram_bank_array.sv \
+    ~/aurora_v1/rtl/interconnect/async_fifo.sv \
+    ~/aurora_v1/rtl/interconnect/axi_crossbar.sv \
+    ~/aurora_v1/rtl/interconnect/axi_cdc_bridge.sv \
+    ~/aurora_v1/rtl/peripherals/uart.sv \
+    ~/aurora_v1/rtl/peripherals/gpio.sv \
+    ~/aurora_v1/rtl/peripherals/timer.sv \
+    ~/aurora_v1/rtl/interrupt/interrupt_controller.sv \
+    ~/aurora_v1/rtl/dma/dma_engine_complete.sv \
+    ~/aurora_v1/rtl/tensor_cluster/mac_unit.sv \
+    ~/aurora_v1/rtl/tensor_cluster/tensor_local_buffer.sv \
+    ~/aurora_v1/rtl/tensor_cluster/systolic_array_16x16.sv \
+    ~/aurora_v1/rtl/tensor_cluster/tensor_core.sv \
+    ~/aurora_v1/rtl/tensor_cluster/tensor_cluster_top.sv \
+    ~/aurora_v1/rtl/cpu_cluster/cva6_axi_wrapper.sv \
+    ~/aurora_v1/rtl/cpu_cluster/cpu_mem_bridge.sv \
+    ~/aurora_v1/rtl/cpu_cluster/cpu_cluster_top.sv \
+    ~/aurora_v1/rtl/top/aurora_soc_top.sv
+
+# Elaborate top
+hierarchy -check -top aurora_soc_top
+
+# Show module list
+ls
+
+# Check for undriven/unused
+check
+
+echo "ELABORATION PASSED"

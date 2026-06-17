@@ -1,0 +1,9 @@
+# running in formal/dma/dma/src/
+read -formal formal/dma/dma_formal.sv
+read -formal rtl/dma/dma_engine_complete.sv
+prep -top dma_formal
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

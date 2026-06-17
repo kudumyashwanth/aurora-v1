@@ -1,0 +1,33 @@
+
+-- Executing script file `/home/yashwanth/aurora_v1/openlane/synlig/extract/extract.ys' --
+
+1. Executing SystemVerilog frontend.
+[INF:CM0023] Creating log file "/home/yashwanth/tools/synlig/synlig/slpp_all/surelog.log".
+[NTE:PP0128] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/include/riscv_pkg.sv:7:48: Non ASCII character detected, replaced by space.
+[NTE:PP0128] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/include/build_config_pkg.sv:214:9: Non ASCII character detected, replaced by space.
+[INF:CP0300] Compilation...
+[INF:CP0301] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/include/config_pkg.sv:10:1: Compile package "config_pkg".
+[INF:CP0301] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/include/cv64a6_imafdc_sv39_config_pkg.sv:11:1: Compile package "cva6_config_pkg".
+[INF:CP0301] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/include/riscv_pkg.sv:18:1: Compile package "riscv".
+[INF:CP0301] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/include/build_config_pkg.sv:1:1: Compile package "build_config_pkg".
+[INF:CP0303] /home/yashwanth/aurora_v1/openlane/synlig/extract/cfg_extract.sv:1:1: Compile module "work@cfg_extract".
+[INF:CP0302] Compile class "work@mailbox".
+[INF:CP0302] Compile class "work@process".
+[INF:CP0302] Compile class "work@semaphore".
+[INF:EL0526] Design Elaboration...
+[NTE:EL0503] /home/yashwanth/aurora_v1/openlane/synlig/extract/cfg_extract.sv:1:1: Top level module "work@cfg_extract".
+[NTE:EL0508] Nb Top level modules: 1.
+[NTE:EL0509] Max instance depth: 1.
+[NTE:EL0510] Nb instances: 1.
+[NTE:EL0511] Nb leaf instances: 1.
+[INF:UH0706] Creating UHDM Model...
+[INF:UH0707] Elaborating UHDM...
+[  FATAL] : 0
+[ SYNTAX] : 0
+[  ERROR] : 0
+[WARNING] : 0
+[   NOTE] : 7
+Warning: /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/include/config_pkg.sv:475: Post-incrementation operations are handled as pre-incrementation.
+Warning: /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/include/config_pkg.sv:486: Post-incrementation operations are handled as pre-incrementation.
+Warning: /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/include/config_pkg.sv:498: Post-incrementation operations are handled as pre-incrementation.
+/home/yashwanth/aurora_v1/openlane/synlig/extract/cfg_extract.sv:3: ERROR: Can't resolve function name `\build_config_pkg::build_config'.

@@ -1,0 +1,542 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.62+0 (git sha1 8bbde80e0, g++ 11.4.0-1ubuntu1~22.04.2 -fPIC -O3)
+
+-- Running command `read_verilog -sv rocket_rv64gc.v; synth -top ExampleRocketSystem -flatten; stat' --
+
+1. Executing Verilog-2005 frontend: rocket_rv64gc.v
+Parsing SystemVerilog input from `rocket_rv64gc.v' to AST representation.
+Generating RTLIL representation for module `\AMOALU'.
+Generating RTLIL representation for module `\Arbiter2_Valid_PTWReq'.
+Generating RTLIL representation for module `\Arbiter3_LLWB'.
+Generating RTLIL representation for module `\AsyncQueueSink_DebugInternalBundle'.
+Generating RTLIL representation for module `\AsyncQueueSink_TLBundleA_a9d32s1k1z2u'.
+Generating RTLIL representation for module `\AsyncQueueSink_TLBundleD_a9d32s1k1z2u'.
+Generating RTLIL representation for module `\AsyncQueueSource_DebugInternalBundle'.
+Generating RTLIL representation for module `\AsyncQueueSource_TLBundleA_a9d32s1k1z2u'.
+Generating RTLIL representation for module `\AsyncQueueSource_TLBundleD_a9d32s1k1z2u'.
+Generating RTLIL representation for module `\AsyncResetRegVec_w1_i0'.
+Generating RTLIL representation for module `\AsyncResetRegVec_w2_i0'.
+Generating RTLIL representation for module `\AsyncResetSynchronizerPrimitiveShiftReg_d3_i0'.
+Generating RTLIL representation for module `\AsyncResetSynchronizerShiftReg_w1_d3_i0_1'.
+Generating RTLIL representation for module `\AsyncResetSynchronizerShiftReg_w1_d3_i0'.
+Generating RTLIL representation for module `\AsyncValidSync'.
+Generating RTLIL representation for module `\AXI4Buffer_1'.
+Generating RTLIL representation for module `\AXI4Buffer_2'.
+Generating RTLIL representation for module `\AXI4Buffer'.
+Generating RTLIL representation for module `\AXI4Deinterleaver'.
+Generating RTLIL representation for module `\AXI4Fragmenter_1'.
+Generating RTLIL representation for module `\AXI4Fragmenter_2'.
+Generating RTLIL representation for module `\AXI4Fragmenter'.
+Generating RTLIL representation for module `\AXI4IdIndexer_1'.
+Generating RTLIL representation for module `\AXI4IdIndexer_2'.
+Generating RTLIL representation for module `\AXI4IdIndexer'.
+Generating RTLIL representation for module `\AXI4ToTL'.
+Generating RTLIL representation for module `\AXI4UserYanker_1'.
+Generating RTLIL representation for module `\AXI4UserYanker_2'.
+Generating RTLIL representation for module `\AXI4UserYanker'.
+Generating RTLIL representation for module `\BankBinder'.
+Generating RTLIL representation for module `\bootromClockSinkDomain'.
+Generating RTLIL representation for module `\BreakpointUnit'.
+Generating RTLIL representation for module `\BroadcastFilter'.
+Generating RTLIL representation for module `\BTB'.
+Generating RTLIL representation for module `\BundleBridgeNexus_UInt1_1'.
+Generating RTLIL representation for module `\CLINTClockSinkDomain'.
+Generating RTLIL representation for module `\CLINT'.
+Generating RTLIL representation for module `\ClockCrossingReg_w15'.
+Generating RTLIL representation for module `\ClockCrossingReg_w43'.
+Generating RTLIL representation for module `\ClockCrossingReg_w55'.
+Generating RTLIL representation for module `\CoherenceManagerWrapper'.
+Generating RTLIL representation for module `\CompareRecFN'.
+Generating RTLIL representation for module `\CSRFile'.
+Generating RTLIL representation for module `\DCacheDataArray'.
+Generating RTLIL representation for module `\DCache'.
+Generating RTLIL representation for module `\DebugCustomXbar'.
+Generating RTLIL representation for module `\DivSqrtRawFN_small_1'.
+Generating RTLIL representation for module `\DivSqrtRawFN_small'.
+Generating RTLIL representation for module `\DivSqrtRecFN_small_1'.
+Generating RTLIL representation for module `\DivSqrtRecFN_small'.
+Generating RTLIL representation for module `\DivSqrtRecFNToRaw_small_1'.
+Generating RTLIL representation for module `\DivSqrtRecFNToRaw_small'.
+Generating RTLIL representation for module `\DMIToTL'.
+Generating RTLIL representation for module `\ErrorDeviceWrapper'.
+Generating RTLIL representation for module `\ExampleRocketSystem'.
+Generating RTLIL representation for module `\FixedClockBroadcast_3'.
+Generating RTLIL representation for module `\FixedClockBroadcast_5'.
+Generating RTLIL representation for module `\FPToFP'.
+Generating RTLIL representation for module `\FPToInt'.
+Generating RTLIL representation for module `\FPUDecoder'.
+Generating RTLIL representation for module `\FPUFMAPipe_l3_f32'.
+Generating RTLIL representation for module `\FPUFMAPipe_l4_f64'.
+Generating RTLIL representation for module `\FPU'.
+Generating RTLIL representation for module `\Frontend'.
+Generating RTLIL representation for module `\HellaCacheArbiter'.
+Generating RTLIL representation for module `\IBuf'.
+Generating RTLIL representation for module `\ICache'.
+Generating RTLIL representation for module `\INToRecFN_1'.
+Generating RTLIL representation for module `\INToRecFN'.
+Generating RTLIL representation for module `\IntSyncAsyncCrossingSink_n1x1'.
+Generating RTLIL representation for module `\IntSyncAsyncCrossingSink_n1x2'.
+Generating RTLIL representation for module `\IntSyncCrossingSource_n1x1_Registered'.
+Generating RTLIL representation for module `\IntSyncCrossingSource_n1x1'.
+Generating RTLIL representation for module `\IntSyncCrossingSource_n1x2'.
+Generating RTLIL representation for module `\IntSyncSyncCrossingSink_n1x1'.
+Generating RTLIL representation for module `\IntSyncSyncCrossingSink_n1x2'.
+Generating RTLIL representation for module `\IntToFP'.
+Generating RTLIL representation for module `\IntXbar_i4_o1'.
+Generating RTLIL representation for module `\ITLB'.
+Generating RTLIL representation for module `\LevelGateway'.
+Generating RTLIL representation for module `\MaxPeriodFibonacciLFSR'.
+Generating RTLIL representation for module `\MemoryBus'.
+Generating RTLIL representation for module `\MulAddRecFNPipe_l2_e11_s53'.
+Generating RTLIL representation for module `\MulAddRecFNPipe_l2_e8_s24'.
+Generating RTLIL representation for module `\MulAddRecFNToRaw_postMul_1'.
+Generating RTLIL representation for module `\MulAddRecFNToRaw_postMul'.
+Generating RTLIL representation for module `\MulAddRecFNToRaw_preMul_1'.
+Generating RTLIL representation for module `\MulAddRecFNToRaw_preMul'.
+Generating RTLIL representation for module `\MulDiv'.
+Generating RTLIL representation for module `\NonSyncResetSynchronizerPrimitiveShiftReg_d3'.
+Generating RTLIL representation for module `\OptimizationBarrier_PTE'.
+Generating RTLIL representation for module `\OptimizationBarrier_TLBEntryData'.
+Generating RTLIL representation for module `\OptimizationBarrier_UInt'.
+Generating RTLIL representation for module `\PeripheryBus_cbus'.
+Generating RTLIL representation for module `\PeripheryBus_pbus'.
+Generating RTLIL representation for module `\PLICClockSinkDomain'.
+Generating RTLIL representation for module `\PLICFanIn'.
+Generating RTLIL representation for module `\PlusArgTimeout'.
+Generating RTLIL representation for module `\PMAChecker'.
+Generating RTLIL representation for module `\PMPChecker_s2'.
+Generating RTLIL representation for module `\PMPChecker_s3'.
+Generating RTLIL representation for module `\ProbePicker'.
+Generating RTLIL representation for module `\PTW'.
+Generating RTLIL representation for module `\Queue1_AXI4BundleAR_1'.
+Generating RTLIL representation for module `\Queue1_AXI4BundleAR_2'.
+Generating RTLIL representation for module `\Queue1_AXI4BundleAR'.
+Generating RTLIL representation for module `\Queue1_AXI4BundleARW_1'.
+Generating RTLIL representation for module `\Queue1_AXI4BundleARW'.
+Generating RTLIL representation for module `\Queue1_AXI4BundleB'.
+Generating RTLIL representation for module `\Queue1_AXI4BundleR'.
+Generating RTLIL representation for module `\Queue1_AXI4BundleW'.
+Generating RTLIL representation for module `\Queue1_BundleMap'.
+Generating RTLIL representation for module `\Queue1_RegMapperInput_i23_m8'.
+Generating RTLIL representation for module `\Queue1_TLBundleA_a14d64s5k1z4u'.
+Generating RTLIL representation for module `\Queue2_AXI4BundleAW_1'.
+Generating RTLIL representation for module `\Queue2_AXI4BundleAW_2'.
+Generating RTLIL representation for module `\Queue2_AXI4BundleAW'.
+Generating RTLIL representation for module `\Queue2_AXI4BundleB_1'.
+Generating RTLIL representation for module `\Queue2_AXI4BundleB'.
+Generating RTLIL representation for module `\Queue2_AXI4BundleR_1'.
+Generating RTLIL representation for module `\Queue2_AXI4BundleR'.
+Generating RTLIL representation for module `\Queue2_AXI4BundleW'.
+Generating RTLIL representation for module `\Queue2_TLBundleA_a14d64s5k1z4u'.
+Generating RTLIL representation for module `\Queue2_TLBundleA_a28d64s5k1z4u'.
+Generating RTLIL representation for module `\Queue2_TLBundleA_a32d64s2k2z4c'.
+Generating RTLIL representation for module `\Queue2_TLBundleA_a32d64s4k2z4u'.
+Generating RTLIL representation for module `\Queue2_TLBundleB_a32d64s2k2z4c'.
+Generating RTLIL representation for module `\Queue2_TLBundleC_a32d64s2k2z4c'.
+Generating RTLIL representation for module `\Queue2_TLBundleD_a28d64s5k1z4u'.
+Generating RTLIL representation for module `\Queue2_TLBundleD_a32d64s2k2z4c'.
+Generating RTLIL representation for module `\Queue2_TLBundleD_a32d64s4k2z4u'.
+Generating RTLIL representation for module `\Queue2_TLBundleE_a32d64s2k2z4c'.
+Generating RTLIL representation for module `\Queue2_UInt1'.
+Generating RTLIL representation for module `\Queue4_BundleMap'.
+Generating RTLIL representation for module `\Queue8_AXI4BundleR'.
+Generating RTLIL representation for module `\Queue8_BundleMap_4'.
+Generating RTLIL representation for module `\Queue8_BundleMap'.
+Generating RTLIL representation for module `\Queue8_TLBroadcastData'.
+Generating RTLIL representation for module `\ram_2x102'.
+Generating RTLIL representation for module `\ram_2x109'.
+Generating RTLIL representation for module `\ram_2x116'.
+Generating RTLIL representation for module `\ram_2x117'.
+Generating RTLIL representation for module `\ram_2x126'.
+Generating RTLIL representation for module `\ram_2x60'.
+Generating RTLIL representation for module `\ram_2x61'.
+Generating RTLIL representation for module `\ram_2x62'.
+Generating RTLIL representation for module `\ram_2x6'.
+Generating RTLIL representation for module `\ram_2x71'.
+Generating RTLIL representation for module `\ram_2x72'.
+Generating RTLIL representation for module `\ram_2x73'.
+Generating RTLIL representation for module `\ram_2x79'.
+Generating RTLIL representation for module `\ram_2x7'.
+Generating RTLIL representation for module `\ram_2x81'.
+Generating RTLIL representation for module `\ram_4x8'.
+Generating RTLIL representation for module `\ram_8x14'.
+Generating RTLIL representation for module `\ram_8x72'.
+Generating RTLIL representation for module `\ram_8x80'.
+Generating RTLIL representation for module `\ram_8x9'.
+Generating RTLIL representation for module `\ram_sink_2x2'.
+Generating RTLIL representation for module `\RecFNToIN_1'.
+Generating RTLIL representation for module `\RecFNToIN'.
+Generating RTLIL representation for module `\RecFNToRecFN'.
+Generating RTLIL representation for module `\regfile_32x65'.
+Generating RTLIL representation for module `\Repeater_TLBundleA_a12d64s5k1z3u'.
+Generating RTLIL representation for module `\Repeater_TLBundleA_a17d64s5k1z3u'.
+Generating RTLIL representation for module `\Repeater_TLBundleA_a26d64s5k1z3u'.
+Generating RTLIL representation for module `\Repeater_TLBundleA_a28d64s5k1z3u'.
+Generating RTLIL representation for module `\ResetSynchronizerShiftReg_w1_d3_i0'.
+Generating RTLIL representation for module `\rf_31x64'.
+Generating RTLIL representation for module `\RocketALU'.
+Generating RTLIL representation for module `\Rocket'.
+Generating RTLIL representation for module `\rockettile_dcache_data_arrays_0_512x256'.
+Generating RTLIL representation for module `\rockettile_dcache_tag_array_64x88'.
+Generating RTLIL representation for module `\rockettile_icache_data_arrays_512x128'.
+Generating RTLIL representation for module `\rockettile_icache_tag_array_64x84'.
+Generating RTLIL representation for module `\RocketTile'.
+Generating RTLIL representation for module `\RoundAnyRawFNToRecFN_1'.
+Generating RTLIL representation for module `\RoundAnyRawFNToRecFN_2'.
+Generating RTLIL representation for module `\RoundAnyRawFNToRecFN_3'.
+Generating RTLIL representation for module `\RoundAnyRawFNToRecFN_4'.
+Generating RTLIL representation for module `\RoundAnyRawFNToRecFN'.
+Generating RTLIL representation for module `\RoundRawFNToRecFN_1'.
+Generating RTLIL representation for module `\RoundRawFNToRecFN'.
+Generating RTLIL representation for module `\RVCExpander'.
+Generating RTLIL representation for module `\ShiftQueue'.
+Generating RTLIL representation for module `\SynchronizerShiftReg_w1_d3'.
+Generating RTLIL representation for module `\SynchronizerShiftReg_w2_d3'.
+Generating RTLIL representation for module `\SystemBus'.
+Generating RTLIL representation for module `\table_512x1'.
+Generating RTLIL representation for module `\TilePRCIDomain'.
+Generating RTLIL representation for module `\TLAsyncCrossingSink_a9d32s1k1z2u'.
+Generating RTLIL representation for module `\TLAsyncCrossingSource_a9d32s1k1z2u'.
+Generating RTLIL representation for module `\TLAtomicAutomata_cbus'.
+Generating RTLIL representation for module `\TLBroadcast'.
+Generating RTLIL representation for module `\TLBroadcastTracker_1'.
+Generating RTLIL representation for module `\TLBroadcastTracker_2'.
+Generating RTLIL representation for module `\TLBroadcastTracker_3'.
+Generating RTLIL representation for module `\TLBroadcastTracker'.
+Generating RTLIL representation for module `\TLBuffer_a14d64s5k1z4u'.
+Generating RTLIL representation for module `\TLBuffer_a28d64s5k1z4u'.
+Generating RTLIL representation for module `\TLBuffer_a32d64s2k2z4c_1'.
+Generating RTLIL representation for module `\TLBuffer_a32d64s4k2z4u_1'.
+Generating RTLIL representation for module `\TLBuffer_a32d64s4k2z4u'.
+Generating RTLIL representation for module `\TLBusBypassBar'.
+Generating RTLIL representation for module `\TLBusBypass'.
+Generating RTLIL representation for module `\TLDebugModuleInnerAsync'.
+Generating RTLIL representation for module `\TLDebugModuleInner'.
+Generating RTLIL representation for module `\TLDebugModuleOuterAsync'.
+Generating RTLIL representation for module `\TLDebugModuleOuter'.
+Generating RTLIL representation for module `\TLDebugModule'.
+Generating RTLIL representation for module `\TLError_1'.
+Generating RTLIL representation for module `\TLError'.
+Generating RTLIL representation for module `\TLFIFOFixer_2'.
+Generating RTLIL representation for module `\TLFIFOFixer_3'.
+Generating RTLIL representation for module `\TLFIFOFixer'.
+Generating RTLIL representation for module `\TLFragmenter_bootrom'.
+Generating RTLIL representation for module `\TLFragmenter_CLINT'.
+Generating RTLIL representation for module `\TLFragmenter_Debug'.
+Generating RTLIL representation for module `\TLFragmenter_PLIC'.
+Generating RTLIL representation for module `\TLInterconnectCoupler_cbus_to_bootrom'.
+Generating RTLIL representation for module `\TLInterconnectCoupler_cbus_to_clint'.
+Generating RTLIL representation for module `\TLInterconnectCoupler_cbus_to_debug'.
+Generating RTLIL representation for module `\TLInterconnectCoupler_cbus_to_plic'.
+Generating RTLIL representation for module `\TLInterconnectCoupler_fbus_from_port_named_slave_port_axi4'.
+Generating RTLIL representation for module `\TLInterconnectCoupler_mbus_to_memory_controller_port_named_axi4'.
+Generating RTLIL representation for module `\TLInterconnectCoupler_sbus_to_port_named_mmio_port_axi4'.
+Generating RTLIL representation for module `\TLMonitor_10'.
+Generating RTLIL representation for module `\TLMonitor_11'.
+Generating RTLIL representation for module `\TLMonitor_12'.
+Generating RTLIL representation for module `\TLMonitor_13'.
+Generating RTLIL representation for module `\TLMonitor_14'.
+Generating RTLIL representation for module `\TLMonitor_15'.
+Generating RTLIL representation for module `\TLMonitor_16'.
+Generating RTLIL representation for module `\TLMonitor_17'.
+Generating RTLIL representation for module `\TLMonitor_18'.
+Generating RTLIL representation for module `\TLMonitor_19'.
+Generating RTLIL representation for module `\TLMonitor_1'.
+Generating RTLIL representation for module `\TLMonitor_20'.
+Generating RTLIL representation for module `\TLMonitor_21'.
+Generating RTLIL representation for module `\TLMonitor_22'.
+Generating RTLIL representation for module `\TLMonitor_23'.
+Generating RTLIL representation for module `\TLMonitor_24'.
+Generating RTLIL representation for module `\TLMonitor_25'.
+Generating RTLIL representation for module `\TLMonitor_26'.
+Generating RTLIL representation for module `\TLMonitor_27'.
+Generating RTLIL representation for module `\TLMonitor_28'.
+Generating RTLIL representation for module `\TLMonitor_29'.
+Generating RTLIL representation for module `\TLMonitor_2'.
+Generating RTLIL representation for module `\TLMonitor_30'.
+Generating RTLIL representation for module `\TLMonitor_31'.
+Generating RTLIL representation for module `\TLMonitor_32'.
+Generating RTLIL representation for module `\TLMonitor_33'.
+Generating RTLIL representation for module `\TLMonitor_34'.
+Generating RTLIL representation for module `\TLMonitor_3'.
+Generating RTLIL representation for module `\TLMonitor_4'.
+Generating RTLIL representation for module `\TLMonitor_5'.
+Generating RTLIL representation for module `\TLMonitor_6'.
+Generating RTLIL representation for module `\TLMonitor_7'.
+Generating RTLIL representation for module `\TLMonitor_8'.
+Generating RTLIL representation for module `\TLMonitor_9'.
+Generating RTLIL representation for module `\TLMonitor'.
+Generating RTLIL representation for module `\TLPLIC'.
+Generating RTLIL representation for module `\TLROM'.
+Generating RTLIL representation for module `\TLToAXI4_1'.
+Generating RTLIL representation for module `\TLToAXI4'.
+Generating RTLIL representation for module `\TLXbar_cbus_out_i1_o5_a28d64s5k1z4u'.
+Generating RTLIL representation for module `\TLXbar_dmixbar_i1_o2_a9d32s1k1z2u'.
+Generating RTLIL representation for module `\TLXbar_MasterXbar_RocketTile_i2_o1_a32d64s2k2z4c'.
+Generating RTLIL representation for module `\TLXbar_sbus_i2_o3_a32d64s5k2z4c'.
+Successfully finished Verilog frontend.
+
+2. Executing SYNTH pass.
+
+2.1. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1.1. Analyzing design hierarchy..
+Top module:  \ExampleRocketSystem
+Used module:     \bootromClockSinkDomain
+Used module:         \TLROM
+Used module:             \TLMonitor_34
+Used module:     \DebugCustomXbar
+Used module:     \TLDebugModule
+Used module:         \TLDebugModuleInnerAsync
+Used module:             \AsyncQueueSink_DebugInternalBundle
+Used module:                 \AsyncValidSync
+Used module:                     \AsyncResetSynchronizerShiftReg_w1_d3_i0_1
+Used module:                         \AsyncResetSynchronizerPrimitiveShiftReg_d3_i0
+Used module:                 \ClockCrossingReg_w15
+Used module:                 \AsyncResetSynchronizerShiftReg_w1_d3_i0
+Used module:             \TLAsyncCrossingSink_a9d32s1k1z2u
+Used module:                 \AsyncQueueSource_TLBundleD_a9d32s1k1z2u
+Used module:                 \AsyncQueueSink_TLBundleA_a9d32s1k1z2u
+Used module:                     \ClockCrossingReg_w55
+Used module:             \TLDebugModuleInner
+Used module:                 \TLMonitor_33
+Used module:                 \TLMonitor_32
+Used module:         \TLDebugModuleOuterAsync
+Used module:             \AsyncQueueSource_DebugInternalBundle
+Used module:             \TLAsyncCrossingSource_a9d32s1k1z2u
+Used module:                 \AsyncQueueSink_TLBundleD_a9d32s1k1z2u
+Used module:                     \ClockCrossingReg_w43
+Used module:                 \AsyncQueueSource_TLBundleA_a9d32s1k1z2u
+Used module:                 \TLMonitor_31
+Used module:             \TLBusBypass
+Used module:                 \TLError_1
+Used module:                     \TLMonitor_30
+Used module:                 \TLBusBypassBar
+Used module:                     \TLMonitor_29
+Used module:             \IntSyncCrossingSource_n1x1_Registered
+Used module:             \TLDebugModuleOuter
+Used module:                 \TLMonitor_28
+Used module:             \DMIToTL
+Used module:             \TLXbar_dmixbar_i1_o2_a9d32s1k1z2u
+Used module:                 \TLMonitor_27
+Used module:     \PLICClockSinkDomain
+Used module:         \IntSyncCrossingSource_n1x1
+Used module:             \AsyncResetRegVec_w1_i0
+Used module:         \TLPLIC
+Used module:             \Queue1_RegMapperInput_i23_m8
+Used module:             \PLICFanIn
+Used module:             \LevelGateway
+Used module:             \TLMonitor_26
+Used module:     \CLINTClockSinkDomain
+Used module:         \IntSyncCrossingSource_n1x2
+Used module:             \AsyncResetRegVec_w2_i0
+Used module:         \CLINT
+Used module:             \TLMonitor_25
+Used module:     \BundleBridgeNexus_UInt1_1
+Used module:     \TilePRCIDomain
+Used module:         \IntSyncSyncCrossingSink_n1x1
+Used module:         \IntSyncSyncCrossingSink_n1x2
+Used module:         \IntSyncAsyncCrossingSink_n1x1
+Used module:             \SynchronizerShiftReg_w1_d3
+Used module:                 \NonSyncResetSynchronizerPrimitiveShiftReg_d3
+Used module:         \TLBuffer_a32d64s2k2z4c_1
+Used module:             \Queue2_TLBundleE_a32d64s2k2z4c
+Used module:                 \ram_sink_2x2
+Used module:             \Queue2_TLBundleC_a32d64s2k2z4c
+Used module:                 \ram_2x109
+Used module:             \Queue2_TLBundleB_a32d64s2k2z4c
+Used module:                 \ram_2x116
+Used module:             \Queue2_TLBundleD_a32d64s2k2z4c
+Used module:                 \ram_2x79
+Used module:             \Queue2_TLBundleA_a32d64s2k2z4c
+Used module:                 \ram_2x117
+Used module:             \TLMonitor_24
+Used module:         \RocketTile
+Used module:             \Rocket
+Used module:                 \PlusArgTimeout
+Used module:                 \Arbiter3_LLWB
+Used module:                 \MulDiv
+Used module:                 \RocketALU
+Used module:                 \BreakpointUnit
+Used module:                 \CSRFile
+Used module:                 \rf_31x64
+Used module:                 \IBuf
+Used module:                     \RVCExpander
+Used module:             \PTW
+Used module:                 \OptimizationBarrier_PTE
+Used module:                 \OptimizationBarrier_UInt
+Used module:                 \Arbiter2_Valid_PTWReq
+Used module:             \HellaCacheArbiter
+Used module:             \FPU
+Used module:                 \DivSqrtRecFN_small_1
+Used module:                     \RoundRawFNToRecFN_1
+Used module:                         \RoundAnyRawFNToRecFN_4
+Used module:                     \DivSqrtRecFNToRaw_small_1
+Used module:                         \DivSqrtRawFN_small_1
+Used module:                 \DivSqrtRecFN_small
+Used module:                     \RoundRawFNToRecFN
+Used module:                         \RoundAnyRawFNToRecFN
+Used module:                     \DivSqrtRecFNToRaw_small
+Used module:                         \DivSqrtRawFN_small
+Used module:                 \FPUFMAPipe_l4_f64
+Used module:                     \MulAddRecFNPipe_l2_e11_s53
+Used module:                         \MulAddRecFNToRaw_postMul_1
+Used module:                         \MulAddRecFNToRaw_preMul_1
+Used module:                 \FPToFP
+Used module:                     \RecFNToRecFN
+Used module:                         \RoundAnyRawFNToRecFN_3
+Used module:                 \IntToFP
+Used module:                     \INToRecFN_1
+Used module:                         \RoundAnyRawFNToRecFN_2
+Used module:                     \INToRecFN
+Used module:                         \RoundAnyRawFNToRecFN_1
+Used module:                 \FPToInt
+Used module:                     \RecFNToIN_1
+Used module:                     \RecFNToIN
+Used module:                     \CompareRecFN
+Used module:                 \FPUFMAPipe_l3_f32
+Used module:                     \MulAddRecFNPipe_l2_e8_s24
+Used module:                         \MulAddRecFNToRaw_postMul
+Used module:                         \MulAddRecFNToRaw_preMul
+Used module:                 \regfile_32x65
+Used module:                 \FPUDecoder
+Used module:             \Frontend
+Used module:                 \BTB
+Used module:                     \table_512x1
+Used module:                 \ITLB
+Used module:                     \OptimizationBarrier_TLBEntryData
+Used module:                     \PMAChecker
+Used module:                     \PMPChecker_s2
+Used module:                 \ShiftQueue
+Used module:                 \ICache
+Used module:                     \rockettile_icache_data_arrays_512x128
+Used module:                     \rockettile_icache_tag_array_64x84
+Used module:                     \MaxPeriodFibonacciLFSR
+Used module:             \DCache
+Used module:                 \AMOALU
+Used module:                 \DCacheDataArray
+Used module:                     \rockettile_dcache_data_arrays_0_512x256
+Used module:                 \rockettile_dcache_tag_array_64x88
+Used module:                 \PMPChecker_s3
+Used module:             \IntXbar_i4_o1
+Used module:             \TLXbar_MasterXbar_RocketTile_i2_o1_a32d64s2k2z4c
+Used module:                 \TLMonitor_23
+Used module:                 \TLMonitor_22
+Used module:     \CoherenceManagerWrapper
+Used module:         \BankBinder
+Used module:             \TLMonitor_21
+Used module:         \TLBroadcast
+Used module:             \TLBroadcastTracker_3
+Used module:                 \Queue8_TLBroadcastData
+Used module:                     \ram_8x72
+Used module:             \TLBroadcastTracker_2
+Used module:             \TLBroadcastTracker_1
+Used module:             \TLBroadcastTracker
+Used module:             \BroadcastFilter
+Used module:             \TLMonitor_20
+Used module:     \MemoryBus
+Used module:         \TLInterconnectCoupler_mbus_to_memory_controller_port_named_axi4
+Used module:             \TLToAXI4_1
+Used module:                 \Queue1_AXI4BundleARW_1
+Used module:                 \Queue1_AXI4BundleW
+Used module:                 \TLMonitor_19
+Used module:             \AXI4IdIndexer_2
+Used module:             \AXI4UserYanker_2
+Used module:                 \Queue8_BundleMap_4
+Used module:                     \ram_8x14
+Used module:         \ProbePicker
+Used module:             \TLMonitor_18
+Used module:     \PeripheryBus_cbus
+Used module:         \TLInterconnectCoupler_cbus_to_bootrom
+Used module:             \TLFragmenter_bootrom
+Used module:                 \Repeater_TLBundleA_a17d64s5k1z3u
+Used module:                 \TLMonitor_17
+Used module:         \TLInterconnectCoupler_cbus_to_debug
+Used module:             \TLFragmenter_Debug
+Used module:                 \Repeater_TLBundleA_a12d64s5k1z3u
+Used module:                 \TLMonitor_16
+Used module:         \TLInterconnectCoupler_cbus_to_plic
+Used module:             \TLFragmenter_PLIC
+Used module:                 \Repeater_TLBundleA_a28d64s5k1z3u
+Used module:                 \TLMonitor_15
+Used module:         \TLInterconnectCoupler_cbus_to_clint
+Used module:             \TLFragmenter_CLINT
+Used module:                 \Repeater_TLBundleA_a26d64s5k1z3u
+Used module:                 \TLMonitor_14
+Used module:         \ErrorDeviceWrapper
+Used module:             \TLBuffer_a14d64s5k1z4u
+Used module:                 \Queue2_TLBundleD_a28d64s5k1z4u
+Used module:                     \ram_2x81
+Used module:                 \Queue2_TLBundleA_a14d64s5k1z4u
+Used module:                     \ram_2x102
+Used module:                 \TLMonitor_13
+Used module:             \TLError
+Used module:                 \Queue1_TLBundleA_a14d64s5k1z4u
+Used module:                 \TLMonitor_12
+Used module:         \TLAtomicAutomata_cbus
+Used module:             \TLMonitor_11
+Used module:         \TLBuffer_a28d64s5k1z4u
+Used module:             \Queue2_TLBundleA_a28d64s5k1z4u
+Used module:             \TLMonitor_10
+Used module:         \TLXbar_cbus_out_i1_o5_a28d64s5k1z4u
+Used module:             \TLMonitor_9
+Used module:         \TLFIFOFixer_3
+Used module:             \TLMonitor_8
+Used module:         \FixedClockBroadcast_5
+Used module:     \TLInterconnectCoupler_fbus_from_port_named_slave_port_axi4
+Used module:         \AXI4IdIndexer_1
+Used module:         \AXI4Fragmenter
+Used module:             \Queue1_AXI4BundleAR
+Used module:         \AXI4UserYanker_1
+Used module:             \Queue4_BundleMap
+Used module:                 \ram_4x8
+Used module:         \AXI4ToTL
+Used module:             \Queue1_AXI4BundleB
+Used module:             \Queue1_AXI4BundleR
+Used module:         \TLFIFOFixer_2
+Used module:             \TLMonitor_7
+Used module:         \TLBuffer_a32d64s4k2z4u_1
+Used module:             \Queue2_TLBundleD_a32d64s4k2z4u
+Used module:             \Queue2_TLBundleA_a32d64s4k2z4u
+Used module:                 \ram_2x126
+Used module:             \TLMonitor_6
+Used module:     \TLBuffer_a32d64s4k2z4u
+Used module:         \TLMonitor_5
+Used module:     \PeripheryBus_pbus
+Used module:     \SystemBus
+Used module:         \TLInterconnectCoupler_sbus_to_port_named_mmio_port_axi4
+Used module:             \TLToAXI4
+Used module:                 \Queue1_AXI4BundleARW
+Used module:                 \TLMonitor_4
+Used module:             \AXI4IdIndexer
+Used module:             \AXI4Deinterleaver
+Used module:                 \Queue8_AXI4BundleR
+Used module:                     \ram_8x80
+Used module:             \AXI4UserYanker
+Used module:                 \Queue1_BundleMap
+Used module:                 \Queue8_BundleMap
+Used module:                     \ram_8x9
+Used module:             \AXI4Buffer
+Used module:                 \Queue2_AXI4BundleR
+Used module:                     \ram_2x71
+Used module:                 \Queue2_AXI4BundleAW
+Used module:                     \ram_2x60
+Used module:                 \Queue2_AXI4BundleB
+Used module:                     \ram_2x6
+Used module:                 \Queue2_AXI4BundleW
+Used module:                     \ram_2x73
+Used module:         \TLFIFOFixer
+Used module:             \TLMonitor_3
+Used module:             \TLMonitor_2
+Used module:         \TLXbar_sbus_i2_o3_a32d64s5k2z4c
+Used module:             \TLMonitor_1
+Used module:             \TLMonitor
+Used module:         \FixedClockBroadcast_3
+Used module:     \IntSyncAsyncCrossingSink_n1x2
+Used module:         \SynchronizerShiftReg_w2_d3
+ERROR: Module `\plusarg_reader' referenced in module `\TLMonitor_21' in cell `\plusarg_reader_1' is not part of the design.

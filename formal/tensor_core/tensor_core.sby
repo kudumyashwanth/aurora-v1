@@ -1,0 +1,22 @@
+[options]
+mode prove
+depth 40
+expect pass
+
+[engines]
+smtbmc z3
+
+[script]
+read -formal tensor_core_formal.sv
+read -formal tensor_core.sv
+read -formal mac_unit.sv
+read -formal systolic_array_16x16.sv
+read -formal tensor_local_buffer.sv
+prep -top tensor_core_formal
+
+[files]
+rtl/tensor_cluster/tensor_core.sv
+rtl/tensor_cluster/mac_unit.sv
+rtl/tensor_cluster/systolic_array_16x16.sv
+rtl/tensor_cluster/tensor_local_buffer.sv
+formal/tensor_core/tensor_core_formal.sv

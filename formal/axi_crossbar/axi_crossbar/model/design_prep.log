@@ -1,0 +1,92 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.62+0 (git sha1 8bbde80e0, g++ 11.4.0-1ubuntu1~22.04.2 -fPIC -O3)
+
+-- Executing script file `design_prep.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design.il
+
+2. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module $paramod$b2d051c10173d3e131bb77f18a5f1d0b0dd27cc0\axi_crossbar.
+Found 0 SCCs in module axi_crossbar_formal.
+Found 0 SCCs.
+
+3. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+4. Executing MEMORY_NORDFF pass (extracting $dff cells from memories).
+
+5. Executing ASYNC2SYNC pass.
+Replacing $paramod$b2d051c10173d3e131bb77f18a5f1d0b0dd27cc0\axi_crossbar.$procdff$15393 ($adff): ARST=\rst_n, D=$0\rd_busy[7:0], Q=\rd_busy
+Replacing $paramod$b2d051c10173d3e131bb77f18a5f1d0b0dd27cc0\axi_crossbar.$procdff$15398 ($adff): ARST=\rst_n, D=$0\rd_owner[7:0], Q=\rd_owner
+Replacing $paramod$b2d051c10173d3e131bb77f18a5f1d0b0dd27cc0\axi_crossbar.$procdff$15403 ($adff): ARST=\rst_n, D=$0\rd_rr_ptr[7:0], Q=\rd_rr_ptr
+Replacing $paramod$b2d051c10173d3e131bb77f18a5f1d0b0dd27cc0\axi_crossbar.$procdff$15415 ($adff): ARST=\rst_n, D=$0\wr_busy[7:0], Q=\wr_busy
+Replacing $paramod$b2d051c10173d3e131bb77f18a5f1d0b0dd27cc0\axi_crossbar.$procdff$15420 ($adff): ARST=\rst_n, D=$0\wr_owner[7:0], Q=\wr_owner
+Replacing $paramod$b2d051c10173d3e131bb77f18a5f1d0b0dd27cc0\axi_crossbar.$procdff$15425 ($adff): ARST=\rst_n, D=$0\wr_rr_ptr[7:0], Q=\wr_rr_ptr
+
+6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$b2d051c10173d3e131bb77f18a5f1d0b0dd27cc0\axi_crossbar..
+Finding unused cells or wires in module \axi_crossbar_formal..
+Removed 214 unused cells and 214 unused wires.
+<suppressed ~215 debug messages>
+
+7. Executing FORMALFF pass.
+
+8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$b2d051c10173d3e131bb77f18a5f1d0b0dd27cc0\axi_crossbar..
+Finding unused cells or wires in module \axi_crossbar_formal..
+Removed 14 unused cells and 14 unused wires.
+<suppressed ~16 debug messages>
+
+9. Executing CHECK pass (checking for obvious problems).
+Checking module $paramod$b2d051c10173d3e131bb77f18a5f1d0b0dd27cc0\axi_crossbar...
+Checking module axi_crossbar_formal...
+Found and reported 0 problems.
+
+10. Executing SETUNDEF pass (replace undef values with defined constants).
+
+11. Executing OPT pass (performing simple optimizations).
+
+11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$b2d051c10173d3e131bb77f18a5f1d0b0dd27cc0\axi_crossbar.
+<suppressed ~64 debug messages>
+Optimizing module axi_crossbar_formal.
+
+11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod$b2d051c10173d3e131bb77f18a5f1d0b0dd27cc0\axi_crossbar'.
+Computing hashes of 1040 cells of `$paramod$b2d051c10173d3e131bb77f18a5f1d0b0dd27cc0\axi_crossbar'.
+Finding duplicate cells in `$paramod$b2d051c10173d3e131bb77f18a5f1d0b0dd27cc0\axi_crossbar'.
+Finding identical cells in module `\axi_crossbar_formal'.
+Computing hashes of 1389 cells of `\axi_crossbar_formal'.
+Finding duplicate cells in `\axi_crossbar_formal'.
+Computing hashes of 1382 cells of `\axi_crossbar_formal'.
+Finding duplicate cells in `\axi_crossbar_formal'.
+<suppressed ~21 debug messages>
+Removed a total of 7 cells.
+
+11.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+11.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$b2d051c10173d3e131bb77f18a5f1d0b0dd27cc0\axi_crossbar..
+Finding unused cells or wires in module \axi_crossbar_formal..
+Removed 80 unused cells and 207 unused wires.
+<suppressed ~178 debug messages>
+
+11.5. Finished fast OPT passes.
+
+12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$b2d051c10173d3e131bb77f18a5f1d0b0dd27cc0\axi_crossbar..
+Finding unused cells or wires in module \axi_crossbar_formal..
+Removed 0 unused cells and 116 unused wires.
+<suppressed ~2 debug messages>
+
+13. Executing RTLIL backend.
+Output filename: ../model/design_prep.il
+
+End of script. Logfile hash: fbe889f7c0, CPU: user 0.10s system 0.01s, MEM: 23.85 MB peak
+Yosys 0.62+0 (git sha1 8bbde80e0, g++ 11.4.0-1ubuntu1~22.04.2 -fPIC -O3)
+Time spent: 39% 4x opt_clean (0 sec), 13% 1x opt_expr (0 sec), ...

@@ -1,0 +1,9 @@
+cd /home/yashwanth/tools/rocket-chip && /home/yashwanth/tools/bin/mill emulator[freechips.rocketchip.system.TestHarness,freechips.rocketchip.system.DefaultSmallConfig].mfccompiler.compile
+firtool: Unknown command line argument '-dedup'.  Try: 'firtool --help'
+firtool: Did you mean '--no-dedup'?
+1 targets failed
+emulator[freechips.rocketchip.system.TestHarness,freechips.rocketchip.system.DefaultSmallConfig].mfccompiler.compile os.SubprocessException: Result of firtool…: 1
+
+    os.proc.call(ProcessOps.scala:95)
+    millbuild.build$Emulator$mfccompiler$.$anonfun$compile$6(build.sc:229)
+make: *** [Makefile:11: verilog] Error 1

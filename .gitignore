@@ -1,0 +1,9 @@
+# Regenerable build artifacts
+obj_dir/
+obj_tensor/
+*.fst
+*.vcd
+*.dasm
+sim_run*.log
+# OpenLane run outputs (large, regenerable) — keep configs/drivers/RTL
+openlane/**/runs/

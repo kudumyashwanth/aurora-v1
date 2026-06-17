@@ -1,0 +1,16 @@
+[options]
+mode bmc
+depth 20
+multiclock on
+
+[engines]
+smtbmc z3
+
+[script]
+read -formal async_fifo_formal.sv
+read -formal async_fifo.sv
+prep -top async_fifo_formal
+
+[files]
+async_fifo_formal.sv
+../../rtl/interconnect/async_fifo.sv

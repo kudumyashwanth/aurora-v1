@@ -1,0 +1,192 @@
+cd /home/yashwanth/tools/rocket-chip && /home/yashwanth/tools/bin/mill emulator[freechips.rocketchip.system.TestHarness,freechips.rocketchip.system.DefaultSmallConfig].mfccompiler.compile
+Preparing Java 11.0.31 runtime; this may take a minute or two ...
+[info] compiling 7 Scala sources to /home/yashwanth/tools/rocket-chip/out/mill-build/compile.dest/classes ...
+[warn] /home/yashwanth/tools/rocket-chip/dependencies/chisel/build.sc:250:38: Auto-application to `()` is deprecated. Supply the empty argument list `()` explicitly to invoke method ctx,
+[warn] or remove the empty argument list from its definition (Java-defined methods are exempt).
+[warn] In Scala 3, an unapplied method like this will be eta-expanded into a function. [quickfixable]
+[warn]   def circtInstallPath = T(os.Path(T.ctx.env.get("CIRCT_INSTALL_PATH").getOrElse("/usr/local")))
+[warn]                                      ^
+[warn] /home/yashwanth/tools/rocket-chip/dependencies/chisel/build.sc:117:56: method lineStream in trait ProcessBuilder is deprecated (since 2.13.0): use lazyLines
+[warn]       val lines = Process(Seq("firtool", "--version")).lineStream
+[warn]                                                        ^
+[warn] /home/yashwanth/tools/rocket-chip/build.sc:283:155: method any2stringadd in object Predef is deprecated (since 2.13.0): Implicit injection of + is deprecated. Convert to String to call +
+[warn]          |"$${CMAKE_CXX_FLAGS} -DVERILATOR -DTEST_HARNESS=VTestHarness -include VTestHarness.h -include verilator.h -include ${generator.elaborate().path / config + ".plusArgs"}")
+[warn]                                                                                                                                                           ^
+[warn] three warnings found
+[info] done compiling
+[info] compiling 1 Scala source to /home/yashwanth/tools/rocket-chip/out/macros/compile.dest/classes ...
+[info] done compiling
+[info] compiling 7 Scala sources to /home/yashwanth/tools/rocket-chip/out/foreign-modules/dependencies/chisel/build/plugin/2.13.12/compile.dest/classes ...
+[info] done compiling
+[info] compiling 20 Scala sources to /home/yashwanth/tools/rocket-chip/out/hardfloat/6.7.0/compile.dest/classes ...
+[warn] 535 feature warnings; re-run with -feature for details
+[warn] one warning found
+[info] done compiling
+[info] compiling 1 Scala source to /home/yashwanth/tools/rocket-chip/out/cde/compile.dest/classes ...
+[info] done compiling
+[info] compiling 36 Scala sources to /home/yashwanth/tools/rocket-chip/out/diplomacy/6.7.0/compile.dest/classes ...
+[warn] /home/yashwanth/tools/rocket-chip/dependencies/diplomacy/diplomacy/src/diplomacy/nodes/NodeImp.scala:63:20: parameter node in method mixI is never used
+[warn]   def mixI(pu: UI, node: InwardNode[DI, UI, BI]): UI = pu
+[warn]                    ^
+[warn] /home/yashwanth/tools/rocket-chip/dependencies/diplomacy/diplomacy/src/diplomacy/nodes/NodeImp.scala:138:20: parameter node in method mixO is never used
+[warn]   def mixO(pd: DO, node: OutwardNode[DO, UO, BO]): DO = pd
+[warn]                    ^
+[warn] two warnings found
+[info] done compiling
+[info] compiling 322 Scala sources to /home/yashwanth/tools/rocket-chip/out/rocketchip/6.7.0/compile.dest/classes ...
+[warn] 3 deprecations
+[warn] 1 deprecation (since 6.6.0)
+[warn] 1 deprecation (since rocket-chip 1.2)
+[warn] 5 deprecations in total; re-run with -deprecation for details
+[warn] 2890 feature warnings; re-run with -feature for details
+[warn] 5 warnings found
+[info] done compiling
+java.lang.reflect.InvocationTargetException
+	at ... ()
+	at freechips.rocketchip.diplomacy.Main$.$anonfun$elaborate$1(Main.scala:23)
+	at freechips.rocketchip.diplomacy.Main$.$anonfun$elaborate$3(Main.scala:38)
+	at chisel3.Module$.evaluate(Module.scala:88)
+	at chisel3.Module$.do_apply(Module.scala:35)
+	at chisel3.stage.phases.Elaborate.$anonfun$transform$2(Elaborate.scala:53)
+	at chisel3.internal.Builder$.$anonfun$buildImpl$1(Builder.scala:1044)
+	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:59)
+	at chisel3.internal.Builder$.buildImpl(Builder.scala:1034)
+	at chisel3.internal.Builder$.$anonfun$build$1(Builder.scala:1025)
+	at logger.Logger$.$anonfun$makeScope$4(Logger.scala:148)
+	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:59)
+	at logger.Logger$.makeScope(Logger.scala:146)
+	at logger.Logger$.makeScope(Logger.scala:133)
+	at ... ()
+	at ... (Stack trace trimmed to user code only. Rerun with --full-stacktrace to see the full stack trace)
+Caused by: java.lang.IllegalArgumentException: requirement failed: Failed to run dtc; is it in your path?
+	at scala.Predef$.require(Predef.scala:337)
+	at freechips.rocketchip.resources.DTB$.apply(DeviceTree.scala:137)
+	at freechips.rocketchip.subsystem.HasDTS.dtb(BaseSubsystem.scala:33)
+	at freechips.rocketchip.subsystem.HasDTS.dtb$(BaseSubsystem.scala:33)
+	at freechips.rocketchip.subsystem.BaseSubsystem.dtb$lzycompute(BaseSubsystem.scala:97)
+	at freechips.rocketchip.subsystem.BaseSubsystem.dtb(BaseSubsystem.scala:97)
+	at freechips.rocketchip.devices.tilelink.BootROM$.contents$lzycompute$1(BootROM.scala:96)
+	at freechips.rocketchip.devices.tilelink.BootROM$.contents$1(BootROM.scala:95)
+	at freechips.rocketchip.devices.tilelink.BootROM$.$anonfun$attach$3(BootROM.scala:102)
+	at freechips.rocketchip.devices.tilelink.TLROM$Impl.<init>(BootROM.scala:47)
+	at freechips.rocketchip.devices.tilelink.TLROM.$anonfun$module$1(BootROM.scala:45)
+	at chisel3.internal.plugin.package$.autoNameRecursively(package.scala:33)
+	at freechips.rocketchip.devices.tilelink.TLROM.module$lzycompute(BootROM.scala:45)
+	at freechips.rocketchip.devices.tilelink.TLROM.module(BootROM.scala:45)
+	at freechips.rocketchip.devices.tilelink.TLROM.module(BootROM.scala:32)
+	at org.chipsalliance.diplomacy.lazymodule.LazyModuleImpLike.$anonfun$instantiate$15(LazyModuleImp.scala:71)
+	at chisel3.Module$.evaluate(Module.scala:88)
+	at chisel3.Module$.do_apply(Module.scala:35)
+	at org.chipsalliance.diplomacy.lazymodule.LazyModuleImpLike.$anonfun$instantiate$14(LazyModuleImp.scala:71)
+	at chisel3.internal.plugin.package$.autoNameRecursively(package.scala:33)
+	at org.chipsalliance.diplomacy.lazymodule.LazyModuleImpLike.$anonfun$instantiate$13(LazyModuleImp.scala:70)
+	at scala.Option.getOrElse(Option.scala:201)
+	at org.chipsalliance.diplomacy.lazymodule.LazyModuleImpLike.$anonfun$instantiate$1(LazyModuleImp.scala:68)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at org.chipsalliance.diplomacy.lazymodule.LazyModuleImpLike.instantiate(LazyModuleImp.scala:46)
+	at org.chipsalliance.diplomacy.lazymodule.LazyModuleImpLike.instantiate$(LazyModuleImp.scala:43)
+	at org.chipsalliance.diplomacy.lazymodule.LazyRawModuleImp.instantiate(LazyModuleImp.scala:147)
+	at org.chipsalliance.diplomacy.lazymodule.LazyRawModuleImp.$anonfun$x$6$2(LazyModuleImp.scala:164)
+	at chisel3.withClockAndReset$.apply(MultiClock.scala:35)
+	at chisel3.withClockAndReset$.apply(MultiClock.scala:18)
+	at org.chipsalliance.diplomacy.lazymodule.LazyRawModuleImp.$anonfun$x$6$1(LazyModuleImp.scala:164)
+	at chisel3.internal.plugin.package$.autoNameRecursivelyProduct(package.scala:48)
+	at org.chipsalliance.diplomacy.lazymodule.LazyRawModuleImp.<init>(LazyModuleImp.scala:163)
+	at freechips.rocketchip.prci.Domain$Impl.<init>(ClockDomain.scala:14)
+	at freechips.rocketchip.prci.Domain.$anonfun$module$1(ClockDomain.scala:13)
+	at chisel3.internal.plugin.package$.autoNameRecursively(package.scala:33)
+	at freechips.rocketchip.prci.Domain.module$lzycompute(ClockDomain.scala:13)
+	at freechips.rocketchip.prci.Domain.module(ClockDomain.scala:13)
+	at freechips.rocketchip.prci.Domain.module(ClockDomain.scala:9)
+	at org.chipsalliance.diplomacy.lazymodule.LazyModuleImpLike.$anonfun$instantiate$15(LazyModuleImp.scala:71)
+	at chisel3.Module$.evaluate(Module.scala:88)
+	at chisel3.Module$.do_apply(Module.scala:35)
+	at org.chipsalliance.diplomacy.lazymodule.LazyModuleImpLike.$anonfun$instantiate$14(LazyModuleImp.scala:71)
+	at chisel3.internal.plugin.package$.autoNameRecursively(package.scala:33)
+	at org.chipsalliance.diplomacy.lazymodule.LazyModuleImpLike.$anonfun$instantiate$13(LazyModuleImp.scala:70)
+	at scala.Option.getOrElse(Option.scala:201)
+	at org.chipsalliance.diplomacy.lazymodule.LazyModuleImpLike.$anonfun$instantiate$1(LazyModuleImp.scala:68)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at org.chipsalliance.diplomacy.lazymodule.LazyModuleImpLike.instantiate(LazyModuleImp.scala:46)
+	at org.chipsalliance.diplomacy.lazymodule.LazyModuleImpLike.instantiate$(LazyModuleImp.scala:43)
+	at org.chipsalliance.diplomacy.lazymodule.LazyRawModuleImp.instantiate(LazyModuleImp.scala:147)
+	at org.chipsalliance.diplomacy.lazymodule.LazyRawModuleImp.$anonfun$x$6$1(LazyModuleImp.scala:166)
+	at chisel3.internal.plugin.package$.autoNameRecursivelyProduct(package.scala:48)
+	at org.chipsalliance.diplomacy.lazymodule.LazyRawModuleImp.<init>(LazyModuleImp.scala:163)
+	at freechips.rocketchip.subsystem.BareSubsystemModuleImp.<init>(BaseSubsystem.scala:50)
+	at freechips.rocketchip.subsystem.BaseSubsystemModuleImp.<init>(BaseSubsystem.scala:143)
+	at freechips.rocketchip.subsystem.RocketSubsystemModuleImp.<init>(RocketSubsystem.scala:51)
+	at freechips.rocketchip.system.ExampleRocketSystemModuleImp.<init>(ExampleRocketSystem.scala:25)
+	at freechips.rocketchip.system.ExampleRocketSystem.$anonfun$module$1(ExampleRocketSystem.scala:22)
+	at chisel3.internal.plugin.package$.autoNameRecursively(package.scala:33)
+	at freechips.rocketchip.system.ExampleRocketSystem.module$lzycompute(ExampleRocketSystem.scala:22)
+	at freechips.rocketchip.system.ExampleRocketSystem.module(ExampleRocketSystem.scala:22)
+	at freechips.rocketchip.system.TestHarness.$anonfun$dut$2(TestHarness.scala:19)
+	at chisel3.Module$.evaluate(Module.scala:88)
+	at chisel3.Module$.do_apply(Module.scala:35)
+	at freechips.rocketchip.system.TestHarness.$anonfun$dut$1(TestHarness.scala:19)
+	at chisel3.internal.plugin.package$.autoNameRecursively(package.scala:33)
+	at freechips.rocketchip.system.TestHarness.<init>(TestHarness.scala:19)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at freechips.rocketchip.diplomacy.Main$.$anonfun$elaborate$1(Main.scala:23)
+	at freechips.rocketchip.diplomacy.Main$.$anonfun$elaborate$3(Main.scala:38)
+	at chisel3.Module$.evaluate(Module.scala:88)
+	at chisel3.Module$.do_apply(Module.scala:35)
+	at chisel3.stage.phases.Elaborate.$anonfun$transform$2(Elaborate.scala:53)
+	at chisel3.internal.Builder$.$anonfun$buildImpl$1(Builder.scala:1044)
+	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:59)
+	at chisel3.internal.Builder$.buildImpl(Builder.scala:1034)
+	at chisel3.internal.Builder$.$anonfun$build$1(Builder.scala:1025)
+	at logger.Logger$.$anonfun$makeScope$4(Logger.scala:148)
+	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:59)
+	at logger.Logger$.makeScope(Logger.scala:146)
+	at logger.Logger$.makeScope(Logger.scala:133)
+	at chisel3.internal.Builder$.build(Builder.scala:1025)
+	at chisel3.stage.phases.Elaborate.$anonfun$transform$1(Elaborate.scala:53)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.collection.immutable.List.flatMap(List.scala:79)
+	at chisel3.stage.phases.Elaborate.transform(Elaborate.scala:36)
+	at chisel3.stage.phases.Elaborate.transform(Elaborate.scala:26)
+	at freechips.rocketchip.diplomacy.Main$.$anonfun$elaborate$4(Main.scala:40)
+	at scala.collection.LinearSeqOps.foldLeft(LinearSeq.scala:183)
+	at scala.collection.LinearSeqOps.foldLeft$(LinearSeq.scala:179)
+	at scala.collection.immutable.List.foldLeft(List.scala:79)
+	at freechips.rocketchip.diplomacy.Main$.elaborate(Main.scala:40)
+	at freechips.rocketchip.diplomacy.Main$.$anonfun$main$1(Main.scala:54)
+	at freechips.rocketchip.diplomacy.Main$.$anonfun$main$1$adapted(Main.scala:54)
+	at mainargs.Invoker$.$anonfun$invoke0$2(Invoker.scala:68)
+	at mainargs.Result.flatMap(Result.scala:13)
+	at mainargs.Result.flatMap$(Result.scala:12)
+	at mainargs.Result$Success.flatMap(Result.scala:23)
+	at mainargs.Invoker$.invoke0(Invoker.scala:67)
+	at mainargs.Invoker$.invoke(Invoker.scala:77)
+	at mainargs.Invoker$.invokeLocal$1(Invoker.scala:89)
+	at mainargs.Invoker$.$anonfun$runMains$2(Invoker.scala:103)
+	at mainargs.Result.flatMap(Result.scala:13)
+	at mainargs.Result.flatMap$(Result.scala:12)
+	at mainargs.Result$Success.flatMap(Result.scala:23)
+	at mainargs.Invoker$.groupArgs$1(Invoker.scala:103)
+	at mainargs.Invoker$.runMains(Invoker.scala:108)
+	at mainargs.ParserForMethods.runRaw0(Parser.scala:170)
+	at mainargs.ParserForMethods.runEither(Parser.scala:108)
+	at mainargs.ParserForMethods.runEither(Parser.scala:151)
+	at mainargs.ParserForMethods.runOrExit(Parser.scala:56)
+	at freechips.rocketchip.diplomacy.Main$.main(Main.scala:54)
+	at freechips.rocketchip.diplomacy.Main.main(Main.scala)
+
+1 targets failed
+emulator[freechips.rocketchip.system.TestHarness,freechips.rocketchip.system.DefaultSmallConfig].generator.elaborate os.SubprocessException: Result of /usr/lib/jvm/java-11-openjdk-amd64/bin/java…: 1
+Interrupt map (1 harts 2 interrupts):
+  [1, 2] => ldut
+
+[warn] src/main/scala/rocket/ICache.scala 508:25: [W002] Dynamic index with width 7 is too large for extractee of width 64
+[warn]     val s1_vb = vb_array(Cat(i.U, s1_idx).pad(log2Ceil(nSets*nWays))) && !s1_slaveValid
+[warn]                         ^
+[warn] There were 1 warning(s) during hardware elaboration.
+
+    os.proc.call(ProcessOps.scala:95)
+    millbuild.build$Emulator$generator$.$anonfun$elaborate$3(build.sc:175)
+make: *** [Makefile:11: verilog] Error 1

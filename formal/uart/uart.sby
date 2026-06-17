@@ -1,0 +1,16 @@
+[options]
+mode prove
+depth 30
+expect pass
+
+[engines]
+smtbmc z3
+
+[script]
+read -formal uart_formal.sv
+read -formal uart.sv
+prep -top uart_formal
+
+[files]
+rtl/peripherals/uart.sv
+formal/uart/uart_formal.sv

@@ -1,0 +1,51 @@
+OpenLane v1.0.2 (ff5509f65b17bfa4068d5336495ab1718987ff69)
+All rights reserved. (c) 2020-2025 Efabless Corporation and contributors.
+Available under the Apache License, version 2.0. See the LICENSE file for more details.
+
+[INFO]: Using configuration in '../home/yashwanth/aurora_v1/openlane/aurora_soc/config.json'...
+[INFO]: PDK Root: /home/yashwanth/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af
+[INFO]: Process Design Kit: sky130B
+[INFO]: Standard Cell Library: sky130_fd_sc_hd
+[INFO]: Optimization Standard Cell Library: sky130_fd_sc_hd
+[WARNING]: SYNTH_MAX_FANOUT is now deprecated; use MAX_FANOUT_CONSTRAINT instead.
+[WARNING]: DIODE_INSERTION_STRATEGY is now deprecated; use GRT_REPAIR_ANTENNAS, DIODE_ON_PORTS and RUN_HEURISTIC_DIODE_INSERTION instead.
+[INFO]: DIODE_INSERTION_STRATEGY set to 3. Setting GRT_REPAIR_ANTENNAS to 1
+[INFO]: Run Directory: /home/yashwanth/aurora_v1/openlane/aurora_soc/runs/resume_route
+[INFO]: Saving runtime environment...
+[INFO]: Preparing LEF files for the nom corner...
+[INFO]: Preparing LEF files for the min corner...
+[INFO]: Preparing LEF files for the max corner...
+[STEP 1]
+[INFO]: Running Global Routing Resizer Design Optimizations (log: ../home/yashwanth/aurora_v1/openlane/aurora_soc/runs/resume_route/logs/routing/1-resizer_design.log)...
+[ERROR]: during executing openroad script /openlane/scripts/openroad/resizer_routing_design.tcl
+[ERROR]: Log: ../home/yashwanth/aurora_v1/openlane/aurora_soc/runs/resume_route/logs/routing/1-resizer_design.log
+[ERROR]: Last 10 lines:
+37# 0x00007B41FBEDFF1E in /lib64/libtcl8.5.so
+38# Tcl_EvalEx in /lib64/libtcl8.5.so
+39# Tcl_Eval in /lib64/libtcl8.5.so
+40# sta::sourceTclFile(char const*, bool, bool, Tcl_Interp*) in openroad
+41# ord::tclAppInit(Tcl_Interp*) in openroad
+42# Tcl_Main in /lib64/libtcl8.5.so
+43# main in openroad
+44# __libc_start_main in /lib64/libc.so.6
+45# 0x0000000000D3C6C7 in openroad
+child killed: SIGABRT
+
+[ERROR]: Creating issue reproducible...
+[INFO]: Saving runtime environment...
+OpenLane TCL Issue Packager
+
+EFABLESS CORPORATION AND ALL AUTHORS OF THE OPENLANE PROJECT SHALL NOT BE HELD
+LIABLE FOR ANY LEAKS THAT MAY OCCUR TO ANY PROPRIETARY DATA AS A RESULT OF USING
+THIS SCRIPT. THIS SCRIPT IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OR
+CONDITIONS OF ANY KIND.
+
+BY USING THIS SCRIPT, YOU ACKNOWLEDGE THAT YOU FULLY UNDERSTAND THIS DISCLAIMER
+AND ALL IT ENTAILS.
+
+Parsing config file(s)…
+Setting up /home/yashwanth/aurora_v1/openlane/aurora_soc/runs/resume_route/issue_reproducible…
+Done.
+[INFO]: Reproducible packaged: Please tarball and upload '../home/yashwanth/aurora_v1/openlane/aurora_soc/runs/resume_route/issue_reproducible' if you're going to submit an issue.
+
+=== RESUME_ROUTE_DONE ===

@@ -1,0 +1,22 @@
+cd /home/yashwanth/tools/rocket-chip && /home/yashwanth/tools/bin/mill emulator[freechips.rocketchip.system.TestHarness,freechips.rocketchip.system.DefaultSmallConfig].mfccompiler.compile
+1 targets failed
+emulator[freechips.rocketchip.system.TestHarness,freechips.rocketchip.system.DefaultSmallConfig].mfccompiler.compile java.io.IOException: Cannot run program "firtool" (in directory "/home/yashwanth/tools/rocket-chip/out/emulator/freechips.rocketchip.system.TestHarness/freechips.rocketchip.system.DefaultSmallConfig/mfccompiler/compile.dest"): error=2, No such file or directory
+    java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1128)
+    java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1071)
+    os.proc.proc$lzycompute$1(ProcessOps.scala:123)
+    os.proc.proc$1(ProcessOps.scala:122)
+    os.proc.spawn(ProcessOps.scala:129)
+    os.proc.call(ProcessOps.scala:87)
+    millbuild.build$Emulator$mfccompiler$.$anonfun$compile$6(build.sc:229)
+java.io.IOException: error=2, No such file or directory
+    java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+    java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:340)
+    java.base/java.lang.ProcessImpl.start(ProcessImpl.java:271)
+    java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1107)
+    java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1071)
+    os.proc.proc$lzycompute$1(ProcessOps.scala:123)
+    os.proc.proc$1(ProcessOps.scala:122)
+    os.proc.spawn(ProcessOps.scala:129)
+    os.proc.call(ProcessOps.scala:87)
+    millbuild.build$Emulator$mfccompiler$.$anonfun$compile$6(build.sc:229)
+make: *** [Makefile:11: verilog] Error 1

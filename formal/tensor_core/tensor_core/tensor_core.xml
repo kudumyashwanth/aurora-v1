@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2026-05-12T11:17:47" hostname="yashwanth-LOQ-15ARP9" package="tensor_core" id="0" name="default" tests="1" errors="1" failures="0" time="0" skipped="0">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="ERROR"/>
+</properties>
+<testcase classname="default" name="default" time="0">
+<error type="ERROR"/>
+</testcase>
+<system-out>SBY 11:17:47 [formal/tensor_core/tensor_core] Removing directory '/home/yashwanth/aurora_v1/formal/tensor_core/tensor_core'.
+SBY 11:17:47 [formal/tensor_core/tensor_core] Copy '/home/yashwanth/aurora_v1/rtl/tensor_cluster/tensor_core.sv' to '/home/yashwanth/aurora_v1/formal/tensor_core/tensor_core/src/tensor_core.sv'.
+SBY 11:17:47 [formal/tensor_core/tensor_core] Copy '/home/yashwanth/aurora_v1/rtl/tensor_cluster/mac_unit.sv' to '/home/yashwanth/aurora_v1/formal/tensor_core/tensor_core/src/mac_unit.sv'.
+SBY 11:17:47 [formal/tensor_core/tensor_core] Copy '/home/yashwanth/aurora_v1/rtl/tensor_cluster/systolic_array_16x16.sv' to '/home/yashwanth/aurora_v1/formal/tensor_core/tensor_core/src/systolic_array_16x16.sv'.
+SBY 11:17:47 [formal/tensor_core/tensor_core] Copy '/home/yashwanth/aurora_v1/rtl/tensor_cluster/tensor_local_buffer.sv' to '/home/yashwanth/aurora_v1/formal/tensor_core/tensor_core/src/tensor_local_buffer.sv'.
+SBY 11:17:47 [formal/tensor_core/tensor_core] Copy '/home/yashwanth/aurora_v1/formal/tensor_core/tensor_core_formal.sv' to '/home/yashwanth/aurora_v1/formal/tensor_core/tensor_core/src/tensor_core_formal.sv'.
+SBY 11:17:47 [formal/tensor_core/tensor_core] engine_0: smtbmc z3
+SBY 11:17:47 [formal/tensor_core/tensor_core] base: starting process &quot;cd formal/tensor_core/tensor_core/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 11:17:47 [formal/tensor_core/tensor_core] base: ERROR: File `formal/tensor_core/tensor_core_formal.sv' not found or is a directory
+SBY 11:17:47 [formal/tensor_core/tensor_core] base: finished (returncode=1)
+SBY 11:17:47 [formal/tensor_core/tensor_core] base: task failed. ERROR.
+SBY 11:17:47 [formal/tensor_core/tensor_core] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 11:17:47 [formal/tensor_core/tensor_core] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 11:17:47 [formal/tensor_core/tensor_core] summary: engine_0 (smtbmc z3) did not return a status
+SBY 11:17:47 [formal/tensor_core/tensor_core] summary: engine_0 did not produce any traces
+SBY 11:17:47 [formal/tensor_core/tensor_core] DONE (ERROR, rc=16)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

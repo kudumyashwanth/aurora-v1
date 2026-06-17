@@ -1,0 +1,59 @@
+OpenLane v1.0.2 (ff5509f65b17bfa4068d5336495ab1718987ff69)
+All rights reserved. (c) 2020-2025 Efabless Corporation and contributors.
+Available under the Apache License, version 2.0. See the LICENSE file for more details.
+
+[INFO]: Using configuration in '../home/yashwanth/aurora_v1/openlane/tensor/tensor_cluster/config.json'...
+[INFO]: PDK Root: /home/yashwanth/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af
+[INFO]: Process Design Kit: sky130B
+[INFO]: Standard Cell Library: sky130_fd_sc_hd
+[INFO]: Optimization Standard Cell Library: sky130_fd_sc_hd
+[WARNING]: DIODE_INSERTION_STRATEGY is now deprecated; use GRT_REPAIR_ANTENNAS, DIODE_ON_PORTS and RUN_HEURISTIC_DIODE_INSERTION instead.
+[INFO]: DIODE_INSERTION_STRATEGY set to 3. Setting GRT_REPAIR_ANTENNAS to 1
+[INFO]: Run Directory: /home/yashwanth/aurora_v1/openlane/tensor/tensor_cluster/runs/tc1
+[INFO]: Saving runtime environment...
+[INFO]: Preparing LEF files for the nom corner...
+[INFO]: Preparing LEF files for the min corner...
+[INFO]: Preparing LEF files for the max corner...
+[STEP 1]
+[INFO]: Running Synthesis (log: ../home/yashwanth/aurora_v1/openlane/tensor/tensor_cluster/runs/tc1/logs/synthesis/1-synthesis.log)...
+[STEP 2]
+[INFO]: Running Single-Corner Static Timing Analysis (log: ../home/yashwanth/aurora_v1/openlane/tensor/tensor_cluster/runs/tc1/logs/synthesis/2-sta.log)...
+[STEP 3]
+[INFO]: Running Initial Floorplanning (log: ../home/yashwanth/aurora_v1/openlane/tensor/tensor_cluster/runs/tc1/logs/floorplan/3-initial_fp.log)...
+[INFO]: Floorplanned with width 3959.68 and height 3957.6.
+[STEP 4]
+[INFO]: Running IO Placement...
+[STEP 5]
+[INFO]: Running Global Placement (log: ../home/yashwanth/aurora_v1/openlane/tensor/tensor_cluster/runs/tc1/logs/placement/5-global.log)...
+[ERROR]: during executing openroad script /openlane/scripts/openroad/gpl.tcl
+[ERROR]: Log: ../home/yashwanth/aurora_v1/openlane/tensor/tensor_cluster/runs/tc1/logs/placement/5-global.log
+[ERROR]: Last 10 lines:
+[INFO GPL-0049] WhiteSpaceArea: 15670829568000
+[INFO GPL-0050] NesterovInstsArea: 4870334205696
+[INFO GPL-0051] TotalFillerArea: 58795405568
+[INFO GPL-0052] TotalGCellsArea: 4929129611264
+[INFO GPL-0053] ExpectedTotalGCellsArea: 8066734368956
+[ERROR GPL-0303] Use a higher -density or re-floorplan with a larger core area.
+Given target density: 0.50
+Suggested target density: 0.51
+Error: gpl.tcl, 71 GPL-0303
+child process exited abnormally
+
+[ERROR]: Creating issue reproducible...
+[INFO]: Saving runtime environment...
+OpenLane TCL Issue Packager
+
+EFABLESS CORPORATION AND ALL AUTHORS OF THE OPENLANE PROJECT SHALL NOT BE HELD
+LIABLE FOR ANY LEAKS THAT MAY OCCUR TO ANY PROPRIETARY DATA AS A RESULT OF USING
+THIS SCRIPT. THIS SCRIPT IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OR
+CONDITIONS OF ANY KIND.
+
+BY USING THIS SCRIPT, YOU ACKNOWLEDGE THAT YOU FULLY UNDERSTAND THIS DISCLAIMER
+AND ALL IT ENTAILS.
+
+Parsing config file(s)…
+Setting up /home/yashwanth/aurora_v1/openlane/tensor/tensor_cluster/runs/tc1/issue_reproducible…
+Done.
+[INFO]: Reproducible packaged: Please tarball and upload '../home/yashwanth/aurora_v1/openlane/tensor/tensor_cluster/runs/tc1/issue_reproducible' if you're going to submit an issue.
+
+=== TENSOR_FP_DONE ===

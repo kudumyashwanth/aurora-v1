@@ -1,0 +1,63 @@
+OpenLane v1.0.2 (ff5509f65b17bfa4068d5336495ab1718987ff69)
+All rights reserved. (c) 2020-2025 Efabless Corporation and contributors.
+Available under the Apache License, version 2.0. See the LICENSE file for more details.
+
+[INFO]: Using configuration in '../home/yashwanth/aurora_v1/openlane/rocket/rocket_tile/config.json'...
+[INFO]: PDK Root: /home/yashwanth/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af
+[INFO]: Process Design Kit: sky130B
+[INFO]: Standard Cell Library: sky130_fd_sc_hd
+[INFO]: Optimization Standard Cell Library: sky130_fd_sc_hd
+[WARNING]: DIODE_INSERTION_STRATEGY is now deprecated; use GRT_REPAIR_ANTENNAS, DIODE_ON_PORTS and RUN_HEURISTIC_DIODE_INSERTION instead.
+[INFO]: DIODE_INSERTION_STRATEGY set to 3. Setting GRT_REPAIR_ANTENNAS to 1
+[INFO]: Run Directory: /home/yashwanth/aurora_v1/openlane/rocket/rocket_tile/runs/rt2
+[INFO]: Saving runtime environment...
+[INFO]: Preparing LEF files for the nom corner...
+[INFO]: Preparing LEF files for the min corner...
+[INFO]: Preparing LEF files for the max corner...
+[STEP 1]
+[INFO]: Running Synthesis (log: ../home/yashwanth/aurora_v1/openlane/rocket/rocket_tile/runs/rt2/logs/synthesis/1-synthesis.log)...
+[STEP 2]
+[INFO]: Running Single-Corner Static Timing Analysis (log: ../home/yashwanth/aurora_v1/openlane/rocket/rocket_tile/runs/rt2/logs/synthesis/2-sta.log)...
+[STEP 3]
+[INFO]: Running Initial Floorplanning (log: ../home/yashwanth/aurora_v1/openlane/rocket/rocket_tile/runs/rt2/logs/floorplan/3-initial_fp.log)...
+[INFO]: Floorplanned with width 3959.68 and height 3957.6.
+[STEP 4]
+[INFO]: Running IO Placement...
+[STEP 5]
+[INFO]: Performing Manual Macro Placement (log: ../home/yashwanth/aurora_v1/openlane/rocket/rocket_tile/runs/rt2/logs/placement/5-macro_placement.log)...
+[ERROR]: during executing: "openroad -exit -no_init -python /openlane/scripts/odbpy/manual_macro_place.py --config /home/yashwanth/aurora_v1/openlane/rocket/rocket_tile/runs/rt2/tmp/placement/macro_placement.cfg --fixed --input-lef /home/yashwanth/aurora_v1/openlane/rocket/rocket_tile/runs/rt2/tmp/merged.nom.lef --output-def /home/yashwanth/aurora_v1/openlane/rocket/rocket_tile/runs/rt2/tmp/floorplan/4-io.macro_placement.def --output /home/yashwanth/aurora_v1/openlane/rocket/rocket_tile/runs/rt2/tmp/floorplan/4-io.macro_placement.odb /home/yashwanth/aurora_v1/openlane/rocket/rocket_tile/runs/rt2/tmp/floorplan/4-io.odb |& tee /dev/null /home/yashwanth/aurora_v1/openlane/rocket/rocket_tile/runs/rt2/logs/placement/5-macro_placement.log"
+[ERROR]: Exit code: 1
+[ERROR]: Last 10 lines:
+  File "/usr/local/lib/python3.6/site-packages/click/core.py", line 1395, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/usr/local/lib/python3.6/site-packages/click/core.py", line 754, in invoke
+    return __callback(*args, **kwargs)
+  File "/openlane/scripts/odbpy/reader.py", line 76, in wrapper
+    function(**kwargs)
+  File "/openlane/scripts/odbpy/manual_macro_place.py", line 102, in manual_macro_place
+    assert not macros, ("Macros not found:", macros)
+AssertionError: ('Macros not found:', {'dcache.data.rockettile_dcache_data_arrays_0.rockettile_dcache_data_arrays_0_ext.g_bank[0].u_sram': ['100000', '100000', 'N'], 'dcache.data.rockettile_dcache_data_arrays_0.rockettile_dcache_data_arrays_0_ext.g_bank[1].u_sram': ['100000', '583000', 'N'], 'dcache.data.rockettile_dcache_data_arrays_0.rockettile_dcache_data_arrays_0_ext.g_bank[2].u_sram': ['100000', '1066000', 'N'], 'dcache.data.rockettile_dcache_data_arrays_0.rockettile_dcache_data_arrays_0_ext.g_bank[3].u_sram': ['100000', '1549000', 'N'], 'dcache.data.rockettile_dcache_data_arrays_0.rockettile_dcache_data_arrays_0_ext.g_bank[4].u_sram': ['100000', '2032000', 'N'], 'dcache.data.rockettile_dcache_data_arrays_0.rockettile_dcache_data_arrays_0_ext.g_bank[5].u_sram': ['100000', '2515000', 'N'], 'dcache.data.rockettile_dcache_data_arrays_0.rockettile_dcache_data_arrays_0_ext.g_bank[6].u_sram': ['100000', '2998000', 'N'], 'dcache.data.rockettile_dcache_data_arrays_0.rockettile_dcache_data_arrays_0_ext.g_bank[7].u_sram': ['100000', '3481000', 'N'], 'frontend.icache.rockettile_icache_data_arrays_0.rockettile_icache_data_arrays_0_ext.g_bank[0].u_sram': ['3217000', '100000', 'N'], 'frontend.icache.rockettile_icache_data_arrays_0.rockettile_icache_data_arrays_0_ext.g_bank[1].u_sram': ['3217000', '583000', 'N'], 'frontend.icache.rockettile_icache_data_arrays_0.rockettile_icache_data_arrays_0_ext.g_bank[2].u_sram': ['3217000', '1066000', 'N'], 'frontend.icache.rockettile_icache_data_arrays_0.rockettile_icache_data_arrays_0_ext.g_bank[3].u_sram': ['3217000', '1549000', 'N'], 'frontend.icache.rockettile_icache_data_arrays_1.rockettile_icache_data_arrays_0_ext.g_bank[0].u_sram': ['3217000', '2032000', 'N'], 'frontend.icache.rockettile_icache_data_arrays_1.rockettile_icache_data_arrays_0_ext.g_bank[1].u_sram': ['3217000', '2515000', 'N'], 'frontend.icache.rockettile_icache_data_arrays_1.rockettile_icache_data_arrays_0_ext.g_bank[2].u_sram': ['3217000', '2998000', 'N'], 'frontend.icache.rockettile_icache_data_arrays_1.rockettile_icache_data_arrays_0_ext.g_bank[3].u_sram': ['3217000', '3481000', 'N']})
+child process exited abnormally
+
+[ERROR]: Step 5 (floorplan) failed with error:
+-code 1 -level 0 -errorcode NONE -errorinfo {
+    while executing
+"throw_error"
+    (procedure "try_exec" line 17)
+    invoked from within
+"try_exec $::env(OPENROAD_BIN) -exit -no_init -python {*}$args  --input-lef $::env(MERGED_LEF)  --output-def $arg_values(-output_def)  --output $arg_va..."
+    (procedure "manipulate_layout" line 19)
+    invoked from within
+"manipulate_layout $::env(SCRIPTS_DIR)/odbpy/manual_macro_place.py -indexed_log $log  -output_def $save_def  -output $save_db  -input $prev_db  {*}$arg..."
+    (procedure "manual_macro_placement" line 24)
+    invoked from within
+"manual_macro_placement -f"
+    (procedure "run_floorplan" line 43)
+    invoked from within
+"run_floorplan"} -errorline 1
+[INFO]: Saving current set of views in '../home/yashwanth/aurora_v1/openlane/rocket/rocket_tile/runs/rt2/results/final'...
+[INFO]: Generating final set of reports...
+[INFO]: Created manufacturability report at '../home/yashwanth/aurora_v1/openlane/rocket/rocket_tile/runs/rt2/reports/manufacturability.rpt'.
+[INFO]: Created metrics report at '../home/yashwanth/aurora_v1/openlane/rocket/rocket_tile/runs/rt2/reports/metrics.csv'.
+[INFO]: Saving runtime environment...
+[ERROR]: Flow failed.

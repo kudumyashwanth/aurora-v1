@@ -1,0 +1,16 @@
+[options]
+mode prove
+depth 30
+expect pass
+
+[engines]
+smtbmc z3
+
+[script]
+read -formal dma_formal.sv
+read -formal dma_engine_complete.sv
+prep -top dma_formal
+
+[files]
+rtl/dma/dma_engine_complete.sv
+formal/dma/dma_formal.sv

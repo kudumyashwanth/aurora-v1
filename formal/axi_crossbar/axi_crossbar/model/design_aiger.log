@@ -1,0 +1,567 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.62+0 (git sha1 8bbde80e0, g++ 11.4.0-1ubuntu1~22.04.2 -fPIC -O3)
+
+-- Executing script file `design_aiger.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design_prep.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `axi_crossbar_formal'. Setting top module to axi_crossbar_formal.
+
+2.1. Analyzing design hierarchy..
+Top module:  \axi_crossbar_formal
+Used module:     $paramod$b2d051c10173d3e131bb77f18a5f1d0b0dd27cc0\axi_crossbar
+
+2.2. Analyzing design hierarchy..
+Top module:  \axi_crossbar_formal
+Used module:     $paramod$b2d051c10173d3e131bb77f18a5f1d0b0dd27cc0\axi_crossbar
+Removed 0 unused modules.
+Module axi_crossbar_formal directly or indirectly contains formal properties -> setting "keep" attribute.
+
+3. Executing FORMALFF pass.
+
+4. Executing FLATTEN pass (flatten design).
+Deleting now unused module $paramod$b2d051c10173d3e131bb77f18a5f1d0b0dd27cc0\axi_crossbar.
+<suppressed ~1 debug messages>
+
+5. Executing SETUNDEF pass (replace undef values with defined constants).
+
+6. Executing OPT pass (performing simple optimizations).
+
+6.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module axi_crossbar_formal.
+<suppressed ~306 debug messages>
+
+6.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\axi_crossbar_formal'.
+Computing hashes of 2279 cells of `\axi_crossbar_formal'.
+Finding duplicate cells in `\axi_crossbar_formal'.
+Computing hashes of 2254 cells of `\axi_crossbar_formal'.
+Finding duplicate cells in `\axi_crossbar_formal'.
+Computing hashes of 2249 cells of `\axi_crossbar_formal'.
+Finding duplicate cells in `\axi_crossbar_formal'.
+<suppressed ~89 debug messages>
+Removed a total of 30 cells.
+
+6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \axi_crossbar_formal..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $flatten\dut.$procmux$5525.
+    dead port 2/2 on $mux $flatten\dut.$procmux$5525.
+    dead port 1/2 on $mux $flatten\dut.$procmux$5507.
+    dead port 2/2 on $mux $flatten\dut.$procmux$5507.
+    dead port 1/2 on $mux $flatten\dut.$procmux$5489.
+    dead port 2/2 on $mux $flatten\dut.$procmux$5489.
+    dead port 1/2 on $mux $flatten\dut.$procmux$5471.
+    dead port 2/2 on $mux $flatten\dut.$procmux$5471.
+    dead port 1/2 on $mux $flatten\dut.$procmux$5453.
+    dead port 2/2 on $mux $flatten\dut.$procmux$5453.
+    dead port 1/2 on $mux $flatten\dut.$procmux$5435.
+    dead port 2/2 on $mux $flatten\dut.$procmux$5435.
+    dead port 1/2 on $mux $flatten\dut.$procmux$5417.
+    dead port 2/2 on $mux $flatten\dut.$procmux$5417.
+    dead port 1/2 on $mux $flatten\dut.$procmux$5399.
+    dead port 2/2 on $mux $flatten\dut.$procmux$5399.
+Removed 16 multiplexer ports.
+<suppressed ~1801 debug messages>
+
+6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \axi_crossbar_formal.
+    Consolidated identical input bits for $mux cell $flatten\dut.$procmux$6865:
+      Old ports: A={ 1'1 $flatten\dut.$6\decode_address$func$axi_crossbar.sv:161$1643.$result[2:0]$1785 }, B=3'100, Y=$flatten\dut.$5\decode_address$func$axi_crossbar.sv:161$1643.$result[2:0]$1783
+      New ports: A=$flatten\dut.$6\decode_address$func$axi_crossbar.sv:161$1643.$result[2:0]$1785, B=2'00, Y=$flatten\dut.$5\decode_address$func$axi_crossbar.sv:161$1643.$result[2:0]$1783 [1:0]
+      New connections: $flatten\dut.$5\decode_address$func$axi_crossbar.sv:161$1643.$result[2:0]$1783 [2] = 1'1
+    Consolidated identical input bits for $mux cell $flatten\dut.$procmux$5923:
+      Old ports: A={ 2'11 $flatten\dut.$7\decode_address$func$axi_crossbar.sv:161$1644.$result[2:0]$1811 }, B=3'101, Y=$flatten\dut.$6\decode_address$func$axi_crossbar.sv:161$1644.$result[2:0]$1809
+      New ports: A={ 1'1 $flatten\dut.$7\decode_address$func$axi_crossbar.sv:161$1644.$result[2:0]$1811 }, B=2'01, Y=$flatten\dut.$6\decode_address$func$axi_crossbar.sv:161$1644.$result[2:0]$1809 [1:0]
+      New connections: $flatten\dut.$6\decode_address$func$axi_crossbar.sv:161$1644.$result[2:0]$1809 [2] = 1'1
+    Consolidated identical input bits for $mux cell $flatten\dut.$procmux$4397:
+      Old ports: A={ 1'1 $flatten\dut.$6\decode_address$func$axi_crossbar.sv:261$1668.$result[2:0]$2618 }, B=3'100, Y=$flatten\dut.$5\decode_address$func$axi_crossbar.sv:261$1668.$result[2:0]$2616
+      New ports: A=$flatten\dut.$6\decode_address$func$axi_crossbar.sv:261$1668.$result[2:0]$2618, B=2'00, Y=$flatten\dut.$5\decode_address$func$axi_crossbar.sv:261$1668.$result[2:0]$2616 [1:0]
+      New connections: $flatten\dut.$5\decode_address$func$axi_crossbar.sv:261$1668.$result[2:0]$2616 [2] = 1'1
+    Consolidated identical input bits for $mux cell $procmux$10336:
+      Old ports: A={ 1'1 $8\decode_address$func$axi_crossbar_formal.sv:185$63.$result[2:0]$332 }, B=3'100, Y=$7\decode_address$func$axi_crossbar_formal.sv:185$63.$result[2:0]$330
+      New ports: A=$8\decode_address$func$axi_crossbar_formal.sv:185$63.$result[2:0]$332, B=2'00, Y=$7\decode_address$func$axi_crossbar_formal.sv:185$63.$result[2:0]$330 [1:0]
+      New connections: $7\decode_address$func$axi_crossbar_formal.sv:185$63.$result[2:0]$330 [2] = 1'1
+    Consolidated identical input bits for $mux cell $procmux$11470:
+      Old ports: A={ 1'1 $8\decode_address$func$axi_crossbar_formal.sv:185$64.$result[2:0]$349 }, B=3'100, Y=$7\decode_address$func$axi_crossbar_formal.sv:185$64.$result[2:0]$347
+      New ports: A=$8\decode_address$func$axi_crossbar_formal.sv:185$64.$result[2:0]$349, B=2'00, Y=$7\decode_address$func$axi_crossbar_formal.sv:185$64.$result[2:0]$347 [1:0]
+      New connections: $7\decode_address$func$axi_crossbar_formal.sv:185$64.$result[2:0]$347 [2] = 1'1
+    Consolidated identical input bits for $mux cell $procmux$13114:
+      Old ports: A={ 2'11 $9\decode_address$func$axi_crossbar_formal.sv:176$61.$result[2:0]$290 }, B=3'101, Y=$8\decode_address$func$axi_crossbar_formal.sv:176$61.$result[2:0]$288
+      New ports: A={ 1'1 $flatten\dut.$7\decode_address$func$axi_crossbar.sv:161$1643.$result[2:0]$1787 }, B=2'01, Y=$8\decode_address$func$axi_crossbar_formal.sv:176$61.$result[2:0]$288 [1:0]
+      New connections: $8\decode_address$func$axi_crossbar_formal.sv:176$61.$result[2:0]$288 [2] = 1'1
+  Optimizing cells in module \axi_crossbar_formal.
+    Consolidated identical input bits for $mux cell $flatten\dut.$procmux$5941:
+      Old ports: A=$flatten\dut.$6\decode_address$func$axi_crossbar.sv:161$1644.$result[2:0]$1809, B=3'100, Y=$flatten\dut.$5\decode_address$func$axi_crossbar.sv:161$1644.$result[2:0]$1807
+      New ports: A=$flatten\dut.$6\decode_address$func$axi_crossbar.sv:161$1644.$result[2:0]$1809 [1:0], B=2'00, Y=$flatten\dut.$5\decode_address$func$axi_crossbar.sv:161$1644.$result[2:0]$1807 [1:0]
+      New connections: $flatten\dut.$5\decode_address$func$axi_crossbar.sv:161$1644.$result[2:0]$1807 [2] = 1'1
+    Consolidated identical input bits for $mux cell $procmux$13768:
+      Old ports: A=$8\decode_address$func$axi_crossbar_formal.sv:176$61.$result[2:0]$288, B=3'100, Y=$7\decode_address$func$axi_crossbar_formal.sv:176$61.$result[2:0]$286
+      New ports: A=$8\decode_address$func$axi_crossbar_formal.sv:176$61.$result[2:0]$288 [1:0], B=2'00, Y=$7\decode_address$func$axi_crossbar_formal.sv:176$61.$result[2:0]$286 [1:0]
+      New connections: $7\decode_address$func$axi_crossbar_formal.sv:176$61.$result[2:0]$286 [2] = 1'1
+  Optimizing cells in module \axi_crossbar_formal.
+Performed a total of 8 changes.
+
+6.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\axi_crossbar_formal'.
+Computing hashes of 2241 cells of `\axi_crossbar_formal'.
+Finding duplicate cells in `\axi_crossbar_formal'.
+Computing hashes of 2236 cells of `\axi_crossbar_formal'.
+Finding duplicate cells in `\axi_crossbar_formal'.
+Computing hashes of 2232 cells of `\axi_crossbar_formal'.
+Finding duplicate cells in `\axi_crossbar_formal'.
+Computing hashes of 2228 cells of `\axi_crossbar_formal'.
+Finding duplicate cells in `\axi_crossbar_formal'.
+Computing hashes of 2224 cells of `\axi_crossbar_formal'.
+Finding duplicate cells in `\axi_crossbar_formal'.
+<suppressed ~51 debug messages>
+Removed a total of 17 cells.
+
+6.6. Executing OPT_SHARE pass.
+
+6.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \axi_crossbar_formal..
+Removed 40 unused cells and 127 unused wires.
+<suppressed ~47 debug messages>
+
+6.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module axi_crossbar_formal.
+
+6.10. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.11. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \axi_crossbar_formal..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~1818 debug messages>
+
+6.12. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \axi_crossbar_formal.
+Performed a total of 0 changes.
+
+6.13. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\axi_crossbar_formal'.
+Computing hashes of 2184 cells of `\axi_crossbar_formal'.
+Finding duplicate cells in `\axi_crossbar_formal'.
+Removed a total of 0 cells.
+
+6.14. Executing OPT_SHARE pass.
+
+6.15. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \axi_crossbar_formal..
+
+6.17. Executing OPT_EXPR pass (perform const folding).
+Optimizing module axi_crossbar_formal.
+
+6.18. Finished fast OPT passes. (There is nothing left to do.)
+
+7. Executing TECHMAP pass (map to technology primitives).
+
+7.1. Executing Verilog-2005 frontend: /usr/local/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/usr/local/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+7.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $ff.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $logic_and.
+Running "alumacc" on wrapper $extern:wrap:$le:A_SIGNED=0:A_WIDTH=4:B_SIGNED=0:B_WIDTH=1:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$le:A_SIGNED=0:A_WIDTH=4:B_SIGNED=0:B_WIDTH=1:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$le:A_SIGNED=0:A_WIDTH=4:B_SIGNED=0:B_WIDTH=1:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Using extmapper simplemap for cells of type $eq.
+Running "alumacc" on wrapper $extern:wrap:$add:A_SIGNED=0:A_WIDTH=4:B_SIGNED=0:B_WIDTH=1:Y_WIDTH=4:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$add:A_SIGNED=0:A_WIDTH=4:B_SIGNED=0:B_WIDTH=1:Y_WIDTH=4:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$add:A_SIGNED=0:A_WIDTH=4:B_SIGNED=0:B_WIDTH=1:Y_WIDTH=4:394426c56d1a028ba8fdd5469b163e04011def47.
+Running "alumacc" on wrapper $extern:wrap:$add:A_SIGNED=0:A_WIDTH=1:B_SIGNED=0:B_WIDTH=1:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$add:A_SIGNED=0:A_WIDTH=1:B_SIGNED=0:B_WIDTH=1:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$add:A_SIGNED=0:A_WIDTH=1:B_SIGNED=0:B_WIDTH=1:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Using extmapper simplemap for cells of type $logic_or.
+Using template $paramod$constmap:10887e013c6ac5a74755f7ac430ded3f147ecbc3$paramod$1e265d9719406ee45a570be27d6567e3eeff81e5\_90_shift_shiftx for cells of type $shiftx.
+Using template $paramod$constmap:20e8eacf0302113fc0c7637176195cfee2d453b4$paramod$07ad06b675ddca5d394b805ef842802460ed8736\_90_shift_shiftx for cells of type $shiftx.
+Using template $paramod$fc972a7a46956c1788f3cb5257b53c8f1df2d0cc\_90_alu for cells of type $alu.
+Using template $paramod$32a7b7b86c07519b7537abc18e96f0331f97914d\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $reduce_or.
+Using template $paramod$8742280fdebca84e1c87f2a86ed84f62d558f4cc\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $reduce_and.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000000001 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000001 for cells of type $lcu.
+Using extmapper simplemap for cells of type $xor.
+Using extmapper simplemap for cells of type $pos.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000000100 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000100 for cells of type $lcu.
+No more expansions possible.
+<suppressed ~4043 debug messages>
+
+8. Executing OPT pass (performing simple optimizations).
+
+8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module axi_crossbar_formal.
+<suppressed ~5246 debug messages>
+
+8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\axi_crossbar_formal'.
+Computing hashes of 6867 cells of `\axi_crossbar_formal'.
+Finding duplicate cells in `\axi_crossbar_formal'.
+Computing hashes of 6294 cells of `\axi_crossbar_formal'.
+Finding duplicate cells in `\axi_crossbar_formal'.
+Computing hashes of 6082 cells of `\axi_crossbar_formal'.
+Finding duplicate cells in `\axi_crossbar_formal'.
+Computing hashes of 6070 cells of `\axi_crossbar_formal'.
+Finding duplicate cells in `\axi_crossbar_formal'.
+<suppressed ~2391 debug messages>
+Removed a total of 797 cells.
+
+8.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \axi_crossbar_formal..
+Removed 1600 unused cells and 4441 unused wires.
+<suppressed ~1601 debug messages>
+
+8.5. Finished fast OPT passes.
+
+9. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+10. Executing FORMALFF pass.
+
+11. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+12. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+13. Executing AIGMAP pass (map logic to AIG).
+Module axi_crossbar_formal: replaced 3230 cells with 19508 new cells, skipped 1240 cells.
+  replaced 3 cell types:
+    1968 $_MUX_
+    1034 $_OR_
+     228 $_XOR_
+  not replaced 8 cell types:
+     505 $_AND_
+      79 $_FF_
+     432 $_NOT_
+      68 $anyinit
+      96 $anyseq
+      42 $assert
+      17 $assume
+       1 $scopeinfo
+
+14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \axi_crossbar_formal..
+Removed 0 unused cells and 2418 unused wires.
+<suppressed ~1 debug messages>
+
+15. Printing statistics.
+
+=== axi_crossbar_formal ===
+
+        +----------Local Count, excluding submodules.
+        | 
+    19673 wires
+    23133 wire bits
+      208 public wires
+     2370 public wire bits
+       16 ports
+      261 port bits
+    20748 cells
+     8127   $_AND_
+       79   $_FF_
+    12318   $_NOT_
+       68   $anyinit
+       96   $anyseq
+       42   $assert
+       17   $assume
+        1   $scopeinfo
+
+16. Executing AIGER backend.
+Warning: Treating undriven bit axi_crossbar_formal.\clk like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_wready_e [0] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_wready_e [1] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_wready_e [2] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_wready_e [3] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_wready_e [4] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_wready_e [5] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_wready_e [6] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_wready_e [7] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [0] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [1] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [2] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [3] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [4] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [5] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [6] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [7] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [8] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [9] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [10] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [11] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [12] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [13] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [14] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [15] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [16] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [17] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [18] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [19] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [20] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [21] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [22] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [23] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [24] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [25] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [26] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [27] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [28] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [29] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [30] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [31] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [32] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [33] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [34] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [35] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [36] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [37] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [38] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [39] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [40] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [41] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [42] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [43] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [44] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [45] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [46] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [47] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [48] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [49] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [50] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [51] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [52] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [53] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [54] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [55] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [56] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [57] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [58] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [59] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [60] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [61] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [62] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [63] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_awready_e [0] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_awready_e [1] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_awready_e [2] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_awready_e [3] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_awready_e [4] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_awready_e [5] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_awready_e [6] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_awready_e [7] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_arready_e [0] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_arready_e [1] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_arready_e [2] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_arready_e [3] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_arready_e [4] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_arready_e [5] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_arready_e [6] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\s_arready_e [7] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_wvalid [0] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_wvalid [1] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_wstrb [0] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_wstrb [1] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_wdata [0] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_wdata [1] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_wdata [2] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_wdata [3] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_wdata [4] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_wdata [5] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_wdata [6] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_wdata [7] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_wdata [8] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_wdata [9] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_wdata [10] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_wdata [11] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_wdata [12] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_wdata [13] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_wdata [14] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_wdata [15] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_rready [0] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_rready [1] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_bready [0] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_bready [1] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awvalid [0] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awvalid [1] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [0] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [1] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [2] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [3] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [4] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [5] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [6] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [7] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [8] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [9] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [10] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [11] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [12] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [13] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [14] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [15] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [16] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [17] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [18] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [19] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [20] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [21] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [22] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [23] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [24] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [25] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [26] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [27] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [28] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [29] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [30] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [31] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [32] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [33] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [34] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [35] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [36] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [37] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [38] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [39] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [40] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [41] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [42] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [43] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [44] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [45] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [46] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [47] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [48] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [49] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [50] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [51] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [52] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [53] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [54] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [55] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [56] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [57] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [58] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [59] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [60] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [61] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [62] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [63] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_arvalid [0] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_arvalid [1] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [0] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [1] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [2] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [3] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [4] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [5] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [6] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [7] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [8] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [9] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [10] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [11] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [12] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [13] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [14] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [15] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [16] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [17] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [18] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [19] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [20] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [21] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [22] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [23] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [24] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [25] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [26] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [27] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [28] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [29] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [30] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [31] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [32] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [33] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [34] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [35] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [36] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [37] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [38] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [39] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [40] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [41] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [42] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [43] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [44] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [45] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [46] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [47] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [48] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [49] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [50] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [51] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [52] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [53] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [54] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [55] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [56] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [57] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [58] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [59] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [60] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [61] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [62] like $anyseq.
+Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [63] like $anyseq.
+Warning: Treating a total of 245 undriven bits in axi_crossbar_formal like $anyseq.
+
+Warnings: 246 unique messages, 246 total
+End of script. Logfile hash: 8d560e7a27, CPU: user 0.63s system 0.04s, MEM: 77.21 MB peak
+Yosys 0.62+0 (git sha1 8bbde80e0, g++ 11.4.0-1ubuntu1~22.04.2 -fPIC -O3)
+Time spent: 29% 6x opt_clean (0 sec), 22% 12x opt_expr (0 sec), ...

@@ -1,0 +1,115 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.62+0 (git sha1 8bbde80e0, g++ 11.4.0-1ubuntu1~22.04.2 -fPIC -O3)
+
+-- Executing script file `design_prep.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design.il
+
+2. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module $paramod$2622703013a2e8fd78bed7e43b32480f2b9c4b00\async_fifo.
+Found 0 SCCs in module async_fifo_formal.
+Found 0 SCCs.
+
+3. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+4. Executing MEMORY_NORDFF pass (extracting $dff cells from memories).
+
+5. Executing CLK2FFLOGIC pass (convert clocked FFs to generic $ff cells).
+
+5.1. Executing PEEPOPT pass (run peephole optimizers).
+Replacing $paramod$2622703013a2e8fd78bed7e43b32480f2b9c4b00\async_fifo.$procdff$157 ($adff): CLK=\rd_clk, D=\wr_ptr, Q=\wr_ptr_sync1
+Replacing $paramod$2622703013a2e8fd78bed7e43b32480f2b9c4b00\async_fifo.$procdff$162 ($adff): CLK=\rd_clk, D=\wr_ptr_sync1, Q=\wr_ptr_sync2
+Replacing $paramod$2622703013a2e8fd78bed7e43b32480f2b9c4b00\async_fifo.$procdff$167 ($adff): CLK=\wr_clk, D=\rd_ptr, Q=\rd_ptr_sync1
+Replacing $paramod$2622703013a2e8fd78bed7e43b32480f2b9c4b00\async_fifo.$procdff$172 ($adff): CLK=\wr_clk, D=\rd_ptr_sync1, Q=\rd_ptr_sync2
+Replacing $paramod$2622703013a2e8fd78bed7e43b32480f2b9c4b00\async_fifo.$procdff$177 ($adff): CLK=\rd_clk, D=$0\rd_ptr[2:0], Q=\rd_ptr
+Replacing $paramod$2622703013a2e8fd78bed7e43b32480f2b9c4b00\async_fifo.$procdff$182 ($adff): CLK=\wr_clk, D=$0\wr_ptr[2:0], Q=\wr_ptr
+Replacing $paramod$2622703013a2e8fd78bed7e43b32480f2b9c4b00\async_fifo.$procdff$189 ($dff): CLK=\wr_clk, D=$auto$rtlil.cc:3474:Mux$188, Q=\mem[0]
+Replacing $paramod$2622703013a2e8fd78bed7e43b32480f2b9c4b00\async_fifo.$procdff$196 ($dff): CLK=\wr_clk, D=$auto$rtlil.cc:3474:Mux$195, Q=\mem[1]
+Replacing $paramod$2622703013a2e8fd78bed7e43b32480f2b9c4b00\async_fifo.$procdff$203 ($dff): CLK=\wr_clk, D=$auto$rtlil.cc:3474:Mux$202, Q=\mem[2]
+Replacing $paramod$2622703013a2e8fd78bed7e43b32480f2b9c4b00\async_fifo.$procdff$210 ($dff): CLK=\wr_clk, D=$auto$rtlil.cc:3474:Mux$209, Q=\mem[3]
+Replacing async_fifo_formal.$procdff$221 ($dff): CLK=\rd_clk, D=\rd_empty, Q=$past$async_fifo_formal.sv:71$4$0
+Replacing async_fifo_formal.$procdff$222 ($dff): CLK=\rd_clk, D=\wr_en, Q=$past$async_fifo_formal.sv:71$5$0
+Replacing async_fifo_formal.$procdff$223 ($dff): CLK=\rd_clk, D=\wr_full, Q=$past$async_fifo_formal.sv:75$6$0
+Replacing async_fifo_formal.$procdff$224 ($dff): CLK=\rd_clk, D=$past$async_fifo_formal.sv:75$6$0, Q=$past$async_fifo_formal.sv:75$6$1
+Replacing async_fifo_formal.$procdff$225 ($dff): CLK=\wr_clk, D=\wr_rst_n, Q=$past$async_fifo_formal.sv:58$1$0
+Replacing async_fifo_formal.$procdff$226 ($dff): CLK=\wr_clk, D=\wr_full, Q=$past$async_fifo_formal.sv:59$2$0
+Replacing async_fifo_formal.$procdff$227 ($dff): CLK=\wr_clk, D=\rd_en, Q=$past$async_fifo_formal.sv:59$3$0
+Replacing async_fifo_formal.$procdff$228 ($dff): CLK=\rd_clk, D=$0\f_past_valid_rd[31:0], Q=\f_past_valid_rd
+Replacing async_fifo_formal.$procdff$229 ($dff): CLK=\wr_clk, D=$0\f_past_valid_wr[31:0], Q=\f_past_valid_wr
+
+6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$2622703013a2e8fd78bed7e43b32480f2b9c4b00\async_fifo..
+Finding unused cells or wires in module \async_fifo_formal..
+Removed 26 unused cells and 45 unused wires.
+<suppressed ~28 debug messages>
+
+7. Executing FORMALFF pass.
+
+8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$2622703013a2e8fd78bed7e43b32480f2b9c4b00\async_fifo..
+Finding unused cells or wires in module \async_fifo_formal..
+Removed 16 unused cells and 16 unused wires.
+<suppressed ~17 debug messages>
+
+9. Executing CHECK pass (checking for obvious problems).
+Checking module $paramod$2622703013a2e8fd78bed7e43b32480f2b9c4b00\async_fifo...
+Checking module async_fifo_formal...
+Found and reported 0 problems.
+
+10. Executing SETUNDEF pass (replace undef values with defined constants).
+
+11. Executing OPT pass (performing simple optimizations).
+
+11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$2622703013a2e8fd78bed7e43b32480f2b9c4b00\async_fifo.
+<suppressed ~6 debug messages>
+Optimizing module async_fifo_formal.
+<suppressed ~8 debug messages>
+
+11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod$2622703013a2e8fd78bed7e43b32480f2b9c4b00\async_fifo'.
+Computing hashes of 108 cells of `$paramod$2622703013a2e8fd78bed7e43b32480f2b9c4b00\async_fifo'.
+Finding duplicate cells in `$paramod$2622703013a2e8fd78bed7e43b32480f2b9c4b00\async_fifo'.
+Computing hashes of 96 cells of `$paramod$2622703013a2e8fd78bed7e43b32480f2b9c4b00\async_fifo'.
+Finding duplicate cells in `$paramod$2622703013a2e8fd78bed7e43b32480f2b9c4b00\async_fifo'.
+Computing hashes of 84 cells of `$paramod$2622703013a2e8fd78bed7e43b32480f2b9c4b00\async_fifo'.
+Finding duplicate cells in `$paramod$2622703013a2e8fd78bed7e43b32480f2b9c4b00\async_fifo'.
+<suppressed ~72 debug messages>
+Finding identical cells in module `\async_fifo_formal'.
+Computing hashes of 113 cells of `\async_fifo_formal'.
+Finding duplicate cells in `\async_fifo_formal'.
+Computing hashes of 98 cells of `\async_fifo_formal'.
+Finding duplicate cells in `\async_fifo_formal'.
+Computing hashes of 85 cells of `\async_fifo_formal'.
+Finding duplicate cells in `\async_fifo_formal'.
+<suppressed ~84 debug messages>
+Removed a total of 52 cells.
+
+11.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+11.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$2622703013a2e8fd78bed7e43b32480f2b9c4b00\async_fifo..
+Finding unused cells or wires in module \async_fifo_formal..
+Removed 0 unused cells and 60 unused wires.
+<suppressed ~2 debug messages>
+
+11.5. Finished fast OPT passes.
+
+12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$2622703013a2e8fd78bed7e43b32480f2b9c4b00\async_fifo..
+Finding unused cells or wires in module \async_fifo_formal..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+13. Executing RTLIL backend.
+Output filename: ../model/design_prep.il
+
+End of script. Logfile hash: 2ddefc11b2, CPU: user 0.03s system 0.01s, MEM: 17.33 MB peak
+Yosys 0.62+0 (git sha1 8bbde80e0, g++ 11.4.0-1ubuntu1~22.04.2 -fPIC -O3)
+Time spent: 44% 4x opt_clean (0 sec), 10% 1x opt_expr (0 sec), ...

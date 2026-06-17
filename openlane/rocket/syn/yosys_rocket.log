@@ -1,0 +1,32 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.62+0 (git sha1 8bbde80e0, g++ 11.4.0-1ubuntu1~22.04.2 -fPIC -O3)
+
+-- Running command `read_verilog -sv rocket_system.v; hierarchy -top ExampleRocketSystem; stat' --
+
+1. Executing Verilog-2005 frontend: rocket_system.v
+Parsing SystemVerilog input from `rocket_system.v' to AST representation.
+Generating RTLIL representation for module `\AMOALU'.
+Generating RTLIL representation for module `\Arbiter2_Valid_PTWReq'.
+Generating RTLIL representation for module `\Arbiter3_LLWB'.
+Generating RTLIL representation for module `\AsyncQueueSink_DebugInternalBundle'.
+Generating RTLIL representation for module `\AsyncQueueSink_TLBundleA_a9d32s1k1z2u'.
+Generating RTLIL representation for module `\AsyncQueueSink_TLBundleD_a9d32s1k1z2u'.
+Generating RTLIL representation for module `\AsyncQueueSource_DebugInternalBundle'.
+Generating RTLIL representation for module `\AsyncQueueSource_TLBundleA_a9d32s1k1z2u'.
+Generating RTLIL representation for module `\AsyncQueueSource_TLBundleD_a9d32s1k1z2u'.
+Generating RTLIL representation for module `\AsyncResetRegVec_w1_i0'.
+Generating RTLIL representation for module `\AsyncResetRegVec_w2_i0'.
+Generating RTLIL representation for module `\AsyncResetSynchronizerPrimitiveShiftReg_d3_i0'.
+Generating RTLIL representation for module `\AsyncResetSynchronizerShiftReg_w1_d3_i0_1'.
+Generating RTLIL representation for module `\AsyncResetSynchronizerShiftReg_w1_d3_i0'.
+Generating RTLIL representation for module `\AsyncValidSync'.
+Generating RTLIL representation for module `\AXI4Buffer_1'.
+Generating RTLIL representation for module `\AXI4Buffer_2'.
+Generating RTLIL representation for module `\AXI4Buffer'.
+Generating RTLIL representation for module `\AXI4Deinterleaver'.
+rocket_system.v:3483: ERROR: Can't resolve task name `$error'.

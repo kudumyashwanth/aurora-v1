@@ -1,0 +1,324 @@
+
+-- Executing script file `/home/yashwanth/aurora_v1/openlane/synlig/read_cva6.ys' --
+
+1. Executing SystemVerilog frontend.
+[INF:CM0023] Creating log file "/home/yashwanth/tools/synlig/synlig/slpp_all/surelog.log".
+[NTE:PP0128] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/include/riscv_pkg.sv:7:48: Non ASCII character detected, replaced by space.
+[NTE:PP0128] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/include/build_config_pkg.sv:214:9: Non ASCII character detected, replaced by space.
+[NTE:PP0128] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/include/ariane_pkg.sv:7:48: Non ASCII character detected, replaced by space.
+[NTE:PP0128] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/cf_math_pkg.sv:15:88: Non ASCII character detected, replaced by space.
+[NTE:PP0128] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/axi/src/axi_pkg.sv:160:90: Non ASCII character detected, replaced by space.
+[NTE:PP0128] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/src/fpnew_fma_multi.sv:343:66: Non ASCII character detected, replaced by space.
+[NTE:PP0128] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/src/fpnew_fma.sv:269:62: Non ASCII character detected, replaced by space.
+[NTE:PP0128] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/src/fpu_div_sqrt_mvp/hdl/defs_div_sqrt_mvp.sv:7:48: Non ASCII character detected, replaced by space.
+[NTE:PP0128] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/src/fpu_div_sqrt_mvp/hdl/control_mvp.sv:7:48: Non ASCII character detected, replaced by space.
+[NTE:PP0128] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/src/fpu_div_sqrt_mvp/hdl/div_sqrt_top_mvp.sv:7:48: Non ASCII character detected, replaced by space.
+[NTE:PP0128] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/src/fpu_div_sqrt_mvp/hdl/iteration_div_sqrt_mvp.sv:7:48: Non ASCII character detected, replaced by space.
+[NTE:PP0128] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/src/fpu_div_sqrt_mvp/hdl/norm_div_sqrt_mvp.sv:7:48: Non ASCII character detected, replaced by space.
+[NTE:PP0128] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/src/fpu_div_sqrt_mvp/hdl/nrbd_nrsc_mvp.sv:7:48: Non ASCII character detected, replaced by space.
+[NTE:PP0128] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/src/fpu_div_sqrt_mvp/hdl/preprocess_mvp.sv:7:48: Non ASCII character detected, replaced by space.
+[NTE:PP0128] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cva6_mmu/cva6_tlb.sv:22:84: Non ASCII character detected, replaced by space.
+[NTE:PP0128] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cva6_mmu/cva6_ptw.sv:285:22: Non ASCII character detected, replaced by space.
+[NTE:PP0128] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cva6_mmu/cva6_shared_tlb.sv:330:59: Non ASCII character detected, replaced by space.
+[NTE:PP0128] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cva6_mmu/cva6_mmu.sv:22:117: Non ASCII character detected, replaced by space.
+[NTE:PP0128] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/frontend/instr_queue.sv:87:19: Non ASCII character detected, replaced by space.
+[NTE:PP0128] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/decoder.sv:1949:77: Non ASCII character detected, replaced by space.
+[NTE:PP0128] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/multiplier.sv:130:43: Non ASCII character detected, replaced by space.
+[NTE:PP0128] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/axi_shim.sv:7:48: Non ASCII character detected, replaced by space.
+[WRN:PP0113] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/include/rvfi_types.svh:38:9: Unused macro argument "Cfg".
+[WRN:PP0113] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/include/cvxif_types.svh:10:9: Unused macro argument "Cfg".
+[WRN:PP0113] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/include/cvxif_types.svh:14:9: Unused macro argument "Cfg".
+[WRN:PP0113] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/include/cvxif_types.svh:19:9: Unused macro argument "Cfg".
+[WRN:PP0113] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/include/cvxif_types.svh:24:9: Unused macro argument "Cfg".
+[WRN:PP0113] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/include/cvxif_types.svh:37:9: Unused macro argument "Cfg".
+[WRN:PP0113] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/include/cvxif_types.svh:51:9: Unused macro argument "Cfg".
+[WRN:PP0113] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/include/cvxif_types.svh:63:9: Unused macro argument "Cfg".
+[NTE:PP0128] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6_axi_wrapper.sv:244:56: Non ASCII character detected, replaced by space.
+[  FATAL] : 0
+[ SYNTAX] : 0
+[  ERROR] : 0
+[WARNING] : 8
+[   NOTE] : 23
+
+2. Executing SystemVerilog frontend.
+[INF:CM0023] Creating log file "/home/yashwanth/tools/synlig/synlig/slpp_all/surelog.log".
+[INF:CP0300] Compilation...
+[INF:CP0301] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/include/config_pkg.sv:10:1: Compile package "config_pkg".
+[INF:CP0301] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6_resolved_cfg_pkg.sv:4:1: Compile package "cva6_resolved_cfg_pkg".
+[INF:CP0301] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/include/cv64a6_imafdc_sv39_config_pkg.sv:11:1: Compile package "cva6_config_pkg".
+[INF:CP0301] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/include/riscv_pkg.sv:18:1: Compile package "riscv".
+[INF:CP0301] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/include/build_config_pkg.sv:1:1: Compile package "build_config_pkg".
+[INF:CP0301] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/include/ariane_pkg.sv:29:1: Compile package "ariane_pkg".
+[INF:CP0301] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/include/std_cache_pkg.sv:18:1: Compile package "std_cache_pkg".
+[INF:CP0301] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/include/wt_cache_pkg.sv:23:1: Compile package "wt_cache_pkg".
+[INF:CP0301] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/include/triggers_pkg.sv:1:1: Compile package "triggers_pkg".
+[INF:CP0301] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/include/aes_pkg.sv:13:1: Compile package "aes_pkg".
+[INF:CP0301] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/cf_math_pkg.sv:18:1: Compile package "cf_math_pkg".
+[INF:CP0301] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/axi/src/axi_pkg.sv:21:1: Compile package "axi_pkg".
+[INF:CP0301] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/src/fpnew_pkg.sv:16:1: Compile package "fpnew_pkg".
+[INF:CP0301] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/src/fpu_div_sqrt_mvp/hdl/defs_div_sqrt_mvp.sv:14:1: Compile package "defs_div_sqrt_mvp".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:21:1: Compile module "work@alu".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/ariane_regfile_ff.sv:25:1: Compile module "work@ariane_regfile".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/axi_shim.sv:22:1: Compile module "work@axi_shim".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/frontend/bht.sv:24:1: Compile module "work@bht".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/branch_unit.sv:15:1: Compile module "work@branch_unit".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/frontend/btb.sv:28:1: Compile module "work@btb".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/commit_stage.sv:16:1: Compile module "work@commit_stage".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/compressed_decoder.sv:22:1: Compile module "work@compressed_decoder".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/src/fpu_div_sqrt_mvp/hdl/control_mvp.sv:43:1: Compile module "work@control_mvp".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/controller.sv:16:1: Compile module "work@controller".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/counter.sv:14:1: Compile module "work@counter".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/csr_regfile.sv:16:1: Compile module "work@csr_regfile".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/vendor/openc910/C910_RTL_FACTORY/gen_rtl/vfdsu/rtl/ct_vfdsu_ctrl.v:18:1: Compile module "work@ct_vfdsu_ctrl".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/vendor/openc910/C910_RTL_FACTORY/gen_rtl/vfdsu/rtl/ct_vfdsu_double.v:18:1: Compile module "work@ct_vfdsu_double".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/vendor/openc910/C910_RTL_FACTORY/gen_rtl/vfdsu/rtl/ct_vfdsu_ff1.v:15:1: Compile module "work@ct_vfdsu_ff1".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/vendor/openc910/C910_RTL_FACTORY/gen_rtl/vfdsu/rtl/ct_vfdsu_pack.v:17:1: Compile module "work@ct_vfdsu_pack".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/vendor/openc910/C910_RTL_FACTORY/gen_rtl/vfdsu/rtl/ct_vfdsu_prepare.v:17:1: Compile module "work@ct_vfdsu_prepare".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/vendor/openc910/C910_RTL_FACTORY/gen_rtl/vfdsu/rtl/ct_vfdsu_round.v:17:1: Compile module "work@ct_vfdsu_round".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/vendor/openc910/C910_RTL_FACTORY/gen_rtl/vfdsu/rtl/ct_vfdsu_scalar_dp.v:18:1: Compile module "work@ct_vfdsu_scalar_dp".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/vendor/openc910/C910_RTL_FACTORY/gen_rtl/vfdsu/rtl/ct_vfdsu_srt.v:17:1: Compile module "work@ct_vfdsu_srt".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/vendor/openc910/C910_RTL_FACTORY/gen_rtl/vfdsu/rtl/ct_vfdsu_srt_radix16_bound_table.v:17:1: Compile module "work@ct_vfdsu_srt_radix16_bound_table".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/vendor/openc910/C910_RTL_FACTORY/gen_rtl/vfdsu/rtl/ct_vfdsu_srt_radix16_with_sqrt.v:17:1: Compile module "work@ct_vfdsu_srt_radix16_with_sqrt".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/vendor/openc910/C910_RTL_FACTORY/gen_rtl/vfdsu/rtl/ct_vfdsu_top.v:18:1: Compile module "work@ct_vfdsu_top".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cva6.sv:18:1: Compile module "work@cva6".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cva6_accel_first_pass_decoder_stub.sv:10:1: Compile module "work@cva6_accel_first_pass_decoder".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6_axi_wrapper.sv:11:1: Compile module "work@cva6_axi_wrapper".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cva6_fifo_v3.sv:16:1: Compile module "work@cva6_fifo_v3".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cache_subsystem/cva6_icache.sv:28:1: Compile module "work@cva6_icache".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cache_subsystem/cva6_icache_axi_wrapper.sv:16:1: Compile module "work@cva6_icache_axi_wrapper".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cva6_mmu/cva6_mmu.sv:25:1: Compile module "work@cva6_mmu".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cva6_mmu/cva6_ptw.sv:23:1: Compile module "work@cva6_ptw".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cva6_mmu/cva6_shared_tlb.sv:23:1: Compile module "work@cva6_shared_tlb".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cva6_mmu/cva6_tlb.sv:24:1: Compile module "work@cva6_tlb".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvxif_fu.sv:14:1: Compile module "work@cvxif_fu".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/decoder.sv:22:1: Compile module "work@decoder".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/delta_counter.sv:13:1: Compile module "work@delta_counter".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/src/fpu_div_sqrt_mvp/hdl/div_sqrt_top_mvp.sv:37:1: Compile module "work@div_sqrt_top_mvp".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/ex_stage.sv:17:1: Compile module "work@ex_stage".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/fall_through_register.sv:15:1: Compile module "work@fall_through_register".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13:1: Compile module "work@fifo_v3".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/src/fpnew_cast_multi.sv:18:1: Compile module "work@fpnew_cast_multi".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/src/fpnew_classifier.sv:16:1: Compile module "work@fpnew_classifier".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/src/fpnew_divsqrt_multi.sv:18:1: Compile module "work@fpnew_divsqrt_multi".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/src/fpnew_divsqrt_th_32.sv:21:1: Compile module "work@fpnew_divsqrt_th_32".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/src/fpnew_divsqrt_th_64_multi.sv:20:1: Compile module "work@fpnew_divsqrt_th_64_multi".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/src/fpnew_fma.sv:18:1: Compile module "work@fpnew_fma".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/src/fpnew_fma_multi.sv:18:1: Compile module "work@fpnew_fma_multi".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/src/fpnew_noncomp.sv:18:1: Compile module "work@fpnew_noncomp".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/src/fpnew_opgroup_block.sv:16:1: Compile module "work@fpnew_opgroup_block".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/src/fpnew_opgroup_fmt_slice.sv:16:1: Compile module "work@fpnew_opgroup_fmt_slice".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/src/fpnew_opgroup_multifmt_slice.sv:18:1: Compile module "work@fpnew_opgroup_multifmt_slice".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/src/fpnew_rounding.sv:16:1: Compile module "work@fpnew_rounding".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/src/fpnew_top.sv:16:1: Compile module "work@fpnew_top".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/fpu_wrap.sv:16:1: Compile module "work@fpu_wrap".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/frontend/frontend.sv:18:1: Compile module "work@frontend".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/clk/rtl/gated_clk_cell.v:16:1: Compile module "work@gated_clk_cell".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/id_stage.sv:16:1: Compile module "work@id_stage".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/frontend/instr_queue.sv:46:1: Compile module "work@instr_queue".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/instr_realign.sv:22:1: Compile module "work@instr_realign".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/frontend/instr_scan.sv:18:1: Compile module "work@instr_scan".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/issue_read_operands.sv:17:1: Compile module "work@issue_read_operands".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/issue_stage.sv:17:1: Compile module "work@issue_stage".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/src/fpu_div_sqrt_mvp/hdl/iteration_div_sqrt_mvp.sv:32:1: Compile module "work@iteration_div_sqrt_mvp".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/lfsr.sv:22:1: Compile module "work@lfsr".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/load_store_unit.sv:16:1: Compile module "work@load_store_unit".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/load_unit.sv:21:1: Compile module "work@load_unit".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/lsu_bypass.sv:26:1: Compile module "work@lsu_bypass".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/lzc.sv:25:1: Compile module "work@lzc".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/mult.sv:3:1: Compile module "work@mult".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/multiplier.sv:18:1: Compile module "work@multiplier".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/src/fpu_div_sqrt_mvp/hdl/norm_div_sqrt_mvp.sv:46:1: Compile module "work@norm_div_sqrt_mvp".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/src/fpu_div_sqrt_mvp/hdl/nrbd_nrsc_mvp.sv:36:1: Compile module "work@nrbd_nrsc_mvp".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:13:1: Compile module "work@onehot_to_bin".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fdsu/rtl/pa_fdsu_ctrl.v:17:1: Compile module "work@pa_fdsu_ctrl".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fdsu/rtl/pa_fdsu_ff1.v:17:1: Compile module "work@pa_fdsu_ff1".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fdsu/rtl/pa_fdsu_pack_single.v:17:1: Compile module "work@pa_fdsu_pack_single".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fdsu/rtl/pa_fdsu_prepare.v:17:1: Compile module "work@pa_fdsu_prepare".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fdsu/rtl/pa_fdsu_round_single.v:17:1: Compile module "work@pa_fdsu_round_single".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fdsu/rtl/pa_fdsu_special.v:17:1: Compile module "work@pa_fdsu_special".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fdsu/rtl/pa_fdsu_srt_single.v:17:1: Compile module "work@pa_fdsu_srt_single".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fdsu/rtl/pa_fdsu_top.v:17:1: Compile module "work@pa_fdsu_top".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fpu/rtl/pa_fpu_dp.v:16:1: Compile module "work@pa_fpu_dp".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fpu/rtl/pa_fpu_frbus.v:16:1: Compile module "work@pa_fpu_frbus".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fpu/rtl/pa_fpu_src_type.v:17:1: Compile module "work@pa_fpu_src_type".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/perf_counters.sv:16:1: Compile module "work@perf_counters".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/pmp/src/pmp.sv:15:1: Compile module "work@pmp".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/pmp/src/pmp_entry.sv:15:1: Compile module "work@pmp_entry".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/popcount.sv:19:1: Compile module "work@popcount".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/src/fpu_div_sqrt_mvp/hdl/preprocess_mvp.sv:37:1: Compile module "work@preprocess_mvp".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/frontend/ras.sv:17:1: Compile module "work@ras".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/raw_checker.sv:10:1: Compile module "work@raw_checker".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv:47:1: Compile module "work@rr_arb_tree".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/scoreboard.sv:15:1: Compile module "work@scoreboard".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/serdiv.sv:18:1: Compile module "work@serdiv".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/shift_reg.sv:16:1: Compile module "work@shift_reg".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/spill_register.sv:17:1: Compile module "work@spill_register".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/common/local/util/sram.sv:21:1: Compile module "work@sram".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/common/local/util/sram_cache.sv:21:1: Compile module "work@sram_cache".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/store_buffer.sv:17:1: Compile module "work@store_buffer".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/store_unit.sv:16:1: Compile module "work@store_unit".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/stream_arbiter.sv:16:1: Compile module "work@stream_arbiter".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/stream_arbiter_flushable.sv:16:1: Compile module "work@stream_arbiter_flushable".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/stream_demux.sv:15:1: Compile module "work@stream_demux".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/stream_fifo.sv:13:1: Compile module "work@stream_fifo".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/stream_mux.sv:14:1: Compile module "work@stream_mux".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cache_subsystem/wt_axi_adapter.sv:17:1: Compile module "work@wt_axi_adapter".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cache_subsystem/wt_cache_subsystem.sv:22:1: Compile module "work@wt_cache_subsystem".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cache_subsystem/wt_dcache.sv:16:1: Compile module "work@wt_dcache".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cache_subsystem/wt_dcache_ctrl.sv:16:1: Compile module "work@wt_dcache_ctrl".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cache_subsystem/wt_dcache_mem.sv:29:1: Compile module "work@wt_dcache_mem".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cache_subsystem/wt_dcache_missunit.sv:17:1: Compile module "work@wt_dcache_missunit".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cache_subsystem/wt_dcache_wbuffer.sv:52:1: Compile module "work@wt_dcache_wbuffer".
+[NTE:CP0309] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/ex_stage.sv:247:31: Implicit port type (wire) for "rvfi_mem_paddr_o".
+[NTE:CP0309] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/clk/rtl/gated_clk_cell.v:23:3: Implicit port type (wire) for "clk_out".
+[NTE:CP0309] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/issue_stage.sv:56:57: Implicit port type (wire) for "rs1_forwarding_o",
+there are 1 more instances of this message.
+[INF:EL0526] Design Elaboration...
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/stream_arbiter_flushable.sv:34:24: Compile generate block "work@stream_arbiter.i_arb.gen_rr_arb".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv:128:12: Compile generate block "work@stream_arbiter.i_arb.gen_rr_arb.i_arbiter.gen_arbiter".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv:148:14: Compile generate block "work@stream_arbiter.i_arb.gen_rr_arb.i_arbiter.gen_arbiter.gen_int_rr".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv:152:19: Compile generate block "work@stream_arbiter.i_arb.gen_rr_arb.i_arbiter.gen_arbiter.gen_int_rr.gen_lock".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv:201:20: Compile generate block "work@stream_arbiter.i_arb.gen_rr_arb.i_arbiter.gen_arbiter.gen_int_rr.gen_fair_arb".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/lzc.sv:48:12: Compile generate block "work@stream_arbiter.i_arb.gen_rr_arb.i_arbiter.gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_upper.gen_lzc".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/lzc.sv:48:12: Compile generate block "work@stream_arbiter.i_arb.gen_rr_arb.i_arbiter.gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_lower.gen_lzc".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:22:44: Compile generate block "work@onehot_to_bin.jl[0]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[0].il[0]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[0].il[1]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[0].il[2]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[0].il[3]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[0].il[4]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[0].il[5]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[0].il[6]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[0].il[7]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[0].il[8]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[0].il[9]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[0].il[10]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[0].il[11]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[0].il[12]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[0].il[13]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[0].il[14]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[0].il[15]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:22:44: Compile generate block "work@onehot_to_bin.jl[1]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[1].il[0]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[1].il[1]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[1].il[2]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[1].il[3]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[1].il[4]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[1].il[5]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[1].il[6]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[1].il[7]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[1].il[8]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[1].il[9]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[1].il[10]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[1].il[11]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[1].il[12]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[1].il[13]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[1].il[14]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[1].il[15]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:22:44: Compile generate block "work@onehot_to_bin.jl[2]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[2].il[0]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[2].il[1]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[2].il[2]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[2].il[3]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[2].il[4]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[2].il[5]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[2].il[6]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[2].il[7]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[2].il[8]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[2].il[9]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[2].il[10]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[2].il[11]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[2].il[12]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[2].il[13]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[2].il[14]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[2].il[15]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:22:44: Compile generate block "work@onehot_to_bin.jl[3]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[3].il[0]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[3].il[1]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[3].il[2]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[3].il[3]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[3].il[4]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[3].il[5]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[3].il[6]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[3].il[7]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[3].il[8]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[3].il[9]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[3].il[10]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[3].il[11]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[3].il[12]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[3].il[13]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[3].il[14]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/onehot_to_bin.sv:24:55: Compile generate block "work@onehot_to_bin.jl[3].il[15]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/delta_counter.sv:45:14: Compile generate block "work@counter.i_counter.gen_transient_overflow".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/fifo_v3.sv:54:14: Compile generate block "work@stream_fifo.fifo_i.gen_fifo".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/cache_subsystem/cva6_icache.sv:164:12: Compile generate block "work@cva6_icache_axi_wrapper.i_cva6_icache.gen_piton_offset".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/lzc.sv:48:12: Compile generate block "work@cva6_icache_axi_wrapper.i_cva6_icache.i_lzc.gen_lzc".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/lfsr.sv:285:10: Compile generate block "work@cva6_icache_axi_wrapper.i_cva6_icache.i_lfsr.g_no_cipher_layers".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/vendor/pulp-platform/common_cells/src/lzc.sv:48:12: Compile generate block "work@cva6_icache_axi_wrapper.i_cva6_icache.i_lzc_hit.gen_lzc".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/axi_shim.sv:275:5: Compile generate block "work@cva6_icache_axi_wrapper.i_axi_shim.genblk1".
+[INF:CP0303] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:21:1: Compile module "work@alu".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:72:30: Compile generate block "work@alu.genblk2[0]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:72:30: Compile generate block "work@alu.genblk2[1]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:72:30: Compile generate block "work@alu.genblk2[2]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:72:30: Compile generate block "work@alu.genblk2[3]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:72:30: Compile generate block "work@alu.genblk2[4]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:72:30: Compile generate block "work@alu.genblk2[5]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:72:30: Compile generate block "work@alu.genblk2[6]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:72:30: Compile generate block "work@alu.genblk2[7]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:72:30: Compile generate block "work@alu.genblk2[8]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:72:30: Compile generate block "work@alu.genblk2[9]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:72:30: Compile generate block "work@alu.genblk2[10]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:72:30: Compile generate block "work@alu.genblk2[11]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:72:30: Compile generate block "work@alu.genblk2[12]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:72:30: Compile generate block "work@alu.genblk2[13]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:72:30: Compile generate block "work@alu.genblk2[14]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:72:30: Compile generate block "work@alu.genblk2[15]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:72:30: Compile generate block "work@alu.genblk2[16]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:72:30: Compile generate block "work@alu.genblk2[17]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:72:30: Compile generate block "work@alu.genblk2[18]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:72:30: Compile generate block "work@alu.genblk2[19]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:72:30: Compile generate block "work@alu.genblk2[20]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:72:30: Compile generate block "work@alu.genblk2[21]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:72:30: Compile generate block "work@alu.genblk2[22]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:72:30: Compile generate block "work@alu.genblk2[23]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:72:30: Compile generate block "work@alu.genblk2[24]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:72:30: Compile generate block "work@alu.genblk2[25]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:72:30: Compile generate block "work@alu.genblk2[26]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:72:30: Compile generate block "work@alu.genblk2[27]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:72:30: Compile generate block "work@alu.genblk2[28]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:72:30: Compile generate block "work@alu.genblk2[29]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:72:30: Compile generate block "work@alu.genblk2[30]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:72:30: Compile generate block "work@alu.genblk2[31]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:127:5: Compile generate block "work@alu.genblk4".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:188:30: Compile generate block "work@alu.genblk6[0]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:188:30: Compile generate block "work@alu.genblk6[1]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:188:30: Compile generate block "work@alu.genblk6[2]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:188:30: Compile generate block "work@alu.genblk6[3]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:188:30: Compile generate block "work@alu.genblk6[4]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:188:30: Compile generate block "work@alu.genblk6[5]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:188:30: Compile generate block "work@alu.genblk6[6]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:188:30: Compile generate block "work@alu.genblk6[7]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:188:30: Compile generate block "work@alu.genblk6[8]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:188:30: Compile generate block "work@alu.genblk6[9]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:188:30: Compile generate block "work@alu.genblk6[10]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:188:30: Compile generate block "work@alu.genblk6[11]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:188:30: Compile generate block "work@alu.genblk6[12]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:188:30: Compile generate block "work@alu.genblk6[13]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:188:30: Compile generate block "work@alu.genblk6[14]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:188:30: Compile generate block "work@alu.genblk6[15]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:188:30: Compile generate block "work@alu.genblk6[16]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:188:30: Compile generate block "work@alu.genblk6[17]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:188:30: Compile generate block "work@alu.genblk6[18]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:188:30: Compile generate block "work@alu.genblk6[19]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:188:30: Compile generate block "work@alu.genblk6[20]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:188:30: Compile generate block "work@alu.genblk6[21]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:188:30: Compile generate block "work@alu.genblk6[22]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:188:30: Compile generate block "work@alu.genblk6[23]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:188:30: Compile generate block "work@alu.genblk6[24]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:188:30: Compile generate block "work@alu.genblk6[25]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:188:30: Compile generate block "work@alu.genblk6[26]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:188:30: Compile generate block "work@alu.genblk6[27]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:188:30: Compile generate block "work@alu.genblk6[28]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:188:30: Compile generate block "work@alu.genblk6[29]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:188:30: Compile generate block "work@alu.genblk6[30]".
+[INF:CP0335] /home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/alu.sv:188:30: Compile generate block "work@alu.genblk6[31]".

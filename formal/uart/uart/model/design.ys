@@ -1,0 +1,9 @@
+# running in formal/uart/uart/src/
+read -formal formal/uart/uart_formal.sv
+read -formal rtl/peripherals/uart.sv
+prep -top uart_formal
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

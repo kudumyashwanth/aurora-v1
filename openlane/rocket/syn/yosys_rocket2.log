@@ -1,0 +1,5636 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.62+0 (git sha1 8bbde80e0, g++ 11.4.0-1ubuntu1~22.04.2 -fPIC -O3)
+
+-- Running command `read_verilog -sv rocket_system.v; hierarchy -top ExampleRocketSystem; stat' --
+
+1. Executing Verilog-2005 frontend: rocket_system.v
+Parsing SystemVerilog input from `rocket_system.v' to AST representation.
+Generating RTLIL representation for module `\AMOALU'.
+Generating RTLIL representation for module `\Arbiter2_Valid_PTWReq'.
+Generating RTLIL representation for module `\Arbiter3_LLWB'.
+Generating RTLIL representation for module `\AsyncQueueSink_DebugInternalBundle'.
+Generating RTLIL representation for module `\AsyncQueueSink_TLBundleA_a9d32s1k1z2u'.
+Generating RTLIL representation for module `\AsyncQueueSink_TLBundleD_a9d32s1k1z2u'.
+Generating RTLIL representation for module `\AsyncQueueSource_DebugInternalBundle'.
+Generating RTLIL representation for module `\AsyncQueueSource_TLBundleA_a9d32s1k1z2u'.
+Generating RTLIL representation for module `\AsyncQueueSource_TLBundleD_a9d32s1k1z2u'.
+Generating RTLIL representation for module `\AsyncResetRegVec_w1_i0'.
+Generating RTLIL representation for module `\AsyncResetRegVec_w2_i0'.
+Generating RTLIL representation for module `\AsyncResetSynchronizerPrimitiveShiftReg_d3_i0'.
+Generating RTLIL representation for module `\AsyncResetSynchronizerShiftReg_w1_d3_i0_1'.
+Generating RTLIL representation for module `\AsyncResetSynchronizerShiftReg_w1_d3_i0'.
+Generating RTLIL representation for module `\AsyncValidSync'.
+Generating RTLIL representation for module `\AXI4Buffer_1'.
+Generating RTLIL representation for module `\AXI4Buffer_2'.
+Generating RTLIL representation for module `\AXI4Buffer'.
+Generating RTLIL representation for module `\AXI4Deinterleaver'.
+Generating RTLIL representation for module `\AXI4Fragmenter_1'.
+Generating RTLIL representation for module `\AXI4Fragmenter_2'.
+Generating RTLIL representation for module `\AXI4Fragmenter'.
+Generating RTLIL representation for module `\AXI4IdIndexer_1'.
+Generating RTLIL representation for module `\AXI4IdIndexer_2'.
+Generating RTLIL representation for module `\AXI4IdIndexer'.
+Generating RTLIL representation for module `\AXI4ToTL'.
+Generating RTLIL representation for module `\AXI4UserYanker_1'.
+Generating RTLIL representation for module `\AXI4UserYanker_2'.
+Generating RTLIL representation for module `\AXI4UserYanker'.
+Generating RTLIL representation for module `\BankBinder'.
+Generating RTLIL representation for module `\bootromClockSinkDomain'.
+Generating RTLIL representation for module `\BreakpointUnit'.
+Generating RTLIL representation for module `\BroadcastFilter'.
+Generating RTLIL representation for module `\BundleBridgeNexus_UInt1_1'.
+Generating RTLIL representation for module `\CLINTClockSinkDomain'.
+Generating RTLIL representation for module `\CLINT'.
+Generating RTLIL representation for module `\ClockCrossingReg_w15'.
+Generating RTLIL representation for module `\ClockCrossingReg_w43'.
+Generating RTLIL representation for module `\ClockCrossingReg_w55'.
+Generating RTLIL representation for module `\CoherenceManagerWrapper'.
+Generating RTLIL representation for module `\CSRFile'.
+Generating RTLIL representation for module `\DCacheDataArray'.
+Generating RTLIL representation for module `\DCache'.
+Generating RTLIL representation for module `\DebugCustomXbar'.
+Generating RTLIL representation for module `\DMIToTL'.
+Generating RTLIL representation for module `\ErrorDeviceWrapper'.
+Generating RTLIL representation for module `\ExampleRocketSystem'.
+Generating RTLIL representation for module `\FixedClockBroadcast_3'.
+Generating RTLIL representation for module `\FixedClockBroadcast_5'.
+Generating RTLIL representation for module `\Frontend'.
+Generating RTLIL representation for module `\HellaCacheArbiter'.
+Generating RTLIL representation for module `\IBuf'.
+Generating RTLIL representation for module `\ICache'.
+Generating RTLIL representation for module `\IntSyncAsyncCrossingSink_n1x1'.
+Generating RTLIL representation for module `\IntSyncAsyncCrossingSink_n1x2'.
+Generating RTLIL representation for module `\IntSyncCrossingSource_n1x1_Registered'.
+Generating RTLIL representation for module `\IntSyncCrossingSource_n1x1'.
+Generating RTLIL representation for module `\IntSyncCrossingSource_n1x2'.
+Generating RTLIL representation for module `\IntSyncSyncCrossingSink_n1x1'.
+Generating RTLIL representation for module `\IntSyncSyncCrossingSink_n1x2'.
+Generating RTLIL representation for module `\IntXbar_i3_o1'.
+Generating RTLIL representation for module `\ITLB'.
+Generating RTLIL representation for module `\LevelGateway'.
+Generating RTLIL representation for module `\MaxPeriodFibonacciLFSR'.
+Generating RTLIL representation for module `\MemoryBus'.
+Generating RTLIL representation for module `\MulDiv'.
+Generating RTLIL representation for module `\NonSyncResetSynchronizerPrimitiveShiftReg_d3'.
+Generating RTLIL representation for module `\OptimizationBarrier_PTE'.
+Generating RTLIL representation for module `\OptimizationBarrier_TLBEntryData'.
+Generating RTLIL representation for module `\OptimizationBarrier_UInt'.
+Generating RTLIL representation for module `\PeripheryBus_cbus'.
+Generating RTLIL representation for module `\PeripheryBus_pbus'.
+Generating RTLIL representation for module `\PLICClockSinkDomain'.
+Generating RTLIL representation for module `\PLICFanIn'.
+Generating RTLIL representation for module `\PlusArgTimeout'.
+Generating RTLIL representation for module `\PMAChecker'.
+Generating RTLIL representation for module `\PMPChecker_s2'.
+Generating RTLIL representation for module `\PMPChecker_s3'.
+Generating RTLIL representation for module `\ProbePicker'.
+Generating RTLIL representation for module `\PTW'.
+Generating RTLIL representation for module `\Queue1_AXI4BundleAR_1'.
+Generating RTLIL representation for module `\Queue1_AXI4BundleAR_2'.
+Generating RTLIL representation for module `\Queue1_AXI4BundleAR'.
+Generating RTLIL representation for module `\Queue1_AXI4BundleARW_1'.
+Generating RTLIL representation for module `\Queue1_AXI4BundleARW'.
+Generating RTLIL representation for module `\Queue1_AXI4BundleB'.
+Generating RTLIL representation for module `\Queue1_AXI4BundleR'.
+Generating RTLIL representation for module `\Queue1_AXI4BundleW'.
+Generating RTLIL representation for module `\Queue1_BundleMap'.
+Generating RTLIL representation for module `\Queue1_RegMapperInput_i23_m8'.
+Generating RTLIL representation for module `\Queue1_TLBundleA_a14d64s5k1z4u'.
+Generating RTLIL representation for module `\Queue2_AXI4BundleAW_1'.
+Generating RTLIL representation for module `\Queue2_AXI4BundleAW_2'.
+Generating RTLIL representation for module `\Queue2_AXI4BundleAW'.
+Generating RTLIL representation for module `\Queue2_AXI4BundleB_1'.
+Generating RTLIL representation for module `\Queue2_AXI4BundleB'.
+Generating RTLIL representation for module `\Queue2_AXI4BundleR_1'.
+Generating RTLIL representation for module `\Queue2_AXI4BundleR'.
+Generating RTLIL representation for module `\Queue2_AXI4BundleW'.
+Generating RTLIL representation for module `\Queue2_TLBundleA_a14d64s5k1z4u'.
+Generating RTLIL representation for module `\Queue2_TLBundleA_a28d64s5k1z4u'.
+Generating RTLIL representation for module `\Queue2_TLBundleA_a32d64s2k2z4c'.
+Generating RTLIL representation for module `\Queue2_TLBundleA_a32d64s4k2z4u'.
+Generating RTLIL representation for module `\Queue2_TLBundleB_a32d64s2k2z4c'.
+Generating RTLIL representation for module `\Queue2_TLBundleC_a32d64s2k2z4c'.
+Generating RTLIL representation for module `\Queue2_TLBundleD_a28d64s5k1z4u'.
+Generating RTLIL representation for module `\Queue2_TLBundleD_a32d64s2k2z4c'.
+Generating RTLIL representation for module `\Queue2_TLBundleD_a32d64s4k2z4u'.
+Generating RTLIL representation for module `\Queue2_TLBundleE_a32d64s2k2z4c'.
+Generating RTLIL representation for module `\Queue2_UInt1'.
+Generating RTLIL representation for module `\Queue4_BundleMap'.
+Generating RTLIL representation for module `\Queue8_AXI4BundleR'.
+Generating RTLIL representation for module `\Queue8_BundleMap_4'.
+Generating RTLIL representation for module `\Queue8_BundleMap'.
+Generating RTLIL representation for module `\Queue8_TLBroadcastData'.
+Generating RTLIL representation for module `\ram_2x102'.
+Generating RTLIL representation for module `\ram_2x116'.
+Generating RTLIL representation for module `\ram_2x124'.
+Generating RTLIL representation for module `\ram_2x126'.
+Generating RTLIL representation for module `\ram_2x60'.
+Generating RTLIL representation for module `\ram_2x61'.
+Generating RTLIL representation for module `\ram_2x62'.
+Generating RTLIL representation for module `\ram_2x6'.
+Generating RTLIL representation for module `\ram_2x71'.
+Generating RTLIL representation for module `\ram_2x72'.
+Generating RTLIL representation for module `\ram_2x73'.
+Generating RTLIL representation for module `\ram_2x79'.
+Generating RTLIL representation for module `\ram_2x7'.
+Generating RTLIL representation for module `\ram_2x81'.
+Generating RTLIL representation for module `\ram_4x8'.
+Generating RTLIL representation for module `\ram_8x14'.
+Generating RTLIL representation for module `\ram_8x72'.
+Generating RTLIL representation for module `\ram_8x80'.
+Generating RTLIL representation for module `\ram_8x9'.
+Generating RTLIL representation for module `\ram_sink_2x2'.
+Generating RTLIL representation for module `\Repeater_TLBundleA_a12d64s5k1z3u'.
+Generating RTLIL representation for module `\Repeater_TLBundleA_a17d64s5k1z3u'.
+Generating RTLIL representation for module `\Repeater_TLBundleA_a26d64s5k1z3u'.
+Generating RTLIL representation for module `\Repeater_TLBundleA_a28d64s5k1z3u'.
+Generating RTLIL representation for module `\ResetSynchronizerShiftReg_w1_d3_i0'.
+Generating RTLIL representation for module `\rf_31x64'.
+Generating RTLIL representation for module `\RocketALU'.
+Generating RTLIL representation for module `\Rocket'.
+Generating RTLIL representation for module `\rockettile_dcache_data_arrays_0_512x64'.
+Generating RTLIL representation for module `\rockettile_dcache_tag_array_0_64x22'.
+Generating RTLIL representation for module `\rockettile_icache_data_arrays_512x32'.
+Generating RTLIL representation for module `\rockettile_icache_tag_array_0_64x21'.
+Generating RTLIL representation for module `\RocketTile'.
+Generating RTLIL representation for module `\RVCExpander'.
+Generating RTLIL representation for module `\ShiftQueue'.
+Generating RTLIL representation for module `\SynchronizerShiftReg_w1_d3'.
+Generating RTLIL representation for module `\SynchronizerShiftReg_w2_d3'.
+Generating RTLIL representation for module `\SystemBus'.
+Generating RTLIL representation for module `\TilePRCIDomain'.
+Generating RTLIL representation for module `\TLAsyncCrossingSink_a9d32s1k1z2u'.
+Generating RTLIL representation for module `\TLAsyncCrossingSource_a9d32s1k1z2u'.
+Generating RTLIL representation for module `\TLAtomicAutomata_cbus'.
+Generating RTLIL representation for module `\TLBroadcast'.
+Generating RTLIL representation for module `\TLBroadcastTracker_1'.
+Generating RTLIL representation for module `\TLBroadcastTracker_2'.
+Generating RTLIL representation for module `\TLBroadcastTracker_3'.
+Generating RTLIL representation for module `\TLBroadcastTracker'.
+Generating RTLIL representation for module `\TLBuffer_a14d64s5k1z4u'.
+Generating RTLIL representation for module `\TLBuffer_a28d64s5k1z4u'.
+Generating RTLIL representation for module `\TLBuffer_a32d64s2k2z4c_1'.
+Generating RTLIL representation for module `\TLBuffer_a32d64s4k2z4u_1'.
+Generating RTLIL representation for module `\TLBuffer_a32d64s4k2z4u'.
+Generating RTLIL representation for module `\TLBusBypassBar'.
+Generating RTLIL representation for module `\TLBusBypass'.
+Generating RTLIL representation for module `\TLDebugModuleInnerAsync'.
+Generating RTLIL representation for module `\TLDebugModuleInner'.
+Generating RTLIL representation for module `\TLDebugModuleOuterAsync'.
+Generating RTLIL representation for module `\TLDebugModuleOuter'.
+Generating RTLIL representation for module `\TLDebugModule'.
+Generating RTLIL representation for module `\TLError_1'.
+Generating RTLIL representation for module `\TLError'.
+Generating RTLIL representation for module `\TLFIFOFixer_2'.
+Generating RTLIL representation for module `\TLFIFOFixer_3'.
+Generating RTLIL representation for module `\TLFIFOFixer'.
+Generating RTLIL representation for module `\TLFragmenter_bootrom'.
+Generating RTLIL representation for module `\TLFragmenter_CLINT'.
+Generating RTLIL representation for module `\TLFragmenter_Debug'.
+Generating RTLIL representation for module `\TLFragmenter_PLIC'.
+Generating RTLIL representation for module `\TLInterconnectCoupler_cbus_to_bootrom'.
+Generating RTLIL representation for module `\TLInterconnectCoupler_cbus_to_clint'.
+Generating RTLIL representation for module `\TLInterconnectCoupler_cbus_to_debug'.
+Generating RTLIL representation for module `\TLInterconnectCoupler_cbus_to_plic'.
+Generating RTLIL representation for module `\TLInterconnectCoupler_fbus_from_port_named_slave_port_axi4'.
+Generating RTLIL representation for module `\TLInterconnectCoupler_mbus_to_memory_controller_port_named_axi4'.
+Generating RTLIL representation for module `\TLInterconnectCoupler_sbus_to_port_named_mmio_port_axi4'.
+Generating RTLIL representation for module `\TLMonitor_10'.
+Generating RTLIL representation for module `\TLMonitor_11'.
+Generating RTLIL representation for module `\TLMonitor_12'.
+Generating RTLIL representation for module `\TLMonitor_13'.
+Generating RTLIL representation for module `\TLMonitor_14'.
+Generating RTLIL representation for module `\TLMonitor_15'.
+Generating RTLIL representation for module `\TLMonitor_16'.
+Generating RTLIL representation for module `\TLMonitor_17'.
+Generating RTLIL representation for module `\TLMonitor_18'.
+Generating RTLIL representation for module `\TLMonitor_19'.
+Generating RTLIL representation for module `\TLMonitor_1'.
+Generating RTLIL representation for module `\TLMonitor_20'.
+Generating RTLIL representation for module `\TLMonitor_21'.
+Generating RTLIL representation for module `\TLMonitor_22'.
+Generating RTLIL representation for module `\TLMonitor_23'.
+Generating RTLIL representation for module `\TLMonitor_24'.
+Generating RTLIL representation for module `\TLMonitor_25'.
+Generating RTLIL representation for module `\TLMonitor_26'.
+Generating RTLIL representation for module `\TLMonitor_27'.
+Generating RTLIL representation for module `\TLMonitor_28'.
+Generating RTLIL representation for module `\TLMonitor_29'.
+Generating RTLIL representation for module `\TLMonitor_2'.
+Generating RTLIL representation for module `\TLMonitor_30'.
+Generating RTLIL representation for module `\TLMonitor_31'.
+Generating RTLIL representation for module `\TLMonitor_32'.
+Generating RTLIL representation for module `\TLMonitor_33'.
+Generating RTLIL representation for module `\TLMonitor_34'.
+Generating RTLIL representation for module `\TLMonitor_3'.
+Generating RTLIL representation for module `\TLMonitor_4'.
+Generating RTLIL representation for module `\TLMonitor_5'.
+Generating RTLIL representation for module `\TLMonitor_6'.
+Generating RTLIL representation for module `\TLMonitor_7'.
+Generating RTLIL representation for module `\TLMonitor_8'.
+Generating RTLIL representation for module `\TLMonitor_9'.
+Generating RTLIL representation for module `\TLMonitor'.
+Generating RTLIL representation for module `\TLPLIC'.
+Generating RTLIL representation for module `\TLROM'.
+Generating RTLIL representation for module `\TLToAXI4_1'.
+Generating RTLIL representation for module `\TLToAXI4'.
+Generating RTLIL representation for module `\TLXbar_cbus_out_i1_o5_a28d64s5k1z4u'.
+Generating RTLIL representation for module `\TLXbar_dmixbar_i1_o2_a9d32s1k1z2u'.
+Generating RTLIL representation for module `\TLXbar_MasterXbar_RocketTile_i2_o1_a32d64s2k2z4c'.
+Generating RTLIL representation for module `\TLXbar_sbus_i2_o3_a32d64s5k2z4c'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \ExampleRocketSystem
+Used module:     \bootromClockSinkDomain
+Used module:         \TLROM
+Used module:             \TLMonitor_34
+Used module:     \DebugCustomXbar
+Used module:     \TLDebugModule
+Used module:         \TLDebugModuleInnerAsync
+Used module:             \AsyncQueueSink_DebugInternalBundle
+Used module:                 \AsyncValidSync
+Used module:                     \AsyncResetSynchronizerShiftReg_w1_d3_i0_1
+Used module:                         \AsyncResetSynchronizerPrimitiveShiftReg_d3_i0
+Used module:                 \ClockCrossingReg_w15
+Used module:                 \AsyncResetSynchronizerShiftReg_w1_d3_i0
+Used module:             \TLAsyncCrossingSink_a9d32s1k1z2u
+Used module:                 \AsyncQueueSource_TLBundleD_a9d32s1k1z2u
+Used module:                 \AsyncQueueSink_TLBundleA_a9d32s1k1z2u
+Used module:                     \ClockCrossingReg_w55
+Used module:             \TLDebugModuleInner
+Used module:                 \TLMonitor_33
+Used module:                 \TLMonitor_32
+Used module:         \TLDebugModuleOuterAsync
+Used module:             \AsyncQueueSource_DebugInternalBundle
+Used module:             \TLAsyncCrossingSource_a9d32s1k1z2u
+Used module:                 \AsyncQueueSink_TLBundleD_a9d32s1k1z2u
+Used module:                     \ClockCrossingReg_w43
+Used module:                 \AsyncQueueSource_TLBundleA_a9d32s1k1z2u
+Used module:                 \TLMonitor_31
+Used module:             \TLBusBypass
+Used module:                 \TLError_1
+Used module:                     \TLMonitor_30
+Used module:                 \TLBusBypassBar
+Used module:                     \TLMonitor_29
+Used module:             \IntSyncCrossingSource_n1x1_Registered
+Used module:             \TLDebugModuleOuter
+Used module:                 \TLMonitor_28
+Used module:             \DMIToTL
+Used module:             \TLXbar_dmixbar_i1_o2_a9d32s1k1z2u
+Used module:                 \TLMonitor_27
+Used module:     \PLICClockSinkDomain
+Used module:         \IntSyncCrossingSource_n1x1
+Used module:             \AsyncResetRegVec_w1_i0
+Used module:         \TLPLIC
+Used module:             \Queue1_RegMapperInput_i23_m8
+Used module:             \PLICFanIn
+Used module:             \LevelGateway
+Used module:             \TLMonitor_26
+Used module:     \CLINTClockSinkDomain
+Used module:         \IntSyncCrossingSource_n1x2
+Used module:             \AsyncResetRegVec_w2_i0
+Used module:         \CLINT
+Used module:             \TLMonitor_25
+Used module:     \BundleBridgeNexus_UInt1_1
+Used module:     \TilePRCIDomain
+Used module:         \IntSyncSyncCrossingSink_n1x1
+Used module:         \IntSyncSyncCrossingSink_n1x2
+Used module:         \IntSyncAsyncCrossingSink_n1x1
+Used module:             \SynchronizerShiftReg_w1_d3
+Used module:                 \NonSyncResetSynchronizerPrimitiveShiftReg_d3
+Used module:         \TLBuffer_a32d64s2k2z4c_1
+Used module:             \Queue2_TLBundleE_a32d64s2k2z4c
+Used module:                 \ram_sink_2x2
+Used module:             \Queue2_TLBundleC_a32d64s2k2z4c
+Used module:                 \ram_2x116
+Used module:             \Queue2_TLBundleB_a32d64s2k2z4c
+Used module:             \Queue2_TLBundleD_a32d64s2k2z4c
+Used module:                 \ram_2x79
+Used module:             \Queue2_TLBundleA_a32d64s2k2z4c
+Used module:                 \ram_2x124
+Used module:             \TLMonitor_24
+Used module:         \RocketTile
+Used module:             \Rocket
+Used module:                 \PlusArgTimeout
+Used module:                 \Arbiter3_LLWB
+Used module:                 \MulDiv
+Used module:                 \RocketALU
+Used module:                 \BreakpointUnit
+Used module:                 \CSRFile
+Used module:                 \rf_31x64
+Used module:                 \IBuf
+Used module:                     \RVCExpander
+Used module:             \PTW
+Used module:                 \OptimizationBarrier_PTE
+Used module:                 \OptimizationBarrier_UInt
+Used module:                 \Arbiter2_Valid_PTWReq
+Used module:             \HellaCacheArbiter
+Used module:             \Frontend
+Used module:                 \ITLB
+Used module:                     \OptimizationBarrier_TLBEntryData
+Used module:                     \PMAChecker
+Used module:                     \PMPChecker_s2
+Used module:                 \ShiftQueue
+Used module:                 \ICache
+Used module:                     \rockettile_icache_data_arrays_512x32
+Used module:                     \rockettile_icache_tag_array_0_64x21
+Used module:             \DCache
+Used module:                 \AMOALU
+Used module:                 \DCacheDataArray
+Used module:                     \rockettile_dcache_data_arrays_0_512x64
+Used module:                 \rockettile_dcache_tag_array_0_64x22
+Used module:                 \MaxPeriodFibonacciLFSR
+Used module:                 \PMPChecker_s3
+Used module:             \IntXbar_i3_o1
+Used module:             \TLXbar_MasterXbar_RocketTile_i2_o1_a32d64s2k2z4c
+Used module:                 \TLMonitor_23
+Used module:                 \TLMonitor_22
+Used module:     \CoherenceManagerWrapper
+Used module:         \BankBinder
+Used module:             \TLMonitor_21
+Used module:         \TLBroadcast
+Used module:             \TLBroadcastTracker_3
+Used module:                 \Queue8_TLBroadcastData
+Used module:                     \ram_8x72
+Used module:             \TLBroadcastTracker_2
+Used module:             \TLBroadcastTracker_1
+Used module:             \TLBroadcastTracker
+Used module:             \BroadcastFilter
+Used module:             \TLMonitor_20
+Used module:     \MemoryBus
+Used module:         \TLInterconnectCoupler_mbus_to_memory_controller_port_named_axi4
+Used module:             \TLToAXI4_1
+Used module:                 \Queue1_AXI4BundleARW_1
+Used module:                 \Queue1_AXI4BundleW
+Used module:                 \TLMonitor_19
+Used module:             \AXI4IdIndexer_2
+Used module:             \AXI4UserYanker_2
+Used module:                 \Queue8_BundleMap_4
+Used module:                     \ram_8x14
+Used module:         \ProbePicker
+Used module:             \TLMonitor_18
+Used module:     \PeripheryBus_cbus
+Used module:         \TLInterconnectCoupler_cbus_to_bootrom
+Used module:             \TLFragmenter_bootrom
+Used module:                 \Repeater_TLBundleA_a17d64s5k1z3u
+Used module:                 \TLMonitor_17
+Used module:         \TLInterconnectCoupler_cbus_to_debug
+Used module:             \TLFragmenter_Debug
+Used module:                 \Repeater_TLBundleA_a12d64s5k1z3u
+Used module:                 \TLMonitor_16
+Used module:         \TLInterconnectCoupler_cbus_to_plic
+Used module:             \TLFragmenter_PLIC
+Used module:                 \Repeater_TLBundleA_a28d64s5k1z3u
+Used module:                 \TLMonitor_15
+Used module:         \TLInterconnectCoupler_cbus_to_clint
+Used module:             \TLFragmenter_CLINT
+Used module:                 \Repeater_TLBundleA_a26d64s5k1z3u
+Used module:                 \TLMonitor_14
+Used module:         \ErrorDeviceWrapper
+Used module:             \TLBuffer_a14d64s5k1z4u
+Used module:                 \Queue2_TLBundleD_a28d64s5k1z4u
+Used module:                     \ram_2x81
+Used module:                 \Queue2_TLBundleA_a14d64s5k1z4u
+Used module:                     \ram_2x102
+Used module:                 \TLMonitor_13
+Used module:             \TLError
+Used module:                 \Queue1_TLBundleA_a14d64s5k1z4u
+Used module:                 \TLMonitor_12
+Used module:         \TLAtomicAutomata_cbus
+Used module:             \TLMonitor_11
+Used module:         \TLBuffer_a28d64s5k1z4u
+Used module:             \Queue2_TLBundleA_a28d64s5k1z4u
+Used module:             \TLMonitor_10
+Used module:         \TLXbar_cbus_out_i1_o5_a28d64s5k1z4u
+Used module:             \TLMonitor_9
+Used module:         \TLFIFOFixer_3
+Used module:             \TLMonitor_8
+Used module:         \FixedClockBroadcast_5
+Used module:     \TLInterconnectCoupler_fbus_from_port_named_slave_port_axi4
+Used module:         \AXI4IdIndexer_1
+Used module:         \AXI4Fragmenter
+Used module:             \Queue1_AXI4BundleAR
+Used module:         \AXI4UserYanker_1
+Used module:             \Queue4_BundleMap
+Used module:                 \ram_4x8
+Used module:         \AXI4ToTL
+Used module:             \Queue1_AXI4BundleB
+Used module:             \Queue1_AXI4BundleR
+Used module:         \TLFIFOFixer_2
+Used module:             \TLMonitor_7
+Used module:         \TLBuffer_a32d64s4k2z4u_1
+Used module:             \Queue2_TLBundleD_a32d64s4k2z4u
+Used module:             \Queue2_TLBundleA_a32d64s4k2z4u
+Used module:                 \ram_2x126
+Used module:             \TLMonitor_6
+Used module:     \TLBuffer_a32d64s4k2z4u
+Used module:         \TLMonitor_5
+Used module:     \PeripheryBus_pbus
+Used module:     \SystemBus
+Used module:         \TLInterconnectCoupler_sbus_to_port_named_mmio_port_axi4
+Used module:             \TLToAXI4
+Used module:                 \Queue1_AXI4BundleARW
+Used module:                 \TLMonitor_4
+Used module:             \AXI4IdIndexer
+Used module:             \AXI4Deinterleaver
+Used module:                 \Queue8_AXI4BundleR
+Used module:                     \ram_8x80
+Used module:             \AXI4UserYanker
+Used module:                 \Queue1_BundleMap
+Used module:                 \Queue8_BundleMap
+Used module:                     \ram_8x9
+Used module:             \AXI4Buffer
+Used module:                 \Queue2_AXI4BundleR
+Used module:                     \ram_2x71
+Used module:                 \Queue2_AXI4BundleAW
+Used module:                     \ram_2x60
+Used module:                 \Queue2_AXI4BundleB
+Used module:                     \ram_2x6
+Used module:                 \Queue2_AXI4BundleW
+Used module:                     \ram_2x73
+Used module:         \TLFIFOFixer
+Used module:             \TLMonitor_3
+Used module:             \TLMonitor_2
+Used module:         \TLXbar_sbus_i2_o3_a32d64s5k2z4c
+Used module:             \TLMonitor_1
+Used module:             \TLMonitor
+Used module:         \FixedClockBroadcast_3
+Used module:     \IntSyncAsyncCrossingSink_n1x2
+Used module:         \SynchronizerShiftReg_w2_d3
+
+2.2. Analyzing design hierarchy..
+Top module:  \ExampleRocketSystem
+Used module:     \bootromClockSinkDomain
+Used module:         \TLROM
+Used module:             \TLMonitor_34
+Used module:     \DebugCustomXbar
+Used module:     \TLDebugModule
+Used module:         \TLDebugModuleInnerAsync
+Used module:             \AsyncQueueSink_DebugInternalBundle
+Used module:                 \AsyncValidSync
+Used module:                     \AsyncResetSynchronizerShiftReg_w1_d3_i0_1
+Used module:                         \AsyncResetSynchronizerPrimitiveShiftReg_d3_i0
+Used module:                 \ClockCrossingReg_w15
+Used module:                 \AsyncResetSynchronizerShiftReg_w1_d3_i0
+Used module:             \TLAsyncCrossingSink_a9d32s1k1z2u
+Used module:                 \AsyncQueueSource_TLBundleD_a9d32s1k1z2u
+Used module:                 \AsyncQueueSink_TLBundleA_a9d32s1k1z2u
+Used module:                     \ClockCrossingReg_w55
+Used module:             \TLDebugModuleInner
+Used module:                 \TLMonitor_33
+Used module:                 \TLMonitor_32
+Used module:         \TLDebugModuleOuterAsync
+Used module:             \AsyncQueueSource_DebugInternalBundle
+Used module:             \TLAsyncCrossingSource_a9d32s1k1z2u
+Used module:                 \AsyncQueueSink_TLBundleD_a9d32s1k1z2u
+Used module:                     \ClockCrossingReg_w43
+Used module:                 \AsyncQueueSource_TLBundleA_a9d32s1k1z2u
+Used module:                 \TLMonitor_31
+Used module:             \TLBusBypass
+Used module:                 \TLError_1
+Used module:                     \TLMonitor_30
+Used module:                 \TLBusBypassBar
+Used module:                     \TLMonitor_29
+Used module:             \IntSyncCrossingSource_n1x1_Registered
+Used module:             \TLDebugModuleOuter
+Used module:                 \TLMonitor_28
+Used module:             \DMIToTL
+Used module:             \TLXbar_dmixbar_i1_o2_a9d32s1k1z2u
+Used module:                 \TLMonitor_27
+Used module:     \PLICClockSinkDomain
+Used module:         \IntSyncCrossingSource_n1x1
+Used module:             \AsyncResetRegVec_w1_i0
+Used module:         \TLPLIC
+Used module:             \Queue1_RegMapperInput_i23_m8
+Used module:             \PLICFanIn
+Used module:             \LevelGateway
+Used module:             \TLMonitor_26
+Used module:     \CLINTClockSinkDomain
+Used module:         \IntSyncCrossingSource_n1x2
+Used module:             \AsyncResetRegVec_w2_i0
+Used module:         \CLINT
+Used module:             \TLMonitor_25
+Used module:     \BundleBridgeNexus_UInt1_1
+Used module:     \TilePRCIDomain
+Used module:         \IntSyncSyncCrossingSink_n1x1
+Used module:         \IntSyncSyncCrossingSink_n1x2
+Used module:         \IntSyncAsyncCrossingSink_n1x1
+Used module:             \SynchronizerShiftReg_w1_d3
+Used module:                 \NonSyncResetSynchronizerPrimitiveShiftReg_d3
+Used module:         \TLBuffer_a32d64s2k2z4c_1
+Used module:             \Queue2_TLBundleE_a32d64s2k2z4c
+Used module:                 \ram_sink_2x2
+Used module:             \Queue2_TLBundleC_a32d64s2k2z4c
+Used module:                 \ram_2x116
+Used module:             \Queue2_TLBundleB_a32d64s2k2z4c
+Used module:             \Queue2_TLBundleD_a32d64s2k2z4c
+Used module:                 \ram_2x79
+Used module:             \Queue2_TLBundleA_a32d64s2k2z4c
+Used module:                 \ram_2x124
+Used module:             \TLMonitor_24
+Used module:         \RocketTile
+Used module:             \Rocket
+Used module:                 \PlusArgTimeout
+Used module:                 \Arbiter3_LLWB
+Used module:                 \MulDiv
+Used module:                 \RocketALU
+Used module:                 \BreakpointUnit
+Used module:                 \CSRFile
+Used module:                 \rf_31x64
+Used module:                 \IBuf
+Used module:                     \RVCExpander
+Used module:             \PTW
+Used module:                 \OptimizationBarrier_PTE
+Used module:                 \OptimizationBarrier_UInt
+Used module:                 \Arbiter2_Valid_PTWReq
+Used module:             \HellaCacheArbiter
+Used module:             \Frontend
+Used module:                 \ITLB
+Used module:                     \OptimizationBarrier_TLBEntryData
+Used module:                     \PMAChecker
+Used module:                     \PMPChecker_s2
+Used module:                 \ShiftQueue
+Used module:                 \ICache
+Used module:                     \rockettile_icache_data_arrays_512x32
+Used module:                     \rockettile_icache_tag_array_0_64x21
+Used module:             \DCache
+Used module:                 \AMOALU
+Used module:                 \DCacheDataArray
+Used module:                     \rockettile_dcache_data_arrays_0_512x64
+Used module:                 \rockettile_dcache_tag_array_0_64x22
+Used module:                 \MaxPeriodFibonacciLFSR
+Used module:                 \PMPChecker_s3
+Used module:             \IntXbar_i3_o1
+Used module:             \TLXbar_MasterXbar_RocketTile_i2_o1_a32d64s2k2z4c
+Used module:                 \TLMonitor_23
+Used module:                 \TLMonitor_22
+Used module:     \CoherenceManagerWrapper
+Used module:         \BankBinder
+Used module:             \TLMonitor_21
+Used module:         \TLBroadcast
+Used module:             \TLBroadcastTracker_3
+Used module:                 \Queue8_TLBroadcastData
+Used module:                     \ram_8x72
+Used module:             \TLBroadcastTracker_2
+Used module:             \TLBroadcastTracker_1
+Used module:             \TLBroadcastTracker
+Used module:             \BroadcastFilter
+Used module:             \TLMonitor_20
+Used module:     \MemoryBus
+Used module:         \TLInterconnectCoupler_mbus_to_memory_controller_port_named_axi4
+Used module:             \TLToAXI4_1
+Used module:                 \Queue1_AXI4BundleARW_1
+Used module:                 \Queue1_AXI4BundleW
+Used module:                 \TLMonitor_19
+Used module:             \AXI4IdIndexer_2
+Used module:             \AXI4UserYanker_2
+Used module:                 \Queue8_BundleMap_4
+Used module:                     \ram_8x14
+Used module:         \ProbePicker
+Used module:             \TLMonitor_18
+Used module:     \PeripheryBus_cbus
+Used module:         \TLInterconnectCoupler_cbus_to_bootrom
+Used module:             \TLFragmenter_bootrom
+Used module:                 \Repeater_TLBundleA_a17d64s5k1z3u
+Used module:                 \TLMonitor_17
+Used module:         \TLInterconnectCoupler_cbus_to_debug
+Used module:             \TLFragmenter_Debug
+Used module:                 \Repeater_TLBundleA_a12d64s5k1z3u
+Used module:                 \TLMonitor_16
+Used module:         \TLInterconnectCoupler_cbus_to_plic
+Used module:             \TLFragmenter_PLIC
+Used module:                 \Repeater_TLBundleA_a28d64s5k1z3u
+Used module:                 \TLMonitor_15
+Used module:         \TLInterconnectCoupler_cbus_to_clint
+Used module:             \TLFragmenter_CLINT
+Used module:                 \Repeater_TLBundleA_a26d64s5k1z3u
+Used module:                 \TLMonitor_14
+Used module:         \ErrorDeviceWrapper
+Used module:             \TLBuffer_a14d64s5k1z4u
+Used module:                 \Queue2_TLBundleD_a28d64s5k1z4u
+Used module:                     \ram_2x81
+Used module:                 \Queue2_TLBundleA_a14d64s5k1z4u
+Used module:                     \ram_2x102
+Used module:                 \TLMonitor_13
+Used module:             \TLError
+Used module:                 \Queue1_TLBundleA_a14d64s5k1z4u
+Used module:                 \TLMonitor_12
+Used module:         \TLAtomicAutomata_cbus
+Used module:             \TLMonitor_11
+Used module:         \TLBuffer_a28d64s5k1z4u
+Used module:             \Queue2_TLBundleA_a28d64s5k1z4u
+Used module:             \TLMonitor_10
+Used module:         \TLXbar_cbus_out_i1_o5_a28d64s5k1z4u
+Used module:             \TLMonitor_9
+Used module:         \TLFIFOFixer_3
+Used module:             \TLMonitor_8
+Used module:         \FixedClockBroadcast_5
+Used module:     \TLInterconnectCoupler_fbus_from_port_named_slave_port_axi4
+Used module:         \AXI4IdIndexer_1
+Used module:         \AXI4Fragmenter
+Used module:             \Queue1_AXI4BundleAR
+Used module:         \AXI4UserYanker_1
+Used module:             \Queue4_BundleMap
+Used module:                 \ram_4x8
+Used module:         \AXI4ToTL
+Used module:             \Queue1_AXI4BundleB
+Used module:             \Queue1_AXI4BundleR
+Used module:         \TLFIFOFixer_2
+Used module:             \TLMonitor_7
+Used module:         \TLBuffer_a32d64s4k2z4u_1
+Used module:             \Queue2_TLBundleD_a32d64s4k2z4u
+Used module:             \Queue2_TLBundleA_a32d64s4k2z4u
+Used module:                 \ram_2x126
+Used module:             \TLMonitor_6
+Used module:     \TLBuffer_a32d64s4k2z4u
+Used module:         \TLMonitor_5
+Used module:     \PeripheryBus_pbus
+Used module:     \SystemBus
+Used module:         \TLInterconnectCoupler_sbus_to_port_named_mmio_port_axi4
+Used module:             \TLToAXI4
+Used module:                 \Queue1_AXI4BundleARW
+Used module:                 \TLMonitor_4
+Used module:             \AXI4IdIndexer
+Used module:             \AXI4Deinterleaver
+Used module:                 \Queue8_AXI4BundleR
+Used module:                     \ram_8x80
+Used module:             \AXI4UserYanker
+Used module:                 \Queue1_BundleMap
+Used module:                 \Queue8_BundleMap
+Used module:                     \ram_8x9
+Used module:             \AXI4Buffer
+Used module:                 \Queue2_AXI4BundleR
+Used module:                     \ram_2x71
+Used module:                 \Queue2_AXI4BundleAW
+Used module:                     \ram_2x60
+Used module:                 \Queue2_AXI4BundleB
+Used module:                     \ram_2x6
+Used module:                 \Queue2_AXI4BundleW
+Used module:                     \ram_2x73
+Used module:         \TLFIFOFixer
+Used module:             \TLMonitor_3
+Used module:             \TLMonitor_2
+Used module:         \TLXbar_sbus_i2_o3_a32d64s5k2z4c
+Used module:             \TLMonitor_1
+Used module:             \TLMonitor
+Used module:         \FixedClockBroadcast_3
+Used module:     \IntSyncAsyncCrossingSink_n1x2
+Used module:         \SynchronizerShiftReg_w2_d3
+Removing unused module `\ResetSynchronizerShiftReg_w1_d3_i0'.
+Removing unused module `\ram_2x7'.
+Removing unused module `\ram_2x72'.
+Removing unused module `\ram_2x62'.
+Removing unused module `\ram_2x61'.
+Removing unused module `\Queue2_UInt1'.
+Removing unused module `\Queue2_AXI4BundleR_1'.
+Removing unused module `\Queue2_AXI4BundleB_1'.
+Removing unused module `\Queue2_AXI4BundleAW_2'.
+Removing unused module `\Queue2_AXI4BundleAW_1'.
+Removing unused module `\Queue1_AXI4BundleAR_2'.
+Removing unused module `\Queue1_AXI4BundleAR_1'.
+Removing unused module `\AXI4Fragmenter_2'.
+Removing unused module `\AXI4Fragmenter_1'.
+Removing unused module `\AXI4Buffer_2'.
+Removing unused module `\AXI4Buffer_1'.
+Removed 16 unused modules.
+
+3. Printing statistics.
+
+=== TLMonitor_34 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      593 wires
+    88465 wire bits
+      253 public wires
+    46095 public wire bits
+       17 ports
+      188 port bits
+        1 memories
+     5600 memory bits
+        3 processes
+      305 cells
+        6   $add
+      133   $and
+       16   $eq
+        5   $gt
+        1   $lt
+        4   $mul
+       10   $mux
+       11   $ne
+       58   $not
+       24   $or
+        4   $reduce_and
+        6   $reduce_or
+        4   $shiftx
+       10   $shl
+        6   $shr
+        5   $sub
+        2   plusarg_reader
+
+=== TLMonitor_33 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      707 wires
+   122569 wire bits
+      276 public wires
+    58722 public wire bits
+       18 ports
+      186 port bits
+        1 memories
+     5600 memory bits
+        3 processes
+      383 cells
+        6   $add
+      170   $and
+       24   $eq
+        7   $gt
+        2   $lt
+        4   $mul
+       14   $mux
+       14   $ne
+       73   $not
+       26   $or
+        5   $reduce_and
+        6   $reduce_or
+        4   $shiftx
+       14   $shl
+        7   $shr
+        5   $sub
+        2   plusarg_reader
+
+=== TLMonitor_32 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      655 wires
+     2027 wire bits
+      233 public wires
+      895 public wire bits
+       18 ports
+       99 port bits
+        1 memories
+      128 memory bits
+        3 processes
+      374 cells
+        6   $add
+      163   $and
+       30   $eq
+        2   $gt
+        2   $lt
+        4   $mul
+        8   $mux
+       14   $ne
+       87   $not
+       23   $or
+        2   $reduce_and
+        6   $reduce_or
+        4   $shiftx
+        7   $shl
+        7   $shr
+        5   $sub
+        2   $xor
+        2   plusarg_reader
+
+=== TLMonitor_31 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      610 wires
+     1884 wire bits
+      227 public wires
+      842 public wire bits
+       17 ports
+       93 port bits
+        1 memories
+      128 memory bits
+        3 processes
+      335 cells
+        6   $add
+      139   $and
+       28   $eq
+        2   $lt
+        4   $mul
+        8   $mux
+       12   $ne
+       86   $not
+       19   $or
+        4   $reduce_and
+        4   $reduce_or
+        4   $shiftx
+        4   $shl
+        6   $shr
+        5   $sub
+        2   $xor
+        2   plusarg_reader
+
+=== TLMonitor_30 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      513 wires
+     1905 wire bits
+      204 public wires
+      979 public wire bits
+       14 ports
+      178 port bits
+        1 memories
+      256 memory bits
+        3 processes
+      270 cells
+        6   $add
+      117   $and
+       23   $eq
+        2   $lt
+        4   $mul
+        4   $mux
+        9   $ne
+       73   $not
+       13   $or
+        4   $reduce_and
+        4   $reduce_or
+        4   $shiftx
+        5   $sub
+        2   plusarg_reader
+
+=== TLMonitor_2 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      903 wires
+     9370 wire bits
+      323 public wires
+     4446 public wire bits
+       29 ports
+      213 port bits
+        1 memories
+      608 memory bits
+        3 processes
+      515 cells
+        6   $add
+      210   $and
+       48   $eq
+        3   $gt
+        7   $lt
+        4   $mul
+       19   $mux
+       17   $ne
+      105   $not
+       47   $or
+        4   $reduce_and
+       10   $reduce_or
+        4   $shiftx
+       16   $shl
+        7   $shr
+        5   $sub
+        1   $xor
+        2   plusarg_reader
+
+=== TLMonitor_29 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      599 wires
+     1873 wire bits
+      227 public wires
+      842 public wire bits
+       17 ports
+       93 port bits
+        1 memories
+      128 memory bits
+        3 processes
+      324 cells
+        6   $add
+      133   $and
+       28   $eq
+        2   $lt
+        4   $mul
+        8   $mux
+       11   $ne
+       83   $not
+       18   $or
+        4   $reduce_and
+        4   $reduce_or
+        4   $shiftx
+        4   $shl
+        6   $shr
+        5   $sub
+        2   $xor
+        2   plusarg_reader
+
+=== TLMonitor_28 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      441 wires
+     1370 wire bits
+      190 public wires
+      626 public wire bits
+       11 ports
+       83 port bits
+        1 memories
+      128 memory bits
+        3 processes
+      223 cells
+        6   $add
+       89   $and
+       21   $eq
+        2   $lt
+        4   $mul
+        4   $mux
+        5   $ne
+       65   $not
+       13   $or
+        2   $reduce_and
+        4   $shiftx
+        5   $sub
+        1   $xor
+        2   plusarg_reader
+
+=== TLMonitor_27 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      519 wires
+     1466 wire bits
+      207 public wires
+      656 public wire bits
+       16 ports
+       92 port bits
+        1 memories
+      128 memory bits
+        3 processes
+      272 cells
+        6   $add
+      118   $and
+       23   $eq
+        2   $lt
+        4   $mul
+        4   $mux
+       10   $ne
+       73   $not
+       13   $or
+        4   $reduce_and
+        4   $reduce_or
+        4   $shiftx
+        5   $sub
+        2   plusarg_reader
+
+=== TLMonitor_26 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      723 wires
+   122649 wire bits
+      277 public wires
+    58771 public wire bits
+       18 ports
+      202 port bits
+        1 memories
+     5632 memory bits
+        3 processes
+      397 cells
+        6   $add
+      174   $and
+       25   $eq
+        5   $gt
+        4   $lt
+        4   $mul
+       14   $mux
+       16   $ne
+       79   $not
+       27   $or
+        5   $reduce_and
+        6   $reduce_or
+        4   $shiftx
+       14   $shl
+        7   $shr
+        5   $sub
+        2   plusarg_reader
+
+=== TLMonitor_25 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      717 wires
+   122635 wire bits
+      277 public wires
+    58765 public wire bits
+       18 ports
+      200 port bits
+        1 memories
+     5632 memory bits
+        3 processes
+      391 cells
+        6   $add
+      173   $and
+       24   $eq
+        5   $gt
+        4   $lt
+        4   $mul
+       14   $mux
+       15   $ne
+       77   $not
+       26   $or
+        5   $reduce_and
+        6   $reduce_or
+        4   $shiftx
+       14   $shl
+        7   $shr
+        5   $sub
+        2   plusarg_reader
+
+=== TLMonitor_24 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     1663 wires
+     6634 wire bits
+      516 public wires
+     3279 public wire bits
+       49 ports
+      440 port bits
+        1 memories
+      384 memory bits
+        3 processes
+     1039 cells
+        6   $add
+      407   $and
+       94   $eq
+        4   $gt
+       11   $lt
+        4   $mul
+       30   $mux
+       31   $ne
+      236   $not
+      108   $or
+       11   $reduce_and
+       42   $reduce_or
+        4   $shiftx
+       27   $shl
+       10   $shr
+        9   $sub
+        3   $xor
+        2   plusarg_reader
+
+=== TLMonitor_23 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      521 wires
+     2077 wire bits
+      231 public wires
+     1141 public wire bits
+       15 ports
+      116 port bits
+        1 memories
+      224 memory bits
+        3 processes
+      255 cells
+        4   $add
+      101   $and
+       32   $eq
+        3   $lt
+        2   $mul
+        7   $mux
+       10   $ne
+       57   $not
+       21   $or
+        3   $reduce_and
+        4   $reduce_or
+        2   $shiftx
+        1   $shl
+        5   $sub
+        1   $xor
+        2   plusarg_reader
+
+=== TLMonitor_22 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     1629 wires
+     5932 wire bits
+      502 public wires
+     2939 public wire bits
+       47 ports
+      434 port bits
+        1 memories
+      352 memory bits
+        3 processes
+     1021 cells
+        6   $add
+      405   $and
+       81   $eq
+        4   $gt
+       11   $lt
+        4   $mul
+       30   $mux
+       31   $ne
+      239   $not
+      102   $or
+       11   $reduce_and
+       42   $reduce_or
+        4   $shiftx
+       27   $shl
+       10   $shr
+        9   $sub
+        3   $xor
+        2   plusarg_reader
+
+=== TLMonitor_21 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      752 wires
+    42720 wire bits
+      289 public wires
+    20003 public wire bits
+       26 ports
+      212 port bits
+        1 memories
+     2464 memory bits
+        3 processes
+      415 cells
+        6   $add
+      167   $and
+       41   $eq
+        3   $gt
+        3   $lt
+        4   $mul
+       19   $mux
+       16   $ne
+       81   $not
+       33   $or
+        2   $reduce_and
+        6   $reduce_or
+        4   $shiftx
+       16   $shl
+        7   $shr
+        5   $sub
+        2   plusarg_reader
+
+=== TLMonitor_20 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     1403 wires
+    13311 wire bits
+      526 public wires
+     6723 public wire bits
+       51 ports
+      372 port bits
+        1 memories
+      608 memory bits
+        3 processes
+      790 cells
+        6   $add
+      329   $and
+       82   $eq
+        3   $gt
+        4   $lt
+        4   $mul
+       30   $mux
+       29   $ne
+      161   $not
+       65   $or
+       10   $reduce_and
+       18   $reduce_or
+        4   $shiftx
+       24   $shl
+       10   $shr
+        9   $sub
+        2   plusarg_reader
+
+=== TLMonitor_1 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     1508 wires
+     6211 wire bits
+      503 public wires
+     3103 public wire bits
+       51 ports
+      366 port bits
+        1 memories
+      384 memory bits
+        3 processes
+      907 cells
+        6   $add
+      345   $and
+       82   $eq
+        3   $gt
+       10   $lt
+        4   $mul
+       30   $mux
+       27   $ne
+      206   $not
+       94   $or
+       10   $reduce_and
+       38   $reduce_or
+        4   $shiftx
+       24   $shl
+       10   $shr
+        9   $sub
+        3   $xor
+        2   plusarg_reader
+
+=== TLMonitor_19 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      752 wires
+    42720 wire bits
+      289 public wires
+    20003 public wire bits
+       26 ports
+      212 port bits
+        1 memories
+     2464 memory bits
+        3 processes
+      415 cells
+        6   $add
+      167   $and
+       41   $eq
+        3   $gt
+        3   $lt
+        4   $mul
+       19   $mux
+       16   $ne
+       81   $not
+       33   $or
+        2   $reduce_and
+        6   $reduce_or
+        4   $shiftx
+       16   $shl
+        7   $shr
+        5   $sub
+        2   plusarg_reader
+
+=== TLMonitor_18 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      752 wires
+    42720 wire bits
+      289 public wires
+    20003 public wire bits
+       26 ports
+      212 port bits
+        1 memories
+     2464 memory bits
+        3 processes
+      415 cells
+        6   $add
+      167   $and
+       41   $eq
+        3   $gt
+        3   $lt
+        4   $mul
+       19   $mux
+       16   $ne
+       81   $not
+       33   $or
+        2   $reduce_and
+        6   $reduce_or
+        4   $shiftx
+       16   $shl
+        7   $shr
+        5   $sub
+        2   plusarg_reader
+
+=== TLMonitor_17 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      672 wires
+     7675 wire bits
+      277 public wires
+     4115 public wire bits
+       17 ports
+      182 port bits
+        1 memories
+      480 memory bits
+        3 processes
+      360 cells
+        6   $add
+      139   $and
+       38   $eq
+        3   $gt
+        1   $lt
+        4   $mul
+       10   $mux
+       12   $ne
+       70   $not
+       39   $or
+        1   $reduce_and
+        8   $reduce_or
+        4   $shiftx
+       12   $shl
+        6   $shr
+        5   $sub
+        2   plusarg_reader
+
+=== TLMonitor_16 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      813 wires
+    10009 wire bits
+      302 public wires
+     4969 public wire bits
+       18 ports
+      180 port bits
+        1 memories
+      480 memory bits
+        3 processes
+      461 cells
+        6   $add
+      180   $and
+       50   $eq
+        3   $gt
+        3   $lt
+        4   $mul
+       19   $mux
+       14   $ne
+       95   $not
+       43   $or
+        2   $reduce_and
+        8   $reduce_or
+        4   $shiftx
+       16   $shl
+        7   $shr
+        5   $sub
+        2   plusarg_reader
+
+=== TLMonitor_15 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      823 wires
+    10083 wire bits
+      302 public wires
+     5017 public wire bits
+       18 ports
+      196 port bits
+        1 memories
+      512 memory bits
+        3 processes
+      471 cells
+        6   $add
+      183   $and
+       51   $eq
+        3   $gt
+        3   $lt
+        4   $mul
+       19   $mux
+       15   $ne
+       97   $not
+       44   $or
+        4   $reduce_and
+        8   $reduce_or
+        4   $shiftx
+       16   $shl
+        7   $shr
+        5   $sub
+        2   plusarg_reader
+
+=== TLMonitor_14 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      818 wires
+    10070 wire bits
+      303 public wires
+     5012 public wire bits
+       18 ports
+      194 port bits
+        1 memories
+      480 memory bits
+        3 processes
+      464 cells
+        6   $add
+      182   $and
+       51   $eq
+        3   $gt
+        3   $lt
+        4   $mul
+       19   $mux
+       14   $ne
+       95   $not
+       43   $or
+        2   $reduce_and
+        8   $reduce_or
+        4   $shiftx
+       16   $shl
+        7   $shr
+        5   $sub
+        2   plusarg_reader
+
+=== TLMonitor_13 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      890 wires
+    12279 wire bits
+      317 public wires
+     6020 public wire bits
+       22 ports
+      189 port bits
+        1 memories
+      672 memory bits
+        3 processes
+      513 cells
+        6   $add
+      207   $and
+       52   $eq
+        3   $gt
+        5   $lt
+        4   $mul
+       19   $mux
+       17   $ne
+      103   $not
+       45   $or
+        6   $reduce_and
+       12   $reduce_or
+        4   $shiftx
+       16   $shl
+        7   $shr
+        5   $sub
+        2   plusarg_reader
+
+=== TLMonitor_12 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      852 wires
+    12175 wire bits
+      308 public wires
+     5946 public wire bits
+       18 ports
+      121 port bits
+        1 memories
+      672 memory bits
+        3 processes
+      489 cells
+        6   $add
+      195   $and
+       51   $eq
+        3   $gt
+        5   $lt
+        4   $mul
+       19   $mux
+       14   $ne
+      102   $not
+       44   $or
+        4   $reduce_and
+        8   $reduce_or
+        4   $shiftx
+       16   $shl
+        7   $shr
+        5   $sub
+        2   plusarg_reader
+
+=== TLMonitor_11 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      929 wires
+    12384 wire bits
+      323 public wires
+     6068 public wire bits
+       22 ports
+      203 port bits
+        1 memories
+      672 memory bits
+        3 processes
+      540 cells
+        6   $add
+      211   $and
+       56   $eq
+        3   $gt
+        6   $lt
+        4   $mul
+       19   $mux
+       17   $ne
+      105   $not
+       58   $or
+        8   $reduce_and
+       12   $reduce_or
+        4   $shiftx
+       16   $shl
+        7   $shr
+        5   $sub
+        1   $xor
+        2   plusarg_reader
+
+=== TLMonitor_10 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      924 wires
+    12379 wire bits
+      322 public wires
+     6067 public wire bits
+       22 ports
+      203 port bits
+        1 memories
+      672 memory bits
+        3 processes
+      537 cells
+        6   $add
+      211   $and
+       56   $eq
+        3   $gt
+        6   $lt
+        4   $mul
+       19   $mux
+       17   $ne
+      105   $not
+       56   $or
+        7   $reduce_and
+       12   $reduce_or
+        4   $shiftx
+       16   $shl
+        7   $shr
+        5   $sub
+        1   $xor
+        2   plusarg_reader
+
+=== TLInterconnectCoupler_sbus_to_port_named_mmio_port_axi4 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      462 wires
+     3471 wire bits
+      462 public wires
+     3471 public wire bits
+       64 ports
+      490 port bits
+        5 submodules
+        1   AXI4Buffer
+        1   AXI4Deinterleaver
+        1   AXI4IdIndexer
+        1   AXI4UserYanker
+        1   TLToAXI4
+
+=== TLInterconnectCoupler_mbus_to_memory_controller_port_named_axi4 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      485 wires
+     3798 wire bits
+      485 public wires
+     3798 public wire bits
+      111 ports
+      914 port bits
+        3 submodules
+        1   AXI4IdIndexer_2
+        1   AXI4UserYanker_2
+        1   TLToAXI4_1
+
+=== TLInterconnectCoupler_fbus_from_port_named_slave_port_axi4 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      440 wires
+     3363 wire bits
+      440 public wires
+     3363 public wire bits
+       66 ports
+      511 port bits
+        6 submodules
+        1   AXI4Fragmenter
+        1   AXI4IdIndexer_1
+        1   AXI4ToTL
+        1   AXI4UserYanker_1
+        1   TLBuffer_a32d64s4k2z4u_1
+        1   TLFIFOFixer_2
+
+=== TLInterconnectCoupler_cbus_to_plic ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      114 wires
+     1198 wire bits
+      114 public wires
+     1198 public wire bits
+       34 ports
+      396 port bits
+        1 submodules
+        1   TLFragmenter_PLIC
+
+=== TLInterconnectCoupler_cbus_to_debug ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      114 wires
+     1102 wire bits
+      114 public wires
+     1102 public wire bits
+       34 ports
+      364 port bits
+        1 submodules
+        1   TLFragmenter_Debug
+
+=== TLInterconnectCoupler_cbus_to_clint ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      114 wires
+     1186 wire bits
+      114 public wires
+     1186 public wire bits
+       34 ports
+      392 port bits
+        1 submodules
+        1   TLFragmenter_CLINT
+
+=== TLInterconnectCoupler_cbus_to_bootrom ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      112 wires
+     1126 wire bits
+      112 public wires
+     1126 public wire bits
+       32 ports
+      368 port bits
+        1 submodules
+        1   TLFragmenter_bootrom
+
+=== TLFragmenter_PLIC ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      228 wires
+     1527 wire bits
+      163 public wires
+     1376 public wire bits
+       34 ports
+      396 port bits
+        1 memories
+       32 memory bits
+        3 processes
+       58 cells
+       10   $and
+        4   $eq
+        6   $mux
+       20   $not
+        8   $or
+        1   $reduce_and
+        3   $reduce_or
+        4   $shl
+        2   $sub
+        2 submodules
+        1   Repeater_TLBundleA_a28d64s5k1z3u
+        1   TLMonitor_15
+
+=== TLFragmenter_Debug ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      228 wires
+     1415 wire bits
+      163 public wires
+     1264 public wire bits
+       34 ports
+      364 port bits
+        1 memories
+       32 memory bits
+        3 processes
+       58 cells
+       10   $and
+        4   $eq
+        6   $mux
+       20   $not
+        8   $or
+        1   $reduce_and
+        3   $reduce_or
+        4   $shl
+        2   $sub
+        2 submodules
+        1   Repeater_TLBundleA_a12d64s5k1z3u
+        1   TLMonitor_16
+
+=== TLFragmenter_CLINT ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      228 wires
+     1513 wire bits
+      163 public wires
+     1362 public wire bits
+       34 ports
+      392 port bits
+        1 memories
+       32 memory bits
+        3 processes
+       58 cells
+       10   $and
+        4   $eq
+        6   $mux
+       20   $not
+        8   $or
+        1   $reduce_and
+        3   $reduce_or
+        4   $shl
+        2   $sub
+        2 submodules
+        1   Repeater_TLBundleA_a26d64s5k1z3u
+        1   TLMonitor_14
+
+=== TLFragmenter_bootrom ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      210 wires
+     1426 wire bits
+      161 public wires
+     1293 public wire bits
+       32 ports
+      368 port bits
+        1 memories
+       32 memory bits
+        3 processes
+       42 cells
+        6   $and
+        4   $eq
+        5   $mux
+       12   $not
+        5   $or
+        1   $reduce_and
+        3   $reduce_or
+        4   $shl
+        2   $sub
+        2 submodules
+        1   Repeater_TLBundleA_a17d64s5k1z3u
+        1   TLMonitor_17
+
+=== TLFIFOFixer ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      877 wires
+     4906 wire bits
+      580 public wires
+     4207 public wire bits
+      154 ports
+     1152 port bits
+        1 memories
+       96 memory bits
+        2 processes
+      270 cells
+       91   $and
+       50   $eq
+       27   $mux
+        4   $ne
+       57   $not
+       25   $or
+        4   $reduce_and
+        8   $shl
+        4   $sub
+        2 submodules
+        1   TLMonitor_2
+        1   TLMonitor_3
+
+=== TLFIFOFixer_3 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      422 wires
+     2060 wire bits
+      184 public wires
+     1530 public wire bits
+       42 ports
+      404 port bits
+        1 memories
+       64 memory bits
+        2 processes
+      214 cells
+       77   $and
+       51   $eq
+        5   $mux
+        3   $ne
+       29   $not
+       42   $or
+        1   $reduce_and
+        4   $shl
+        2   $sub
+        1 submodules
+        1   TLMonitor_8
+
+=== TLFIFOFixer_2 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      419 wires
+     1938 wire bits
+      216 public wires
+     1497 public wire bits
+       52 ports
+      416 port bits
+        1 memories
+       64 memory bits
+        2 processes
+      182 cells
+       68   $and
+       36   $eq
+        4   $mux
+        3   $ne
+       26   $not
+       36   $or
+        3   $reduce_and
+        4   $shl
+        2   $sub
+        1 submodules
+        1   TLMonitor_7
+
+=== TLError ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      130 wires
+     1012 wire bits
+       96 public wires
+      766 public wire bits
+       18 ports
+      121 port bits
+        1 memories
+       32 memory bits
+        2 processes
+       32 cells
+        1   $add
+        8   $and
+        6   $eq
+        1   $mul
+        2   $mux
+        6   $not
+        3   $or
+        1   $shiftx
+        2   $shl
+        2   $sub
+        2 submodules
+        1   Queue1_TLBundleA_a14d64s5k1z4u
+        1   TLMonitor_12
+
+=== TLError_1 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      196 wires
+     1088 wire bits
+      141 public wires
+      963 public wire bits
+       14 ports
+      178 port bits
+        1 memories
+       32 memory bits
+        3 processes
+       49 cells
+        1   $add
+       19   $and
+        1   $eq
+        1   $mul
+        5   $mux
+       14   $not
+        4   $or
+        1   $shiftx
+        3   $sub
+        1 submodules
+        1   TLMonitor_30
+
+=== TLDebugModule ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      113 wires
+      674 wire bits
+      113 public wires
+      674 public wire bits
+       36 ports
+      274 port bits
+        2 submodules
+        1   TLDebugModuleInnerAsync
+        1   TLDebugModuleOuterAsync
+
+=== TLDebugModuleOuter ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      601 wires
+     1771 wire bits
+      472 public wires
+     1502 public wire bits
+       22 ports
+      103 port bits
+        1 memories
+       96 memory bits
+        2 processes
+       75 cells
+       44   $and
+        4   $eq
+        9   $mux
+        9   $not
+        9   $or
+        1 submodules
+        1   TLMonitor_28
+
+=== TLDebugModuleOuterAsync ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      204 wires
+      918 wire bits
+      201 public wires
+      915 public wire bits
+       45 ports
+      199 port bits
+        3 cells
+        2   $not
+        1   $or
+        8 submodules
+        1   AsyncQueueSource_DebugInternalBundle
+        1   AsyncResetSynchronizerShiftReg_w1_d3_i0
+        1   DMIToTL
+        1   IntSyncCrossingSource_n1x1_Registered
+        1   TLAsyncCrossingSource_a9d32s1k1z2u
+        1   TLBusBypass
+        1   TLDebugModuleOuter
+        1   TLXbar_dmixbar_i1_o2_a9d32s1k1z2u
+
+=== TLDebugModuleInner ===
+
+        +----------Local Count, excluding submodules.
+        | 
+    33889 wires
+   107344 wire bits
+    20997 public wires
+    91840 public wire bits
+       46 ports
+      304 port bits
+        1 memories
+      768 memory bits
+        4 processes
+    12803 cells
+        2   $add
+     6754   $and
+      592   $eq
+        1   $lt
+        2   $mul
+       87   $mux
+       64   $not
+      186   $or
+     2550   $reduce_and
+     2560   $reduce_or
+        4   $shiftx
+        1   $shl
+        3 submodules
+        1   AsyncResetSynchronizerShiftReg_w1_d3_i0
+        1   TLMonitor_32
+        1   TLMonitor_33
+
+=== TLDebugModuleInnerAsync ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      183 wires
+      875 wire bits
+      183 public wires
+      875 public wire bits
+       52 ports
+      304 port bits
+        4 submodules
+        1   AsyncQueueSink_DebugInternalBundle
+        1   AsyncResetSynchronizerShiftReg_w1_d3_i0
+        1   TLAsyncCrossingSink_a9d32s1k1z2u
+        1   TLDebugModuleInner
+
+=== TLBusBypass ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      166 wires
+      974 wire bits
+      166 public wires
+      974 public wire bits
+       33 ports
+      185 port bits
+        2 submodules
+        1   TLBusBypassBar
+        1   TLError_1
+
+=== TLBusBypassBar ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      315 wires
+     1475 wire bits
+      254 public wires
+     1374 public wire bits
+       45 ports
+      361 port bits
+        1 memories
+       32 memory bits
+        2 processes
+       55 cells
+        3   $add
+       19   $and
+        1   $eq
+        9   $mux
+        1   $ne
+       16   $not
+        1   $or
+        1   $reduce_or
+        4   $sub
+        1 submodules
+        1   TLMonitor_29
+
+=== TLBuffer_a32d64s4k2z4u ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      164 wires
+     1268 wire bits
+      164 public wires
+     1268 public wire bits
+       56 ports
+      424 port bits
+        3 submodules
+        1   Queue2_TLBundleA_a32d64s4k2z4u
+        1   Queue2_TLBundleD_a32d64s4k2z4u
+        1   TLMonitor_5
+
+=== TLBuffer_a32d64s4k2z4u_1 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      162 wires
+     1264 wire bits
+      162 public wires
+     1264 public wire bits
+       54 ports
+      420 port bits
+        3 submodules
+        1   Queue2_TLBundleA_a32d64s4k2z4u
+        1   Queue2_TLBundleD_a32d64s4k2z4u
+        1   TLMonitor_6
+
+=== TLBuffer_a32d64s2k2z4c_1 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      322 wires
+     2592 wire bits
+      322 public wires
+     2592 public wire bits
+       98 ports
+      804 port bits
+        6 submodules
+        1   Queue2_TLBundleA_a32d64s2k2z4c
+        1   Queue2_TLBundleB_a32d64s2k2z4c
+        1   Queue2_TLBundleC_a32d64s2k2z4c
+        1   Queue2_TLBundleD_a32d64s2k2z4c
+        1   Queue2_TLBundleE_a32d64s2k2z4c
+        1   TLMonitor_24
+
+=== TLBuffer_a28d64s5k1z4u ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      122 wires
+     1208 wire bits
+      122 public wires
+     1208 public wire bits
+       42 ports
+      404 port bits
+        3 submodules
+        1   Queue2_TLBundleA_a28d64s5k1z4u
+        1   Queue2_TLBundleD_a28d64s5k1z4u
+        1   TLMonitor_10
+
+=== TLBuffer_a14d64s5k1z4u ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      118 wires
+     1056 wire bits
+      118 public wires
+     1056 public wire bits
+       38 ports
+      308 port bits
+        3 submodules
+        1   Queue2_TLBundleA_a14d64s5k1z4u
+        1   Queue2_TLBundleD_a28d64s5k1z4u
+        1   TLMonitor_13
+
+=== TLBroadcastTracker ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      196 wires
+      860 wire bits
+      126 public wires
+      744 public wire bits
+       49 ports
+      302 port bits
+        1 memories
+       64 memory bits
+        3 processes
+       53 cells
+       20   $and
+        1   $eq
+        4   $mux
+        2   $ne
+       15   $not
+        9   $or
+        1   $reduce_and
+        1   $sub
+        1 submodules
+        1   Queue8_TLBroadcastData
+
+=== TLBroadcastTracker_3 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      196 wires
+      860 wire bits
+      126 public wires
+      744 public wire bits
+       49 ports
+      302 port bits
+        1 memories
+       64 memory bits
+        3 processes
+       53 cells
+       20   $and
+        1   $eq
+        4   $mux
+        2   $ne
+       15   $not
+        9   $or
+        1   $reduce_and
+        1   $sub
+        1 submodules
+        1   Queue8_TLBroadcastData
+
+=== TLBroadcastTracker_2 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      196 wires
+      860 wire bits
+      126 public wires
+      744 public wire bits
+       49 ports
+      302 port bits
+        1 memories
+       64 memory bits
+        3 processes
+       53 cells
+       20   $and
+        1   $eq
+        4   $mux
+        2   $ne
+       15   $not
+        9   $or
+        1   $reduce_and
+        1   $sub
+        1 submodules
+        1   Queue8_TLBroadcastData
+
+=== TLBroadcastTracker_1 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      196 wires
+      860 wire bits
+      126 public wires
+      744 public wire bits
+       49 ports
+      302 port bits
+        1 memories
+       64 memory bits
+        3 processes
+       53 cells
+       20   $and
+        1   $eq
+        4   $mux
+        2   $ne
+       15   $not
+        9   $or
+        1   $reduce_and
+        1   $sub
+        1 submodules
+        1   Queue8_TLBroadcastData
+
+=== TLBroadcast ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     1264 wires
+     5770 wire bits
+      679 public wires
+     3808 public wire bits
+       75 ports
+      582 port bits
+        1 memories
+       64 memory bits
+        3 processes
+      569 cells
+      203   $and
+       47   $eq
+        1   $gt
+       82   $mux
+        2   $ne
+       68   $not
+      138   $or
+        5   $reduce_and
+        8   $reduce_or
+       10   $shl
+        5   $sub
+        6 submodules
+        1   BroadcastFilter
+        1   TLBroadcastTracker
+        1   TLBroadcastTracker_1
+        1   TLBroadcastTracker_2
+        1   TLBroadcastTracker_3
+        1   TLMonitor_20
+
+=== TLAtomicAutomata_cbus ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      810 wires
+     5791 wire bits
+      518 public wires
+     3876 public wire bits
+       42 ports
+      404 port bits
+        1 memories
+      224 memory bits
+        3 processes
+      271 cells
+        2   $add
+       69   $and
+       16   $eq
+        1   $gt
+        3   $lt
+        1   $mul
+       29   $mux
+       29   $not
+       45   $or
+        1   $reduce_and
+        4   $reduce_or
+        1   $shiftx
+        3   $shl
+       64   $shr
+        2   $sub
+        1   $xor
+        1 submodules
+        1   TLMonitor_11
+
+=== TLAsyncCrossingSource_a9d32s1k1z2u ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      200 wires
+      859 wire bits
+      200 public wires
+      859 public wire bits
+       36 ports
+      187 port bits
+        3 submodules
+        1   AsyncQueueSink_TLBundleD_a9d32s1k1z2u
+        1   AsyncQueueSource_TLBundleA_a9d32s1k1z2u
+        1   TLMonitor_31
+
+=== TLAsyncCrossingSink_a9d32s1k1z2u ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      201 wires
+      865 wire bits
+      201 public wires
+      865 public wire bits
+       37 ports
+      193 port bits
+        2 submodules
+        1   AsyncQueueSink_TLBundleA_a9d32s1k1z2u
+        1   AsyncQueueSource_TLBundleD_a9d32s1k1z2u
+
+=== TilePRCIDomain ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      388 wires
+     3326 wire bits
+      388 public wires
+     3326 public wire bits
+       68 ports
+      608 port bits
+       11 submodules
+        1   IntSyncAsyncCrossingSink_n1x1
+        3   IntSyncCrossingSource_n1x1
+        4   IntSyncSyncCrossingSink_n1x1
+        1   IntSyncSyncCrossingSink_n1x2
+        1   RocketTile
+        1   TLBuffer_a32d64s2k2z4c_1
+
+=== SystemBus ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     1757 wires
+    13523 wire bits
+     1757 public wires
+    13523 public wire bits
+      208 ports
+     1452 port bits
+        4 submodules
+        1   FixedClockBroadcast_3
+        1   TLFIFOFixer
+        1   TLInterconnectCoupler_sbus_to_port_named_mmio_port_axi4
+        1   TLXbar_sbus_i2_o3_a32d64s5k2z4c
+
+=== SynchronizerShiftReg_w2_d3 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        7 wires
+       11 wire bits
+        7 public wires
+       11 public wire bits
+        3 ports
+        5 port bits
+        2 submodules
+        2   NonSyncResetSynchronizerPrimitiveShiftReg_d3
+
+=== SynchronizerShiftReg_w1_d3 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        6 wires
+        6 wire bits
+        6 public wires
+        6 public wire bits
+        3 ports
+        3 port bits
+        1 submodules
+        1   NonSyncResetSynchronizerPrimitiveShiftReg_d3
+
+=== ShiftQueue ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      429 wires
+     2886 wire bits
+      219 public wires
+     1611 public wire bits
+       35 ports
+      251 port bits
+        1 memories
+      640 memory bits
+        2 processes
+      131 cells
+        4   $add
+       35   $and
+       70   $mux
+        8   $not
+       14   $or
+
+=== RVCExpander ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      619 wires
+     7166 wire bits
+      465 public wires
+     6202 public wire bits
+        7 ports
+       85 port bits
+      154 cells
+        6   $add
+        6   $and
+       38   $eq
+        6   $mul
+       34   $mux
+        2   $ne
+        9   $not
+       24   $or
+        3   $reduce_and
+       20   $reduce_or
+        6   $shiftx
+
+=== RocketTile ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     1468 wires
+    12476 wire bits
+     1467 public wires
+    12475 public wire bits
+       64 ports
+      680 port bits
+        1 memories
+       32 memory bits
+        2 processes
+        7 submodules
+        1   DCache
+        1   Frontend
+        1   HellaCacheArbiter
+        1   IntXbar_i3_o1
+        1   PTW
+        1   Rocket
+        1   TLXbar_MasterXbar_RocketTile_i2_o1_a32d64s2k2z4c
+
+=== rockettile_icache_tag_array_0_64x21 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       28 wires
+      289 wire bits
+       10 public wires
+       91 public wire bits
+        6 ports
+       51 port bits
+        1 memories
+     1344 memory bits
+        1 processes
+        6 cells
+        3   $and
+        1   $memrd
+        1   $mux
+        1   $not
+
+=== rockettile_icache_data_arrays_512x32 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       28 wires
+      417 wire bits
+       10 public wires
+      119 public wire bits
+        6 ports
+       76 port bits
+        1 memories
+    16384 memory bits
+        1 processes
+        6 cells
+        3   $and
+        1   $memrd
+        1   $mux
+        1   $not
+
+=== rockettile_dcache_tag_array_0_64x22 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       28 wires
+      299 wire bits
+       10 public wires
+       93 public wire bits
+        6 ports
+       53 port bits
+        1 memories
+     1408 memory bits
+        1 processes
+        6 cells
+        3   $and
+        1   $memrd
+        1   $mux
+        1   $not
+
+=== rockettile_dcache_data_arrays_0_512x64 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      106 wires
+     3668 wire bits
+       11 public wires
+      223 public wire bits
+        7 ports
+      148 port bits
+        1 memories
+    32768 memory bits
+        1 processes
+       20 cells
+       17   $and
+        1   $memrd
+        1   $mux
+        1   $not
+
+=== Rocket ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     4939 wires
+    24697 wire bits
+     3911 public wires
+    19177 public wire bits
+      248 ports
+     2295 port bits
+        1 memories
+     1440 memory bits
+        3 processes
+      817 cells
+        7   $add
+      192   $and
+       77   $eq
+        4   $mul
+       80   $mux
+        4   $ne
+       99   $not
+      208   $or
+        1   $pos
+       91   $reduce_and
+        1   $reduce_bool
+       41   $reduce_or
+        4   $shiftx
+        4   $shl
+        3   $shr
+        1   $xor
+        8 submodules
+        1   Arbiter3_LLWB
+        1   BreakpointUnit
+        1   CSRFile
+        1   IBuf
+        1   MulDiv
+        1   PlusArgTimeout
+        1   RocketALU
+        1   rf_31x64
+
+=== RocketALU ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      443 wires
+    11162 wire bits
+      104 public wires
+     3390 public wire bits
+        7 ports
+      263 port bits
+      339 cells
+       66   $add
+       66   $and
+       20   $eq
+        1   $gt
+        1   $mul
+       87   $mux
+        3   $not
+       78   $or
+        9   $reduce_or
+        1   $shiftx
+        1   $shr
+        1   $sshr
+        2   $sub
+        3   $xor
+
+=== rf_31x64 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       27 wires
+      933 wire bits
+       13 public wires
+      277 public wire bits
+       12 ports
+      213 port bits
+        1 memories
+     1984 memory bits
+        1 processes
+        5 cells
+        1   $and
+        2   $memrd
+        2   $mux
+
+=== TLXbar_sbus_i2_o3_a32d64s5k2z4c ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     1954 wires
+    13028 wire bits
+     1376 public wires
+    10197 public wire bits
+      172 ports
+     1356 port bits
+        1 memories
+       96 memory bits
+        3 processes
+      535 cells
+      167   $and
+       14   $eq
+      121   $mux
+        5   $ne
+       67   $not
+      145   $or
+        5   $reduce_or
+        6   $shl
+        5   $sub
+        2 submodules
+        1   TLMonitor
+        1   TLMonitor_1
+
+=== Repeater_TLBundleA_a28d64s5k1z3u ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       84 wires
+      770 wire bits
+       55 public wires
+      527 public wire bits
+       23 ports
+      174 port bits
+        1 memories
+      128 memory bits
+        2 processes
+       19 cells
+        6   $and
+        8   $mux
+        3   $not
+        2   $or
+
+=== Repeater_TLBundleA_a26d64s5k1z3u ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       84 wires
+      756 wire bits
+       55 public wires
+      517 public wire bits
+       23 ports
+      170 port bits
+        1 memories
+      128 memory bits
+        2 processes
+       19 cells
+        6   $and
+        8   $mux
+        3   $not
+        2   $or
+
+=== Repeater_TLBundleA_a17d64s5k1z3u ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       84 wires
+      693 wire bits
+       55 public wires
+      472 public wire bits
+       23 ports
+      152 port bits
+        1 memories
+      128 memory bits
+        2 processes
+       19 cells
+        6   $and
+        8   $mux
+        3   $not
+        2   $or
+
+=== Repeater_TLBundleA_a12d64s5k1z3u ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       84 wires
+      658 wire bits
+       55 public wires
+      447 public wire bits
+       23 ports
+      142 port bits
+        1 memories
+      128 memory bits
+        2 processes
+       19 cells
+        6   $and
+        8   $mux
+        3   $not
+        2   $or
+
+=== ram_sink_2x2 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       21 wires
+       62 wire bits
+        9 public wires
+       42 public wire bits
+        8 ports
+       10 port bits
+        1 memories
+        4 memory bits
+        1 processes
+        3 cells
+        1   $and
+        1   $memrd
+        1   $mux
+
+=== ram_8x9 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       21 wires
+      142 wire bits
+        9 public wires
+       60 public wire bits
+        8 ports
+       28 port bits
+        1 memories
+       72 memory bits
+        1 processes
+        3 cells
+        1   $and
+        1   $memrd
+        1   $mux
+
+=== ram_8x80 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       21 wires
+      916 wire bits
+        9 public wires
+      266 public wire bits
+        8 ports
+      170 port bits
+        1 memories
+      640 memory bits
+        1 processes
+        3 cells
+        1   $and
+        1   $memrd
+        1   $mux
+
+=== ram_8x72 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       21 wires
+      836 wire bits
+        9 public wires
+      250 public wire bits
+        8 ports
+      154 port bits
+        1 memories
+      576 memory bits
+        1 processes
+        3 cells
+        1   $and
+        1   $memrd
+        1   $mux
+
+=== ram_8x14 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       21 wires
+      192 wire bits
+        9 public wires
+       70 public wire bits
+        8 ports
+       38 port bits
+        1 memories
+      112 memory bits
+        1 processes
+        3 cells
+        1   $and
+        1   $memrd
+        1   $mux
+
+=== ram_4x8 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       21 wires
+      127 wire bits
+        9 public wires
+       56 public wire bits
+        8 ports
+       24 port bits
+        1 memories
+       32 memory bits
+        1 processes
+        3 cells
+        1   $and
+        1   $memrd
+        1   $mux
+
+=== ram_2x81 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       21 wires
+      916 wire bits
+        9 public wires
+      264 public wire bits
+        8 ports
+      168 port bits
+        1 memories
+      162 memory bits
+        1 processes
+        3 cells
+        1   $and
+        1   $memrd
+        1   $mux
+
+=== TLXbar_MasterXbar_RocketTile_i2_o1_a32d64s2k2z4c ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      826 wires
+     6198 wire bits
+      725 public wires
+     5715 public wire bits
+      107 ports
+      986 port bits
+        1 memories
+       32 memory bits
+        3 processes
+       94 cells
+       28   $and
+        3   $eq
+       18   $mux
+        1   $ne
+       18   $not
+       20   $or
+        1   $reduce_or
+        4   $shl
+        1   $sub
+        2 submodules
+        1   TLMonitor_22
+        1   TLMonitor_23
+
+=== ram_2x79 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       21 wires
+      896 wire bits
+        9 public wires
+      260 public wire bits
+        8 ports
+      164 port bits
+        1 memories
+      158 memory bits
+        1 processes
+        3 cells
+        1   $and
+        1   $memrd
+        1   $mux
+
+=== ram_2x73 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       21 wires
+      836 wire bits
+        9 public wires
+      248 public wire bits
+        8 ports
+      152 port bits
+        1 memories
+      146 memory bits
+        1 processes
+        3 cells
+        1   $and
+        1   $memrd
+        1   $mux
+
+=== TLXbar_dmixbar_i1_o2_a9d32s1k1z2u ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      445 wires
+     1887 wire bits
+      355 public wires
+     1671 public wire bits
+       40 ports
+      264 port bits
+        1 memories
+       32 memory bits
+        3 processes
+       83 cells
+       24   $and
+        7   $eq
+       11   $mux
+        1   $ne
+       16   $not
+       18   $or
+        1   $reduce_or
+        1   $sub
+        4   $xor
+        1 submodules
+        1   TLMonitor_27
+
+=== ram_2x71 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       21 wires
+      816 wire bits
+        9 public wires
+      244 public wire bits
+        8 ports
+      148 port bits
+        1 memories
+      142 memory bits
+        1 processes
+        3 cells
+        1   $and
+        1   $memrd
+        1   $mux
+
+=== ram_2x6 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       21 wires
+      102 wire bits
+        9 public wires
+       50 public wire bits
+        8 ports
+       18 port bits
+        1 memories
+       12 memory bits
+        1 processes
+        3 cells
+        1   $and
+        1   $memrd
+        1   $mux
+
+=== TLXbar_cbus_out_i1_o5_a28d64s5k1z4u ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      992 wires
+     8436 wire bits
+      799 public wires
+     7288 public wire bits
+      105 ports
+     1134 port bits
+        1 memories
+       32 memory bits
+        3 processes
+      177 cells
+       40   $and
+        5   $eq
+       41   $mux
+        1   $ne
+       26   $not
+       56   $or
+        1   $reduce_or
+        6   $shl
+        1   $sub
+        1 submodules
+        1   TLMonitor_9
+
+=== TLToAXI4 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      588 wires
+     2761 wire bits
+      391 public wires
+     2389 public wire bits
+       72 ports
+      522 port bits
+        1 memories
+       32 memory bits
+        3 processes
+      181 cells
+        7   $add
+       49   $and
+       15   $eq
+        1   $gt
+        1   $mul
+       10   $mux
+        5   $ne
+       57   $not
+       18   $or
+        2   $reduce_and
+        6   $reduce_or
+        2   $shiftx
+        2   $shl
+        6   $sub
+        3 submodules
+        1   Queue1_AXI4BundleARW
+        1   Queue1_AXI4BundleW
+        1   TLMonitor_4
+
+=== ram_2x60 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       21 wires
+      674 wire bits
+        9 public wires
+      190 public wire bits
+        8 ports
+      126 port bits
+        1 memories
+      120 memory bits
+        1 processes
+        3 cells
+        1   $and
+        1   $memrd
+        1   $mux
+
+=== ram_2x126 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       21 wires
+     1398 wire bits
+        9 public wires
+      386 public wire bits
+        8 ports
+      258 port bits
+        1 memories
+      252 memory bits
+        1 processes
+        3 cells
+        1   $and
+        1   $memrd
+        1   $mux
+
+=== ram_2x124 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       21 wires
+     1378 wire bits
+        9 public wires
+      382 public wire bits
+        8 ports
+      254 port bits
+        1 memories
+      248 memory bits
+        1 processes
+        3 cells
+        1   $and
+        1   $memrd
+        1   $mux
+
+=== ram_2x116 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       21 wires
+     1298 wire bits
+        9 public wires
+      366 public wire bits
+        8 ports
+      238 port bits
+        1 memories
+      232 memory bits
+        1 processes
+        3 cells
+        1   $and
+        1   $memrd
+        1   $mux
+
+=== ram_2x102 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       21 wires
+     1158 wire bits
+        9 public wires
+      338 public wire bits
+        8 ports
+      210 port bits
+        1 memories
+      204 memory bits
+        1 processes
+        3 cells
+        1   $and
+        1   $memrd
+        1   $mux
+
+=== Queue8_TLBroadcastData ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       50 wires
+      420 wire bits
+       31 public wires
+      391 public wire bits
+       10 ports
+      150 port bits
+        1 memories
+       32 memory bits
+        2 processes
+       16 cells
+        2   $add
+        5   $and
+        2   $eq
+        4   $not
+        2   $reduce_and
+        1   $sub
+        1 submodules
+        1   ram_8x72
+
+=== Queue8_BundleMap ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       50 wires
+      105 wire bits
+       31 public wires
+       76 public wire bits
+       10 ports
+       24 port bits
+        1 memories
+       32 memory bits
+        2 processes
+       16 cells
+        2   $add
+        5   $and
+        2   $eq
+        4   $not
+        2   $reduce_and
+        1   $sub
+        1 submodules
+        1   ram_8x9
+
+=== Queue8_BundleMap_4 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       54 wires
+      130 wire bits
+       35 public wires
+      101 public wire bits
+       12 ports
+       34 port bits
+        1 memories
+       32 memory bits
+        2 processes
+       16 cells
+        2   $add
+        5   $and
+        2   $eq
+        4   $not
+        2   $reduce_and
+        1   $sub
+        1 submodules
+        1   ram_8x14
+
+=== Queue8_AXI4BundleR ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       65 wires
+      459 wire bits
+       46 public wires
+      430 public wire bits
+       17 ports
+      165 port bits
+        1 memories
+       32 memory bits
+        2 processes
+       16 cells
+        2   $add
+        5   $and
+        2   $eq
+        4   $not
+        2   $reduce_and
+        1   $sub
+        1 submodules
+        1   ram_8x80
+
+=== Queue4_BundleMap ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       50 wires
+       91 wire bits
+       31 public wires
+       67 public wire bits
+       10 ports
+       22 port bits
+        1 memories
+       32 memory bits
+        2 processes
+       16 cells
+        2   $add
+        5   $and
+        2   $eq
+        4   $not
+        2   $reduce_and
+        1   $sub
+        1 submodules
+        1   ram_4x8
+
+=== TLToAXI4_1 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     4356 wires
+     8193 wire bits
+     1590 public wires
+     5291 public wire bits
+       71 ports
+      550 port bits
+        1 memories
+      288 memory bits
+        3 processes
+     2504 cells
+      130   $add
+      662   $and
+      257   $eq
+        1   $gt
+        1   $mul
+       10   $mux
+        1   $ne
+     1041   $not
+      262   $or
+        4   $reduce_and
+        2   $reduce_or
+        2   $shiftx
+        2   $shl
+      129   $sub
+        3 submodules
+        1   Queue1_AXI4BundleARW_1
+        1   Queue1_AXI4BundleW
+        1   TLMonitor_19
+
+=== Queue2_TLBundleE_a32d64s2k2z4c ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       41 wires
+       46 wire bits
+       25 public wires
+       30 public wire bits
+        7 ports
+        9 port bits
+        1 memories
+       32 memory bits
+        2 processes
+       13 cells
+        4   $and
+        2   $eq
+        4   $not
+        3   $sub
+        1 submodules
+        1   ram_sink_2x2
+
+=== Queue2_TLBundleD_a32d64s4k2z4u ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       72 wires
+      445 wire bits
+       55 public wires
+      428 public wire bits
+       22 ports
+      168 port bits
+        1 memories
+       32 memory bits
+        2 processes
+       14 cells
+        5   $and
+        2   $eq
+        4   $not
+        3   $sub
+        1 submodules
+        1   ram_2x81
+
+=== Queue2_TLBundleD_a32d64s2k2z4c ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       72 wires
+      435 wire bits
+       55 public wires
+      418 public wire bits
+       22 ports
+      164 port bits
+        1 memories
+       32 memory bits
+        2 processes
+       14 cells
+        5   $and
+        2   $eq
+        4   $not
+        3   $sub
+        1 submodules
+        1   ram_2x79
+
+=== Queue2_TLBundleD_a28d64s5k1z4u ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       72 wires
+      445 wire bits
+       55 public wires
+      428 public wire bits
+       22 ports
+      168 port bits
+        1 memories
+       32 memory bits
+        2 processes
+       14 cells
+        5   $and
+        2   $eq
+        4   $not
+        3   $sub
+        1 submodules
+        1   ram_2x81
+
+=== Queue2_TLBundleC_a32d64s2k2z4c ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       88 wires
+      612 wire bits
+       71 public wires
+      595 public wire bits
+       26 ports
+      230 port bits
+        1 memories
+       32 memory bits
+        2 processes
+       14 cells
+        5   $and
+        2   $eq
+        4   $not
+        3   $sub
+        1 submodules
+        1   ram_2x116
+
+=== Queue2_TLBundleB_a32d64s2k2z4c ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       66 wires
+      538 wire bits
+       49 public wires
+      521 public wire bits
+       16 ports
+      156 port bits
+        1 memories
+       32 memory bits
+        2 processes
+       14 cells
+        5   $and
+        2   $eq
+        4   $not
+        3   $sub
+        1 submodules
+        1   ram_2x116
+
+=== Queue2_TLBundleA_a32d64s4k2z4u ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      100 wires
+      670 wire bits
+       83 public wires
+      653 public wire bits
+       36 ports
+      258 port bits
+        1 memories
+       32 memory bits
+        2 processes
+       14 cells
+        5   $and
+        2   $eq
+        4   $not
+        3   $sub
+        1 submodules
+        1   ram_2x126
+
+=== Queue2_TLBundleA_a32d64s2k2z4c ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       99 wires
+      659 wire bits
+       82 public wires
+      642 public wire bits
+       35 ports
+      253 port bits
+        1 memories
+       32 memory bits
+        2 processes
+       14 cells
+        5   $and
+        2   $eq
+        4   $not
+        3   $sub
+        1 submodules
+        1   ram_2x124
+
+=== Queue2_TLBundleA_a28d64s5k1z4u ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       72 wires
+      620 wire bits
+       55 public wires
+      603 public wire bits
+       22 ports
+      238 port bits
+        1 memories
+       32 memory bits
+        2 processes
+       14 cells
+        5   $and
+        2   $eq
+        4   $not
+        3   $sub
+        1 submodules
+        1   ram_2x116
+
+=== Queue2_TLBundleA_a14d64s5k1z4u ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       72 wires
+      550 wire bits
+       55 public wires
+      533 public wire bits
+       22 ports
+      210 port bits
+        1 memories
+       32 memory bits
+        2 processes
+       14 cells
+        5   $and
+        2   $eq
+        4   $not
+        3   $sub
+        1 submodules
+        1   ram_2x102
+
+=== Queue2_AXI4BundleW ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       52 wires
+      405 wire bits
+       35 public wires
+      388 public wire bits
+       12 ports
+      152 port bits
+        1 memories
+       32 memory bits
+        2 processes
+       14 cells
+        5   $and
+        2   $eq
+        4   $not
+        3   $sub
+        1 submodules
+        1   ram_2x73
+
+=== Queue2_AXI4BundleR ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       56 wires
+      395 wire bits
+       39 public wires
+      378 public wire bits
+       14 ports
+      148 port bits
+        1 memories
+       32 memory bits
+        2 processes
+       14 cells
+        5   $and
+        2   $eq
+        4   $not
+        3   $sub
+        1 submodules
+        1   ram_2x71
+
+=== TLROM ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      585 wires
+    66401 wire bits
+      580 public wires
+    66208 public wire bits
+       17 ports
+      188 port bits
+        5 cells
+        1   $add
+        1   $mul
+        1   $mux
+        1   $reduce_or
+        1   $shiftx
+        1 submodules
+        1   TLMonitor_34
+
+=== Queue2_AXI4BundleB ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       48 wires
+       70 wire bits
+       31 public wires
+       53 public wire bits
+       10 ports
+       18 port bits
+        1 memories
+       32 memory bits
+        2 processes
+       14 cells
+        5   $and
+        2   $eq
+        4   $not
+        3   $sub
+        1 submodules
+        1   ram_2x6
+
+=== TLPLIC ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      623 wires
+     2667 wire bits
+      409 public wires
+     2012 public wire bits
+       21 ports
+      205 port bits
+        1 memories
+       32 memory bits
+        3 processes
+      203 cells
+       98   $and
+       45   $eq
+        1   $gt
+        8   $mux
+        1   $ne
+       11   $not
+        8   $or
+       14   $reduce_and
+       13   $reduce_or
+        1   $shl
+        1   $shr
+        2   $sub
+        5 submodules
+        2   LevelGateway
+        1   PLICFanIn
+        1   Queue1_RegMapperInput_i23_m8
+        1   TLMonitor_26
+
+=== Queue2_AXI4BundleAW ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       76 wires
+      340 wire bits
+       59 public wires
+      323 public wire bits
+       24 ports
+      126 port bits
+        1 memories
+       32 memory bits
+        2 processes
+       14 cells
+        5   $and
+        2   $eq
+        4   $not
+        3   $sub
+        1 submodules
+        1   ram_2x60
+
+=== TLMonitor ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      903 wires
+     9370 wire bits
+      323 public wires
+     4446 public wire bits
+       29 ports
+      213 port bits
+        1 memories
+      608 memory bits
+        3 processes
+      515 cells
+        6   $add
+      210   $and
+       48   $eq
+        3   $gt
+        7   $lt
+        4   $mul
+       19   $mux
+       17   $ne
+      105   $not
+       47   $or
+        4   $reduce_and
+       10   $reduce_or
+        4   $shiftx
+       16   $shl
+        7   $shr
+        5   $sub
+        1   $xor
+        2   plusarg_reader
+
+=== TLMonitor_9 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      918 wires
+    12373 wire bits
+      322 public wires
+     6067 public wire bits
+       22 ports
+      203 port bits
+        1 memories
+      672 memory bits
+        3 processes
+      531 cells
+        6   $add
+      210   $and
+       55   $eq
+        3   $gt
+        6   $lt
+        4   $mul
+       19   $mux
+       16   $ne
+      103   $not
+       55   $or
+        7   $reduce_and
+       12   $reduce_or
+        4   $shiftx
+       16   $shl
+        7   $shr
+        5   $sub
+        1   $xor
+        2   plusarg_reader
+
+=== Queue1_TLBundleA_a14d64s5k1z4u ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       57 wires
+      550 wire bits
+       48 public wires
+      440 public wire bits
+       17 ports
+      120 port bits
+        1 memories
+      128 memory bits
+        2 processes
+        7 cells
+        2   $and
+        1   $eq
+        4   $not
+
+=== Queue1_RegMapperInput_i23_m8 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       54 wires
+      670 wire bits
+       45 public wires
+      555 public wire bits
+       18 ports
+      220 port bits
+        1 memories
+      128 memory bits
+        2 processes
+        7 cells
+        2   $and
+        1   $eq
+        4   $not
+
+=== Queue1_BundleMap ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       38 wires
+       82 wire bits
+       29 public wires
+       65 public wire bits
+       10 ports
+       24 port bits
+        1 memories
+       32 memory bits
+        2 processes
+        7 cells
+        2   $and
+        1   $eq
+        4   $not
+
+=== Queue1_AXI4BundleW ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       51 wires
+      545 wire bits
+       33 public wires
+      385 public wire bits
+       12 ports
+      152 port bits
+        1 memories
+       96 memory bits
+        2 processes
+       16 cells
+        5   $and
+        1   $eq
+        3   $mux
+        6   $not
+        1   $or
+
+=== Queue1_AXI4BundleR ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       56 wires
+      510 wire bits
+       37 public wires
+      360 public wire bits
+       14 ports
+      142 port bits
+        1 memories
+       96 memory bits
+        2 processes
+       17 cells
+        5   $and
+        1   $eq
+        4   $mux
+        6   $not
+        1   $or
+
+=== Queue1_AXI4BundleB ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       46 wires
+       55 wire bits
+       29 public wires
+       35 public wire bits
+       10 ports
+       12 port bits
+        1 memories
+       32 memory bits
+        2 processes
+       15 cells
+        5   $and
+        1   $eq
+        2   $mux
+        6   $not
+        1   $or
+
+=== Queue1_AXI4BundleARW ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       94 wires
+      511 wire bits
+       66 public wires
+      358 public wire bits
+       27 ports
+      137 port bits
+        1 memories
+       96 memory bits
+        2 processes
+       26 cells
+        6   $and
+        1   $eq
+       11   $mux
+        7   $not
+        1   $or
+
+=== Queue1_AXI4BundleARW_1 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       94 wires
+      560 wire bits
+       66 public wires
+      393 public wire bits
+       27 ports
+      151 port bits
+        1 memories
+       96 memory bits
+        2 processes
+       26 cells
+        6   $and
+        1   $eq
+       11   $mux
+        7   $not
+        1   $or
+
+=== Queue1_AXI4BundleAR ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       86 wires
+      489 wire bits
+       61 public wires
+      345 public wire bits
+       26 ports
+      136 port bits
+        1 memories
+       96 memory bits
+        2 processes
+       23 cells
+        5   $and
+        1   $eq
+       10   $mux
+        6   $not
+        1   $or
+
+=== TLMonitor_8 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      918 wires
+    12373 wire bits
+      322 public wires
+     6067 public wire bits
+       22 ports
+      203 port bits
+        1 memories
+      672 memory bits
+        3 processes
+      531 cells
+        6   $add
+      210   $and
+       55   $eq
+        3   $gt
+        6   $lt
+        4   $mul
+       19   $mux
+       16   $ne
+      103   $not
+       55   $or
+        7   $reduce_and
+       12   $reduce_or
+        4   $shiftx
+       16   $shl
+        7   $shr
+        5   $sub
+        1   $xor
+        2   plusarg_reader
+
+=== TLMonitor_7 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      874 wires
+     9335 wire bits
+      319 public wires
+     4438 public wire bits
+       27 ports
+      209 port bits
+        1 memories
+      608 memory bits
+        3 processes
+      492 cells
+        6   $add
+      196   $and
+       48   $eq
+        1   $gt
+        7   $lt
+        4   $mul
+       19   $mux
+       16   $ne
+      104   $not
+       47   $or
+        4   $reduce_and
+        5   $reduce_or
+        4   $shiftx
+       16   $shl
+        7   $shr
+        5   $sub
+        1   $xor
+        2   plusarg_reader
+
+=== PTW ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     2107 wires
+    16594 wire bits
+     1579 public wires
+    13330 public wire bits
+      412 ports
+     3359 port bits
+        1 memories
+     1216 memory bits
+        2 processes
+      503 cells
+        2   $add
+       88   $and
+       31   $eq
+        8   $ge
+       16   $lt
+      145   $mux
+        2   $ne
+       70   $not
+       66   $or
+       11   $reduce_and
+       38   $reduce_or
+       26   $xor
+        3 submodules
+        1   Arbiter2_Valid_PTWReq
+        1   OptimizationBarrier_PTE
+        1   OptimizationBarrier_UInt
+
+=== ProbePicker ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      158 wires
+     1278 wire bits
+      158 public wires
+     1278 public wire bits
+       50 ports
+      422 port bits
+        1 submodules
+        1   TLMonitor_18
+
+=== PMPChecker_s3 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      880 wires
+     5036 wire bits
+      406 public wires
+     2401 public wire bits
+       62 ports
+      583 port bits
+      474 cells
+      125   $and
+       55   $eq
+       30   $lt
+       71   $mux
+       77   $not
+       69   $or
+        1   $shl
+       46   $xor
+
+=== PMPChecker_s2 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      450 wires
+     3407 wire bits
+      284 public wires
+     2009 public wire bits
+       61 ports
+      581 port bits
+      166 cells
+       32   $and
+        8   $eq
+        7   $ge
+        8   $lt
+       63   $mux
+       16   $not
+       24   $or
+        8   $xor
+
+=== PMAChecker ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      101 wires
+      200 wire bits
+       24 public wires
+      108 public wire bits
+        9 ports
+       42 port bits
+       77 cells
+        7   $and
+       10   $eq
+       23   $not
+       19   $or
+       16   $reduce_or
+        2   $xor
+
+=== PlusArgTimeout ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       10 wires
+      103 wire bits
+        5 public wires
+       98 public wire bits
+        3 ports
+       34 port bits
+        1 processes
+        6 cells
+        2   $and
+        1   $ge
+        1   $not
+        1   $reduce_or
+        1   plusarg_reader
+
+=== PLICFanIn ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       25 wires
+       51 wire bits
+       19 public wires
+       40 public wire bits
+        5 ports
+       10 port bits
+        6 cells
+        1   $ge
+        1   $lt
+        3   $mux
+        1   $not
+
+=== PLICClockSinkDomain ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       53 wires
+      422 wire bits
+       53 public wires
+      422 public wire bits
+       21 ports
+      205 port bits
+        2 submodules
+        1   IntSyncCrossingSource_n1x1
+        1   TLPLIC
+
+=== PeripheryBus_pbus ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       40 wires
+       40 wire bits
+       40 public wires
+       40 public wire bits
+        2 ports
+        2 port bits
+
+=== PeripheryBus_cbus ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      697 wires
+     6635 wire bits
+      690 public wires
+     6544 public wire bits
+       97 ports
+      983 port bits
+        7 cells
+        2   $mux
+        3   $not
+        2   $shl
+       10 submodules
+        1   ErrorDeviceWrapper
+        1   FixedClockBroadcast_5
+        1   TLAtomicAutomata_cbus
+        1   TLBuffer_a28d64s5k1z4u
+        1   TLFIFOFixer_3
+        1   TLInterconnectCoupler_cbus_to_bootrom
+        1   TLInterconnectCoupler_cbus_to_clint
+        1   TLInterconnectCoupler_cbus_to_debug
+        1   TLInterconnectCoupler_cbus_to_plic
+        1   TLXbar_cbus_out_i1_o5_a28d64s5k1z4u
+
+=== OptimizationBarrier_UInt ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        4 wires
+       12 wire bits
+        4 public wires
+       12 public wire bits
+        2 ports
+        6 port bits
+
+=== OptimizationBarrier_TLBEntryData ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       89 wires
+      146 wire bits
+       89 public wires
+      146 public wire bits
+       43 ports
+       62 port bits
+
+=== OptimizationBarrier_PTE ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       44 wires
+      256 wire bits
+       44 public wires
+      256 public wire bits
+       22 ports
+      128 port bits
+
+=== NonSyncResetSynchronizerPrimitiveShiftReg_d3 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       11 wires
+       11 wire bits
+        8 public wires
+        8 public wire bits
+        3 ports
+        3 port bits
+        1 memories
+       32 memory bits
+        2 processes
+
+=== MulDiv ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      197 wires
+     3858 wire bits
+      105 public wires
+     2709 public wire bits
+       14 ports
+      215 port bits
+        1 memories
+      352 memory bits
+        2 processes
+       73 cells
+        3   $add
+       18   $and
+       10   $eq
+        1   $mul
+       11   $mux
+        1   $ne
+       12   $not
+        5   $or
+        4   $reduce_and
+        3   $reduce_or
+        1   $shr
+        1   $sshr
+        3   $sub
+
+=== MemoryBus ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     2170 wires
+     9546 wire bits
+     1093 public wires
+     7595 public wire bits
+       63 ports
+      494 port bits
+        1 memories
+      288 memory bits
+        2 processes
+      946 cells
+      394   $and
+      260   $eq
+        8   $mux
+        1   $ne
+      139   $not
+      131   $or
+        3   $reduce_and
+        8   $shl
+        2   $sub
+        2 submodules
+        1   ProbePicker
+        1   TLInterconnectCoupler_mbus_to_memory_controller_port_named_axi4
+
+=== MaxPeriodFibonacciLFSR ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       88 wires
+       88 wire bits
+       69 public wires
+       69 public wire bits
+       19 ports
+       19 port bits
+        1 memories
+       32 memory bits
+        2 processes
+        3 cells
+        3   $xor
+
+=== LevelGateway ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       18 wires
+       18 wire bits
+       11 public wires
+       11 public wire bits
+        6 ports
+        6 port bits
+        1 memories
+       32 memory bits
+        2 processes
+        6 cells
+        3   $and
+        2   $not
+        1   $or
+
+=== ITLB ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     1022 wires
+     5714 wire bits
+      929 public wires
+     5431 public wire bits
+      163 ports
+     1299 port bits
+       93 cells
+       33   $and
+        6   $eq
+        1   $mux
+       30   $not
+       17   $or
+        4   $reduce_or
+        2   $xor
+        9 submodules
+        7   OptimizationBarrier_TLBEntryData
+        1   PMAChecker
+        1   PMPChecker_s2
+
+=== IntXbar_i3_o1 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       26 wires
+       26 wire bits
+       26 public wires
+       26 public wire bits
+        8 ports
+        8 port bits
+
+=== IntSyncSyncCrossingSink_n1x2 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       14 wires
+       14 wire bits
+       14 public wires
+       14 public wire bits
+        4 ports
+        4 port bits
+
+=== IntSyncSyncCrossingSink_n1x1 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        8 wires
+        8 wire bits
+        8 public wires
+        8 public wire bits
+        2 ports
+        2 port bits
+
+=== IntSyncCrossingSource_n1x2 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       15 wires
+       16 wire bits
+       15 public wires
+       16 public wire bits
+        6 ports
+        6 port bits
+        1 submodules
+        1   AsyncResetRegVec_w2_i0
+
+=== IntSyncCrossingSource_n1x1 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        8 wires
+        8 wire bits
+        8 public wires
+        8 public wire bits
+        4 ports
+        4 port bits
+        1 submodules
+        1   AsyncResetRegVec_w1_i0
+
+=== IntSyncCrossingSource_n1x1_Registered ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        8 wires
+        8 wire bits
+        8 public wires
+        8 public wire bits
+        2 ports
+        2 port bits
+
+=== IntSyncAsyncCrossingSink_n1x2 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       14 wires
+       15 wire bits
+       14 public wires
+       15 public wire bits
+        5 ports
+        5 port bits
+        1 submodules
+        1   SynchronizerShiftReg_w2_d3
+
+=== IntSyncAsyncCrossingSink_n1x1 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        7 wires
+        7 wire bits
+        7 public wires
+        7 public wire bits
+        3 ports
+        3 port bits
+        1 submodules
+        1   SynchronizerShiftReg_w1_d3
+
+=== ICache ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      367 wires
+     3361 wire bits
+      242 public wires
+     1892 public wire bits
+       29 ports
+      287 port bits
+        1 memories
+      288 memory bits
+        2 processes
+      106 cells
+       38   $and
+       11   $eq
+        6   $mux
+       25   $not
+       21   $or
+        1   $reduce_or
+        2   $shl
+        1   $shr
+        1   $sub
+        3 submodules
+        2   rockettile_icache_data_arrays_512x32
+        1   rockettile_icache_tag_array_0_64x21
+
+=== IBuf ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      261 wires
+     2484 wire bits
+      149 public wires
+     1429 public wire bits
+       45 ports
+      303 port bits
+        1 memories
+      192 memory bits
+        3 processes
+       85 cells
+        4   $add
+       17   $and
+        3   $ge
+        1   $lt
+       24   $mux
+       12   $not
+       11   $or
+        4   $shl
+        1   $shr
+        8   $sub
+        1 submodules
+        1   RVCExpander
+
+=== HellaCacheArbiter ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      226 wires
+     2274 wire bits
+      226 public wires
+     2274 public wire bits
+      100 ports
+     1046 port bits
+
+=== Frontend ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      670 wires
+     5288 wire bits
+      582 public wires
+     4969 public wire bits
+      215 ports
+     1737 port bits
+        1 memories
+      288 memory bits
+        3 processes
+       70 cells
+        1   $add
+       22   $and
+        2   $mux
+       25   $not
+       18   $or
+        1   $reduce_or
+        1   $shl
+        3 submodules
+        1   ICache
+        1   ITLB
+        1   ShiftQueue
+
+=== FixedClockBroadcast_5 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       38 wires
+       38 wire bits
+       38 public wires
+       38 public wire bits
+       12 ports
+       12 port bits
+
+=== FixedClockBroadcast_3 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       26 wires
+       26 wire bits
+       26 public wires
+       26 public wire bits
+        8 ports
+        8 port bits
+
+=== ExampleRocketSystem ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     1268 wires
+     9990 wire bits
+     1258 public wires
+     9884 public wire bits
+      141 ports
+      961 port bits
+        1 memories
+       32 memory bits
+        2 processes
+        9 cells
+        1   $add
+        1   $eq
+        2   $mux
+        3   $not
+        2   $shl
+       16 submodules
+        1   BundleBridgeNexus_UInt1_1
+        1   CLINTClockSinkDomain
+        1   CoherenceManagerWrapper
+        1   DebugCustomXbar
+        1   IntSyncAsyncCrossingSink_n1x2
+        1   IntSyncCrossingSource_n1x2
+        1   MemoryBus
+        1   PLICClockSinkDomain
+        1   PeripheryBus_cbus
+        1   PeripheryBus_pbus
+        1   SystemBus
+        1   TLBuffer_a32d64s4k2z4u
+        1   TLDebugModule
+        1   TLInterconnectCoupler_fbus_from_port_named_slave_port_axi4
+        1   TilePRCIDomain
+        1   bootromClockSinkDomain
+
+=== ErrorDeviceWrapper ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       58 wires
+      495 wire bits
+       58 public wires
+      495 public wire bits
+       22 ports
+      189 port bits
+        2 submodules
+        1   TLBuffer_a14d64s5k1z4u
+        1   TLError
+
+=== DMIToTL ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      189 wires
+      776 wire bits
+      170 public wires
+      708 public wire bits
+       23 ports
+      169 port bits
+       19 cells
+        8   $and
+        2   $eq
+        4   $mux
+        4   $not
+        1   $or
+
+=== DebugCustomXbar ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        8 wires
+        8 wire bits
+        8 public wires
+        8 public wire bits
+
+=== DCache ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     6136 wires
+    30523 wire bits
+     3887 public wires
+    23318 public wire bits
+      241 ports
+     2115 port bits
+        1 memories
+     2720 memory bits
+        3 processes
+     2084 cells
+        5   $add
+      565   $and
+      175   $eq
+        1   $gt
+        1   $lt
+        1   $mul
+      215   $mux
+        3   $ne
+      300   $not
+      707   $or
+       17   $reduce_and
+       63   $reduce_or
+        1   $shiftx
+       16   $shl
+        8   $sub
+        6   $xor
+       22 submodules
+        1   AMOALU
+        1   DCacheDataArray
+        1   MaxPeriodFibonacciLFSR
+       14   OptimizationBarrier_TLBEntryData
+        2   PMAChecker
+        2   PMPChecker_s3
+        1   rockettile_dcache_tag_array_0_64x22
+
+=== DCacheDataArray ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       50 wires
+      713 wire bits
+       46 public wires
+      709 public wire bits
+        9 ports
+      153 port bits
+        4 cells
+        2   $and
+        1   $not
+        1   $or
+        1 submodules
+        1   rockettile_dcache_data_arrays_0_512x64
+
+=== CSRFile ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     6226 wires
+    29924 wire bits
+     5186 public wires
+    21309 public wire bits
+      168 ports
+     1841 port bits
+        1 memories
+     3264 memory bits
+        4 processes
+      934 cells
+       15   $add
+      174   $and
+      156   $eq
+        5   $gt
+        5   $lt
+       85   $mux
+       92   $not
+      235   $or
+      153   $reduce_and
+        9   $reduce_or
+        1   $shl
+        2   $shr
+        2   $sub
+
+=== CoherenceManagerWrapper ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      877 wires
+     6554 wire bits
+      867 public wires
+     6496 public wire bits
+       79 ports
+      586 port bits
+       10 cells
+        3   $mux
+        4   $not
+        3   $shl
+        2 submodules
+        1   BankBinder
+        1   TLBroadcast
+
+=== ClockCrossingReg_w55 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        9 wires
+      333 wire bits
+        8 public wires
+      278 public wire bits
+        4 ports
+      112 port bits
+        1 memories
+       64 memory bits
+        2 processes
+
+=== ClockCrossingReg_w43 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        9 wires
+      261 wire bits
+        8 public wires
+      218 public wire bits
+        4 ports
+       88 port bits
+        1 memories
+       64 memory bits
+        2 processes
+
+=== ClockCrossingReg_w15 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        9 wires
+       93 wire bits
+        8 public wires
+       78 public wire bits
+        4 ports
+       32 port bits
+        1 memories
+       32 memory bits
+        2 processes
+
+=== CLINT ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      692 wires
+     4015 wire bits
+      466 public wires
+     3288 public wire bits
+       21 ports
+      203 port bits
+        1 memories
+      160 memory bits
+        2 processes
+      223 cells
+        2   $add
+      103   $and
+       11   $eq
+        1   $ge
+        1   $mul
+       17   $mux
+        2   $not
+       14   $or
+       36   $reduce_and
+       34   $reduce_or
+        2   $shiftx
+        1 submodules
+        1   TLMonitor_25
+
+=== CLINTClockSinkDomain ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       57 wires
+      422 wire bits
+       57 public wires
+      422 public wire bits
+       23 ports
+      205 port bits
+        2 submodules
+        1   CLINT
+        1   IntSyncCrossingSource_n1x2
+
+=== BundleBridgeNexus_UInt1_1 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        5 wires
+        5 wire bits
+        5 public wires
+        5 public wire bits
+        1 ports
+        1 port bits
+
+=== BroadcastFilter ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       45 wires
+      237 wire bits
+       45 public wires
+      237 public wire bits
+       20 ports
+      116 port bits
+
+=== BreakpointUnit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      193 wires
+      855 wire bits
+      137 public wires
+      685 public wire bits
+       31 ports
+      207 port bits
+       56 cells
+       30   $and
+        3   $eq
+        2   $ge
+        3   $mux
+        7   $not
+        8   $or
+        3   $xor
+
+=== bootromClockSinkDomain ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       43 wires
+      388 wire bits
+       43 public wires
+      388 public wire bits
+       17 ports
+      188 port bits
+        1 submodules
+        1   TLROM
+
+=== BankBinder ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      158 wires
+     1278 wire bits
+      158 public wires
+     1278 public wire bits
+       50 ports
+      422 port bits
+        1 submodules
+        1   TLMonitor_21
+
+=== AXI4UserYanker ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      748 wires
+     3316 wire bits
+      566 public wires
+     2842 public wire bits
+       84 ports
+      598 port bits
+        1 processes
+      180 cells
+        4   $add
+       90   $and
+       60   $eq
+        4   $mul
+        6   $not
+        2   $or
+        4   $reduce_and
+       10   $shiftx
+       10 submodules
+        6   Queue1_BundleMap
+        4   Queue8_BundleMap
+
+=== AXI4UserYanker_2 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      690 wires
+     3582 wire bits
+      502 public wires
+     2970 public wire bits
+       88 ports
+      622 port bits
+        1 processes
+      186 cells
+        6   $add
+       90   $and
+       60   $eq
+        6   $mul
+        6   $not
+        2   $or
+        4   $reduce_and
+       12   $shiftx
+       32 submodules
+       32   Queue8_BundleMap_4
+
+=== AXI4UserYanker_1 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      322 wires
+     1828 wire bits
+      282 public wires
+     1776 public wire bits
+       84 ports
+      574 port bits
+        1 processes
+       40 cells
+       20   $and
+        8   $mux
+       10   $not
+        2   $or
+        4 submodules
+        4   Queue4_BundleMap
+
+=== AXI4ToTL ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      736 wires
+     3675 wire bits
+      417 public wires
+     2669 public wire bits
+       64 ports
+      479 port bits
+        1 memories
+       64 memory bits
+        3 processes
+      297 cells
+        6   $add
+       92   $and
+       34   $eq
+        1   $gt
+        5   $lt
+       23   $mux
+        2   $ne
+       47   $not
+       67   $or
+        7   $reduce_or
+        9   $shl
+        2   $sub
+        2   $xor
+        2 submodules
+        1   Queue1_AXI4BundleB
+        1   Queue1_AXI4BundleR
+
+=== AXI4IdIndexer ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      270 wires
+     1884 wire bits
+      270 public wires
+     1884 public wire bits
+       90 ports
+      628 port bits
+
+=== AXI4IdIndexer_2 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      282 wires
+     2028 wire bits
+      282 public wires
+     2028 public wire bits
+       94 ports
+      676 port bits
+
+=== AXI4IdIndexer_1 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      234 wires
+     1788 wire bits
+      234 public wires
+     1788 public wire bits
+       78 ports
+      596 port bits
+
+=== AXI4Fragmenter ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      577 wires
+     4250 wire bits
+      395 public wires
+     2960 public wire bits
+       88 ports
+      602 port bits
+        1 memories
+       96 memory bits
+        3 processes
+      168 cells
+        2   $add
+       28   $and
+       21   $eq
+       13   $mux
+        2   $ne
+       42   $not
+       50   $or
+        1   $reduce_or
+        6   $shl
+        3   $sub
+        3 submodules
+        2   Queue1_AXI4BundleAR
+        1   Queue1_AXI4BundleW
+
+=== TLMonitor_6 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      874 wires
+     9335 wire bits
+      319 public wires
+     4438 public wire bits
+       27 ports
+      209 port bits
+        1 memories
+      608 memory bits
+        3 processes
+      492 cells
+        6   $add
+      196   $and
+       48   $eq
+        1   $gt
+        7   $lt
+        4   $mul
+       19   $mux
+       16   $ne
+      104   $not
+       47   $or
+        4   $reduce_and
+        5   $reduce_or
+        4   $shiftx
+       16   $shl
+        7   $shr
+        5   $sub
+        1   $xor
+        2   plusarg_reader
+
+=== TLMonitor_5 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      903 wires
+     9370 wire bits
+      323 public wires
+     4446 public wire bits
+       29 ports
+      213 port bits
+        1 memories
+      608 memory bits
+        3 processes
+      515 cells
+        6   $add
+      210   $and
+       48   $eq
+        3   $gt
+        7   $lt
+        4   $mul
+       19   $mux
+       17   $ne
+      105   $not
+       47   $or
+        4   $reduce_and
+       10   $reduce_or
+        4   $shiftx
+       16   $shl
+        7   $shr
+        5   $sub
+        1   $xor
+        2   plusarg_reader
+
+=== AXI4Deinterleaver ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      864 wires
+     7434 wire bits
+      669 public wires
+     6667 public wire bits
+       92 ports
+      634 port bits
+        1 memories
+       32 memory bits
+        3 processes
+      187 cells
+       10   $add
+       77   $and
+        5   $mul
+        5   $ne
+       43   $not
+       19   $or
+       14   $reduce_or
+        7   $shiftx
+        2   $shl
+        5   $sub
+        5 submodules
+        5   Queue8_AXI4BundleR
+
+=== AXI4Buffer ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      261 wires
+     1962 wire bits
+      261 public wires
+     1962 public wire bits
+       76 ports
+      562 port bits
+        5 submodules
+        2   Queue2_AXI4BundleAW
+        1   Queue2_AXI4BundleB
+        1   Queue2_AXI4BundleR
+        1   Queue2_AXI4BundleW
+
+=== TLMonitor_4 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      869 wires
+    12047 wire bits
+      324 public wires
+     5940 public wire bits
+       27 ports
+      210 port bits
+        1 memories
+      672 memory bits
+        3 processes
+      490 cells
+        6   $add
+      194   $and
+       51   $eq
+        3   $gt
+        6   $lt
+        4   $mul
+       19   $mux
+       15   $ne
+      100   $not
+       45   $or
+        5   $reduce_and
+        8   $reduce_or
+        4   $shiftx
+       16   $shl
+        7   $shr
+        5   $sub
+        2   plusarg_reader
+
+=== TLMonitor_3 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     1508 wires
+     6211 wire bits
+      503 public wires
+     3103 public wire bits
+       51 ports
+      366 port bits
+        1 memories
+      384 memory bits
+        3 processes
+      907 cells
+        6   $add
+      345   $and
+       82   $eq
+        3   $gt
+       10   $lt
+        4   $mul
+       30   $mux
+       27   $ne
+      206   $not
+       94   $or
+       10   $reduce_and
+       38   $reduce_or
+        4   $shiftx
+       24   $shl
+       10   $shr
+        9   $sub
+        3   $xor
+        2   plusarg_reader
+
+=== AsyncValidSync ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        6 wires
+        6 wire bits
+        6 public wires
+        6 public wire bits
+        4 ports
+        4 port bits
+        1 submodules
+        1   AsyncResetSynchronizerShiftReg_w1_d3_i0_1
+
+=== AsyncResetSynchronizerShiftReg_w1_d3_i0 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        7 wires
+        7 wire bits
+        7 public wires
+        7 public wire bits
+        4 ports
+        4 port bits
+        1 submodules
+        1   AsyncResetSynchronizerPrimitiveShiftReg_d3_i0
+
+=== AsyncResetSynchronizerShiftReg_w1_d3_i0_1 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        7 wires
+        7 wire bits
+        7 public wires
+        7 public wire bits
+        4 ports
+        4 port bits
+        1 submodules
+        1   AsyncResetSynchronizerPrimitiveShiftReg_d3_i0
+
+=== AsyncResetSynchronizerPrimitiveShiftReg_d3_i0 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       18 wires
+       18 wire bits
+        9 public wires
+        9 public wire bits
+        4 ports
+        4 port bits
+        1 memories
+       32 memory bits
+        2 processes
+
+=== AsyncResetRegVec_w2_i0 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       11 wires
+       19 wire bits
+        8 public wires
+       13 public wire bits
+        4 ports
+        6 port bits
+        1 memories
+       32 memory bits
+        2 processes
+
+=== AsyncResetRegVec_w1_i0 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       11 wires
+       11 wire bits
+        8 public wires
+        8 public wire bits
+        4 ports
+        4 port bits
+        1 memories
+       32 memory bits
+        2 processes
+
+=== AsyncQueueSource_TLBundleD_a9d32s1k1z2u ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       84 wires
+      290 wire bits
+       57 public wires
+      229 public wire bits
+       18 ports
+       86 port bits
+        1 memories
+       64 memory bits
+        3 processes
+       14 cells
+        1   $add
+        4   $and
+        1   $ne
+        5   $not
+        3   $or
+        5 submodules
+        1   AsyncResetSynchronizerShiftReg_w1_d3_i0
+        4   AsyncValidSync
+
+=== AsyncQueueSource_TLBundleA_a9d32s1k1z2u ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       80 wires
+      338 wire bits
+       54 public wires
+      271 public wire bits
+       16 ports
+       98 port bits
+        1 memories
+       64 memory bits
+        3 processes
+       14 cells
+        1   $add
+        4   $and
+        1   $ne
+        5   $not
+        3   $or
+        5 submodules
+        1   AsyncResetSynchronizerShiftReg_w1_d3_i0
+        4   AsyncValidSync
+
+=== AsyncQueueSource_DebugInternalBundle ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       80 wires
+      134 wire bits
+       53 public wires
+       98 public wire bits
+       18 ports
+       36 port bits
+        1 memories
+       32 memory bits
+        3 processes
+       14 cells
+        1   $add
+        4   $and
+        1   $ne
+        5   $not
+        3   $or
+        5 submodules
+        1   AsyncResetSynchronizerShiftReg_w1_d3_i0
+        4   AsyncValidSync
+
+=== AsyncQueueSink_TLBundleD_a9d32s1k1z2u ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       87 wires
+      352 wire bits
+       65 public wires
+      330 public wire bits
+       22 ports
+       91 port bits
+        1 memories
+       32 memory bits
+        2 processes
+       13 cells
+        1   $add
+        4   $and
+        1   $ne
+        4   $not
+        3   $or
+        6 submodules
+        1   AsyncResetSynchronizerShiftReg_w1_d3_i0
+        4   AsyncValidSync
+        1   ClockCrossingReg_w43
+
+=== AsyncQueueSink_TLBundleA_a9d32s1k1z2u ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       85 wires
+      430 wire bits
+       63 public wires
+      408 public wire bits
+       21 ports
+      109 port bits
+        1 memories
+       32 memory bits
+        2 processes
+       13 cells
+        1   $add
+        4   $and
+        1   $ne
+        4   $not
+        3   $or
+        6 submodules
+        1   AsyncResetSynchronizerShiftReg_w1_d3_i0
+        4   AsyncValidSync
+        1   ClockCrossingReg_w55
+
+=== AsyncQueueSink_DebugInternalBundle ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       75 wires
+      149 wire bits
+       54 public wires
+      128 public wire bits
+       19 ports
+       37 port bits
+        1 memories
+       32 memory bits
+        2 processes
+       12 cells
+        1   $add
+        3   $and
+        1   $ne
+        4   $not
+        3   $or
+        6 submodules
+        1   AsyncResetSynchronizerShiftReg_w1_d3_i0
+        4   AsyncValidSync
+        1   ClockCrossingReg_w15
+
+=== Arbiter3_LLWB ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       35 wires
+      505 wire bits
+       27 public wires
+      430 public wire bits
+        8 ports
+      142 port bits
+        8 cells
+        2   $and
+        2   $mux
+        4   $not
+
+=== Arbiter2_Valid_PTWReq ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       40 wires
+      160 wire bits
+       40 public wires
+      160 public wire bits
+       17 ports
+       77 port bits
+
+=== AMOALU ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       78 wires
+     1992 wire bits
+       34 public wires
+     1003 public wire bits
+        5 ports
+      205 port bits
+       44 cells
+        1   $add
+        6   $and
+       11   $eq
+        3   $lt
+       11   $mux
+        3   $not
+        8   $or
+        1   $xor
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+    46907 ExampleRocketSystem
+      223   CLINT
+      391     TLMonitor_25
+       10 CoherenceManagerWrapper
+      415     TLMonitor_21
+      569   TLBroadcast
+       53     TLBroadcastTracker
+       16       Queue8_TLBroadcastData
+        3         ram_8x72
+       53     TLBroadcastTracker_1
+       16       Queue8_TLBroadcastData
+        3         ram_8x72
+       53     TLBroadcastTracker_2
+       16       Queue8_TLBroadcastData
+        3         ram_8x72
+       53     TLBroadcastTracker_3
+       16       Queue8_TLBroadcastData
+        3         ram_8x72
+      790     TLMonitor_20
+      946 MemoryBus
+      415     TLMonitor_18
+      186     AXI4UserYanker_2
+       16       Queue8_BundleMap_4
+        3         ram_8x14
+     2504     TLToAXI4_1
+       26       Queue1_AXI4BundleARW_1
+       16       Queue1_AXI4BundleW
+      415       TLMonitor_19
+      203   TLPLIC
+        6     LevelGateway
+        6     PLICFanIn
+        7     Queue1_RegMapperInput_i23_m8
+      397     TLMonitor_26
+        7 PeripheryBus_cbus
+       14       Queue2_TLBundleA_a14d64s5k1z4u
+        3         ram_2x102
+       14       Queue2_TLBundleD_a28d64s5k1z4u
+        3         ram_2x81
+      513       TLMonitor_13
+       32     TLError
+        7       Queue1_TLBundleA_a14d64s5k1z4u
+      489       TLMonitor_12
+      271   TLAtomicAutomata_cbus
+      540     TLMonitor_11
+       14     Queue2_TLBundleA_a28d64s5k1z4u
+        3       ram_2x116
+       14     Queue2_TLBundleD_a28d64s5k1z4u
+        3       ram_2x81
+      537     TLMonitor_10
+      214   TLFIFOFixer_3
+      531     TLMonitor_8
+       42     TLFragmenter_bootrom
+       19       Repeater_TLBundleA_a17d64s5k1z3u
+      360       TLMonitor_17
+       58     TLFragmenter_CLINT
+       19       Repeater_TLBundleA_a26d64s5k1z3u
+      464       TLMonitor_14
+       58     TLFragmenter_Debug
+       19       Repeater_TLBundleA_a12d64s5k1z3u
+      461       TLMonitor_16
+       58     TLFragmenter_PLIC
+       19       Repeater_TLBundleA_a28d64s5k1z3u
+      471       TLMonitor_15
+      177   TLXbar_cbus_out_i1_o5_a28d64s5k1z4u
+      531     TLMonitor_9
+      270   TLFIFOFixer
+      515     TLMonitor_2
+      907     TLMonitor_3
+       14       Queue2_AXI4BundleAW
+        3         ram_2x60
+       14       Queue2_AXI4BundleB
+        3         ram_2x6
+       14       Queue2_AXI4BundleR
+        3         ram_2x71
+       14       Queue2_AXI4BundleW
+        3         ram_2x73
+      187     AXI4Deinterleaver
+       16       Queue8_AXI4BundleR
+        3         ram_8x80
+      180     AXI4UserYanker
+        7       Queue1_BundleMap
+       16       Queue8_BundleMap
+        3         ram_8x9
+      181     TLToAXI4
+       26       Queue1_AXI4BundleARW
+       16       Queue1_AXI4BundleW
+      490       TLMonitor_4
+      535   TLXbar_sbus_i2_o3_a32d64s5k2z4c
+      515     TLMonitor
+      907     TLMonitor_1
+       14   Queue2_TLBundleA_a32d64s4k2z4u
+        3     ram_2x126
+       14   Queue2_TLBundleD_a32d64s4k2z4u
+        3     ram_2x81
+      515   TLMonitor_5
+       12     AsyncQueueSink_DebugInternalBundle
+       13       AsyncQueueSink_TLBundleA_a9d32s1k1z2u
+       14       AsyncQueueSource_TLBundleD_a9d32s1k1z2u
+    12803     TLDebugModuleInner
+      374       TLMonitor_32
+      383       TLMonitor_33
+        3   TLDebugModuleOuterAsync
+       14     AsyncQueueSource_DebugInternalBundle
+       19     DMIToTL
+       13       AsyncQueueSink_TLBundleD_a9d32s1k1z2u
+       14       AsyncQueueSource_TLBundleA_a9d32s1k1z2u
+      335       TLMonitor_31
+       55       TLBusBypassBar
+      324         TLMonitor_29
+       49       TLError_1
+      270         TLMonitor_30
+       75     TLDebugModuleOuter
+      223       TLMonitor_28
+       83     TLXbar_dmixbar_i1_o2_a9d32s1k1z2u
+      272       TLMonitor_27
+      168   AXI4Fragmenter
+       23     Queue1_AXI4BundleAR
+       16     Queue1_AXI4BundleW
+      297   AXI4ToTL
+       15     Queue1_AXI4BundleB
+       17     Queue1_AXI4BundleR
+       40   AXI4UserYanker_1
+       16     Queue4_BundleMap
+        3       ram_4x8
+       14     Queue2_TLBundleA_a32d64s4k2z4u
+        3       ram_2x126
+       14     Queue2_TLBundleD_a32d64s4k2z4u
+        3       ram_2x81
+      492     TLMonitor_6
+      182   TLFIFOFixer_2
+      492     TLMonitor_7
+     2084     DCache
+       44       AMOALU
+        4       DCacheDataArray
+       20         rockettile_dcache_data_arrays_0_512x64
+        3       MaxPeriodFibonacciLFSR
+       77       PMAChecker
+      474       PMPChecker_s3
+        6       rockettile_dcache_tag_array_0_64x22
+       70     Frontend
+      106       ICache
+        6         rockettile_icache_data_arrays_512x32
+        6         rockettile_icache_tag_array_0_64x21
+       93       ITLB
+       77         PMAChecker
+      166         PMPChecker_s2
+      131       ShiftQueue
+      503     PTW
+      817     Rocket
+        8       Arbiter3_LLWB
+       56       BreakpointUnit
+      934       CSRFile
+       85       IBuf
+      154         RVCExpander
+       73       MulDiv
+        6       PlusArgTimeout
+      339       RocketALU
+        5       rf_31x64
+       94     TLXbar_MasterXbar_RocketTile_i2_o1_a32d64s2k2z4c
+     1021       TLMonitor_22
+      255       TLMonitor_23
+       14     Queue2_TLBundleA_a32d64s2k2z4c
+        3       ram_2x124
+       14     Queue2_TLBundleB_a32d64s2k2z4c
+        3       ram_2x116
+       14     Queue2_TLBundleC_a32d64s2k2z4c
+        3       ram_2x116
+       14     Queue2_TLBundleD_a32d64s2k2z4c
+        3       ram_2x79
+       13     Queue2_TLBundleE_a32d64s2k2z4c
+        3       ram_sink_2x2
+     1039     TLMonitor_24
+        5   TLROM
+      305     TLMonitor_34
+
+        +----------Count including submodules.
+        | 
+   137683 wires
+  1424573 wire bits
+    85734 public wires
+   891422 public wire bits
+    10478 ports
+    75297 port bits
+      291 memories
+   144826 memory bits
+      580 processes
+    46907 cells
+      604   $add
+    18570   $and
+     4080   $eq
+       23   $ge
+      107   $gt
+      270   $lt
+       74   $memrd
+      175   $mul
+     2342   $mux
+      634   $ne
+     7045   $not
+     4594   $or
+        1   $pos
+     3189   $reduce_and
+        1   $reduce_bool
+     3303   $reduce_or
+      193   $shiftx
+      625   $shl
+      302   $shr
+        2   $sshr
+      515   $sub
+      187   $xor
+       71   plusarg_reader
+       16 submodules
+        1   BundleBridgeNexus_UInt1_1
+        1   CLINTClockSinkDomain
+        1   CoherenceManagerWrapper
+        1   DebugCustomXbar
+        1   IntSyncAsyncCrossingSink_n1x2
+        1   IntSyncCrossingSource_n1x2
+        1   MemoryBus
+        1   PLICClockSinkDomain
+        1   PeripheryBus_cbus
+        1   PeripheryBus_pbus
+        1   SystemBus
+        1   TLBuffer_a32d64s4k2z4u
+        1   TLDebugModule
+        1   TLInterconnectCoupler_fbus_from_port_named_slave_port_axi4
+        1   TilePRCIDomain
+        1   bootromClockSinkDomain
+
+End of script. Logfile hash: 3509cd007b, CPU: user 3.12s system 0.27s, MEM: 577.67 MB peak
+Yosys 0.62+0 (git sha1 8bbde80e0, g++ 11.4.0-1ubuntu1~22.04.2 -fPIC -O3)
+Time spent: 96% 2x read_verilog (3 sec), 2% 1x stat (0 sec), ...

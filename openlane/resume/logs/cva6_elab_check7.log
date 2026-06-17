@@ -1,0 +1,21 @@
+[CHECK] Step 1: Converting ALL RTL (CVA6 + Aurora) with sv2v...
+[CHECK] sv2v done. Converted file: 48053 lines
+[CHECK] Step 2: Yosys elaboration check...
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.62+0 (git sha1 8bbde80e0, g++ 11.4.0-1ubuntu1~22.04.2 -fPIC -O3)
+
+-- Running command `
+  read_verilog -I/home/yashwanth/aurora_v1/rtl/cpu_cluster/cva6/core/include /home/yashwanth/aurora_v1/openlane/pre_check/converted/aurora_soc_combined.v
+  hierarchy -check -top aurora_soc_top
+  check
+' --
+
+1. Executing Verilog-2005 frontend: /home/yashwanth/aurora_v1/openlane/pre_check/converted/aurora_soc_combined.v
+Parsing Verilog input from `/home/yashwanth/aurora_v1/openlane/pre_check/converted/aurora_soc_combined.v' to AST representation.
+Lexer warning: The SystemVerilog keyword `assert' (at /home/yashwanth/aurora_v1/openlane/pre_check/converted/aurora_soc_combined.v:574) is not recognized unless read_verilog is called with -sv!
+/home/yashwanth/aurora_v1/openlane/pre_check/converted/aurora_soc_combined.v:574: ERROR: syntax error, unexpected TOK_ELSE, expecting ';'

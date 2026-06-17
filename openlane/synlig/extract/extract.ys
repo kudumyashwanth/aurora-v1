@@ -1,0 +1,1 @@
+read_systemverilog -dump_vlog2 -f /home/yashwanth/aurora_v1/openlane/synlig/extract/extract.f

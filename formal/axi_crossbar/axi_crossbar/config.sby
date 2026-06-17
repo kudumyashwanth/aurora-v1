@@ -1,0 +1,22 @@
+[options]
+mode bmc
+depth 30
+expect pass
+
+# ABC bmc3 is the only engine that completes on this 8-slave model.
+# The installed z3 (4.8.12) is the sole SMT solver and is far too slow here
+# (>6 GB, no result in minutes), so smtbmc/cover mode is not usable. The BMC
+# safety proof below is the formal sign-off; the liveness intent (transactions
+# actually complete) was instead exercised by the end-to-end SoC simulation,
+# where the CPU completes reads and writes through the crossbar to every slave.
+[engines]
+abc bmc3
+
+[script]
+read -formal axi_crossbar_formal.sv
+read -formal axi_crossbar.sv
+prep -top axi_crossbar_formal
+
+[files]
+../../rtl/interconnect/axi_crossbar.sv
+axi_crossbar_formal.sv

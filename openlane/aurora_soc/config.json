@@ -1,0 +1,33 @@
+{
+  "DESIGN_NAME": "aurora_soc_top",
+  "VERILOG_FILES": [
+    "/home/yashwanth/aurora_v1/openlane/aurora_soc/src/aurora_synth_sv2v.v"
+  ],
+  "PDK": "sky130B",
+  "STD_CELL_LIBRARY": "sky130_fd_sc_hd",
+
+  "CLOCK_PORT": "clk",
+  "CLOCK_NET": "clk",
+  "CLOCK_PERIOD": 20.0,
+
+  "FP_SIZING": "absolute",
+  "DIE_AREA": "0 0 6000 6000",
+  "CORE_AREA": "100 100 5900 5900",
+  "FP_CORE_UTIL": 40,
+  "PL_TARGET_DENSITY": 0.35,
+
+  "FP_PDN_VPITCH": 180,
+  "FP_PDN_HPITCH": 180,
+
+  "SYNTH_STRATEGY": "DELAY 0",
+  "SYNTH_MAX_FANOUT": 16,
+
+  "DIODE_INSERTION_STRATEGY": 3,
+  "RUN_LINTER": 0,
+  "RUN_CVC": 0,
+  "RUN_MAGIC_DRC": 1,
+  "RUN_KLAYOUT_DRC": 0,
+  "QUIT_ON_MAGIC_DRC": 0,
+  "QUIT_ON_LVS_ERROR": 0,
+  "MAGIC_DRC_USE_GDS": 1
+}

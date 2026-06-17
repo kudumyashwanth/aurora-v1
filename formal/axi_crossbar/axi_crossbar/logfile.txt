@@ -1,0 +1,303 @@
+SBY  7:57:52 [axi_crossbar] Removing directory '/home/yashwanth/aurora_v1/formal/axi_crossbar/axi_crossbar'.
+SBY  7:57:52 [axi_crossbar] Copy '/home/yashwanth/aurora_v1/formal/axi_crossbar/../../rtl/interconnect/axi_crossbar.sv' to '/home/yashwanth/aurora_v1/formal/axi_crossbar/axi_crossbar/src/axi_crossbar.sv'.
+SBY  7:57:52 [axi_crossbar] Copy '/home/yashwanth/aurora_v1/formal/axi_crossbar/axi_crossbar_formal.sv' to '/home/yashwanth/aurora_v1/formal/axi_crossbar/axi_crossbar/src/axi_crossbar_formal.sv'.
+SBY  7:57:52 [axi_crossbar] engine_0: abc bmc3
+SBY  7:57:52 [axi_crossbar] base: starting process "cd axi_crossbar/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY  7:57:53 [axi_crossbar] base: finished (returncode=0)
+SBY  7:57:53 [axi_crossbar] prep: starting process "cd axi_crossbar/model; yosys -ql design_prep.log design_prep.ys"
+SBY  7:57:53 [axi_crossbar] prep: finished (returncode=0)
+SBY  7:57:53 [axi_crossbar] aig: starting process "cd axi_crossbar/model; yosys -ql design_aiger.log design_aiger.ys"
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\clk like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_wready_e [0] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_wready_e [1] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_wready_e [2] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_wready_e [3] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_wready_e [4] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_wready_e [5] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_wready_e [6] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_wready_e [7] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [0] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [1] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [2] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [3] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [4] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [5] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [6] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [7] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [8] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [9] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [10] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [11] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [12] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [13] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [14] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [15] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [16] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [17] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [18] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [19] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [20] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [21] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [22] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [23] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [24] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [25] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [26] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [27] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [28] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [29] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [30] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [31] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [32] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [33] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [34] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [35] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [36] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [37] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [38] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [39] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [40] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [41] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [42] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [43] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [44] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [45] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [46] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [47] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [48] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [49] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [50] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [51] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [52] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [53] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [54] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [55] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [56] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [57] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [58] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [59] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [60] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [61] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [62] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_rdata [63] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_awready_e [0] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_awready_e [1] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_awready_e [2] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_awready_e [3] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_awready_e [4] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_awready_e [5] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_awready_e [6] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_awready_e [7] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_arready_e [0] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_arready_e [1] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_arready_e [2] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_arready_e [3] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_arready_e [4] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_arready_e [5] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_arready_e [6] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\s_arready_e [7] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_wvalid [0] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_wvalid [1] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_wstrb [0] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_wstrb [1] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_wdata [0] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_wdata [1] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_wdata [2] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_wdata [3] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_wdata [4] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_wdata [5] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_wdata [6] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_wdata [7] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_wdata [8] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_wdata [9] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_wdata [10] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_wdata [11] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_wdata [12] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_wdata [13] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_wdata [14] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_wdata [15] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_rready [0] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_rready [1] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_bready [0] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_bready [1] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awvalid [0] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awvalid [1] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [0] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [1] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [2] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [3] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [4] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [5] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [6] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [7] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [8] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [9] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [10] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [11] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [12] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [13] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [14] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [15] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [16] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [17] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [18] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [19] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [20] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [21] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [22] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [23] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [24] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [25] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [26] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [27] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [28] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [29] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [30] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [31] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [32] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [33] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [34] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [35] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [36] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [37] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [38] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [39] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [40] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [41] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [42] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [43] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [44] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [45] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [46] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [47] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [48] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [49] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [50] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [51] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [52] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [53] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [54] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [55] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [56] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [57] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [58] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [59] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [60] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [61] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [62] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_awaddr [63] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_arvalid [0] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_arvalid [1] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [0] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [1] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [2] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [3] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [4] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [5] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [6] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [7] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [8] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [9] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [10] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [11] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [12] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [13] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [14] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [15] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [16] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [17] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [18] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [19] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [20] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [21] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [22] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [23] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [24] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [25] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [26] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [27] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [28] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [29] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [30] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [31] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [32] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [33] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [34] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [35] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [36] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [37] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [38] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [39] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [40] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [41] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [42] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [43] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [44] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [45] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [46] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [47] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [48] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [49] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [50] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [51] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [52] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [53] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [54] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [55] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [56] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [57] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [58] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [59] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [60] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [61] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [62] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating undriven bit axi_crossbar_formal.\m_araddr [63] like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: Warning: Treating a total of 245 undriven bits in axi_crossbar_formal like $anyseq.
+SBY  7:57:54 [axi_crossbar] aig: finished (returncode=0)
+SBY  7:57:54 [axi_crossbar] engine_0: starting process "cd axi_crossbar; yosys-abc -c 'read_aiger model/design_aiger.aig; fold; strash; bmc3 -F 30 -v; write_cex -a engine_0/trace.aiw'"
+SBY  7:57:54 [axi_crossbar] engine_0: ======== ABC command line "read_aiger model/design_aiger.aig; fold; strash; bmc3 -F 30 -v; write_cex -a engine_0/trace.aiw"
+SBY  7:57:54 [axi_crossbar] engine_0: Warning: The last 17 outputs are interpreted as constraints.
+SBY  7:57:54 [axi_crossbar] engine_0: Running "bmc3". PI/PO/Reg = 797/42/329. And =   7362. Lev =    57. ObjNums =  3787.
+SBY  7:57:54 [axi_crossbar] engine_0: Params: FramesMax = 30. Start = 0. ConfLimit = 0. TimeOut = 0. SolveAll = 0.
+SBY  7:57:54 [axi_crossbar] engine_0: 0 + : Var =       1. Cla =        0. Conf =      0. Learn =      0.    0 MB   4 MB     0.02 sec
+SBY  7:57:54 [axi_crossbar] engine_0: 1 + : Var =       1. Cla =        0. Conf =      0. Learn =      0.    0 MB   4 MB     0.02 sec
+SBY  7:57:54 [axi_crossbar] engine_0: 2 + : Var =    1482. Cla =     3782. Conf =    133. Learn =    117.    0 MB   4 MB     0.02 sec
+SBY  7:57:54 [axi_crossbar] engine_0: 3 + : Var =    3955. Cla =    11192. Conf =   2174. Learn =   2132.    0 MB   4 MB     0.04 sec
+SBY  7:57:54 [axi_crossbar] engine_0: 4 + : Var =    6598. Cla =    19279. Conf =   7116. Learn =   7045.    0 MB   5 MB     0.10 sec
+SBY  7:57:54 [axi_crossbar] engine_0: 5 + : Var =    9273. Cla =    27526. Conf =  13333. Learn =  11248.    0 MB   6 MB     0.19 sec
+SBY  7:57:54 [axi_crossbar] engine_0: 6 + : Var =   11948. Cla =    35773. Conf =  19904. Learn =  12991.    0 MB   5 MB     0.30 sec
+SBY  7:57:54 [axi_crossbar] engine_0: 7 + : Var =   14623. Cla =    44020. Conf =  27193. Learn =  17419.    0 MB   7 MB     0.42 sec
+SBY  7:57:55 [axi_crossbar] engine_0: 8 + : Var =   17298. Cla =    52267. Conf =  35244. Learn =  17588.    0 MB   8 MB     0.55 sec
+SBY  7:57:55 [axi_crossbar] engine_0: 9 + : Var =   19973. Cla =    60514. Conf =  43290. Learn =  21896.    0 MB   8 MB     0.71 sec
+SBY  7:57:55 [axi_crossbar] engine_0: 10 + : Var =   22648. Cla =    68761. Conf =  51896. Learn =  21981.    0 MB   8 MB     0.88 sec
+SBY  7:57:55 [axi_crossbar] engine_0: 11 + : Var =   25323. Cla =    77008. Conf =  61255. Learn =  21834.    0 MB   9 MB     1.06 sec
+SBY  7:57:55 [axi_crossbar] engine_0: 12 + : Var =   27998. Cla =    85255. Conf =  71262. Learn =  26529.    0 MB  10 MB     1.29 sec
+SBY  7:57:55 [axi_crossbar] engine_0: 13 + : Var =   30673. Cla =    93502. Conf =  79819. Learn =  29663.    0 MB  11 MB     1.49 sec
+SBY  7:57:56 [axi_crossbar] engine_0: 14 + : Var =   33348. Cla =   101749. Conf =  89403. Learn =  33239.    0 MB  11 MB     1.70 sec
+SBY  7:57:56 [axi_crossbar] engine_0: 15 + : Var =   36023. Cla =   109996. Conf =  99400. Learn =  33526.    0 MB  12 MB     1.95 sec
+SBY  7:57:56 [axi_crossbar] engine_0: 16 + : Var =   38698. Cla =   118243. Conf = 109684. Learn =  36790.    0 MB  12 MB     2.22 sec
+SBY  7:57:56 [axi_crossbar] engine_0: 17 + : Var =   41373. Cla =   126490. Conf = 119607. Learn =  39806.    0 MB  13 MB     2.48 sec
+SBY  7:57:57 [axi_crossbar] engine_0: 18 + : Var =   44048. Cla =   134737. Conf = 128803. Learn =  38420.    0 MB  14 MB     2.70 sec
+SBY  7:57:57 [axi_crossbar] engine_0: 19 + : Var =   46723. Cla =   142984. Conf = 138918. Learn =  40972.    0 MB  14 MB     2.97 sec
+SBY  7:57:57 [axi_crossbar] engine_0: 20 + : Var =   49398. Cla =   151231. Conf = 148525. Learn =  38897.    0 MB  14 MB     3.23 sec
+SBY  7:57:57 [axi_crossbar] engine_0: 21 + : Var =   52073. Cla =   159478. Conf = 157721. Learn =  39678.    0 MB  17 MB     3.49 sec
+SBY  7:57:58 [axi_crossbar] engine_0: 22 + : Var =   54748. Cla =   167725. Conf = 167103. Learn =  49017.    0 MB  19 MB     3.75 sec
+SBY  7:57:58 [axi_crossbar] engine_0: 23 + : Var =   57423. Cla =   175972. Conf = 177120. Learn =  47290.    0 MB  20 MB     3.99 sec
+SBY  7:57:58 [axi_crossbar] engine_0: 24 + : Var =   60098. Cla =   184219. Conf = 187752. Learn =  49213.    0 MB  20 MB     4.34 sec
+SBY  7:57:59 [axi_crossbar] engine_0: 25 + : Var =   62773. Cla =   192466. Conf = 197729. Learn =  48525.    0 MB  20 MB     4.65 sec
+SBY  7:57:59 [axi_crossbar] engine_0: 26 + : Var =   65448. Cla =   200713. Conf = 206896. Learn =  45724.    0 MB  20 MB     4.93 sec
+SBY  7:57:59 [axi_crossbar] engine_0: 27 + : Var =   68123. Cla =   208960. Conf = 215910. Learn =  54696.    0 MB  22 MB     5.24 sec
+SBY  7:58:00 [axi_crossbar] engine_0: 28 + : Var =   70798. Cla =   217207. Conf = 227589. Learn =  55101.    0 MB  22 MB     5.67 sec
+SBY  7:58:00 [axi_crossbar] engine_0: 29 + : Var =   73473. Cla =   225454. Conf = 236943. Learn =  53280.    0 MB  22 MB     5.94 sec
+SBY  7:58:00 [axi_crossbar] engine_0: Runtime:  CNF = 0.1 sec (0.9 %)  UNSAT = 5.9 sec (98.7 %)  SAT = 0.0 sec (0.0 %)  UNDEC = 0.0 sec (0.0 %)
+SBY  7:58:00 [axi_crossbar] engine_0: LStart(P) = 10000  LDelta(Q) = 2000  LRatio(R) = 80  ReduceDB = 26  Vars = 73473  Used = 73364 (99.85 %)
+SBY  7:58:00 [axi_crossbar] engine_0: Buffs = 11349. Dups = 0.   Hash hits = 64.  Hash misses = 51361.  UniProps = 0.
+SBY  7:58:00 [axi_crossbar] engine_0: No output asserted in 30 frames. Resource limit reached (conf limit 0). Time =     5.95 sec
+SBY  7:58:00 [axi_crossbar] engine_0: Counter-example is not available.
+SBY  7:58:00 [axi_crossbar] engine_0: finished (returncode=0)
+SBY  7:58:00 [axi_crossbar] engine_0: Status returned by engine: PASS
+SBY  7:58:00 [axi_crossbar] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:07 (7)
+SBY  7:58:00 [axi_crossbar] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:07 (7)
+SBY  7:58:00 [axi_crossbar] summary: engine_0 (abc bmc3) returned PASS
+SBY  7:58:00 [axi_crossbar] summary: engine_0 did not produce any traces
+SBY  7:58:00 [axi_crossbar] DONE (PASS, rc=0)

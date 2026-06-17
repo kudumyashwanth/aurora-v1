@@ -1,0 +1,7 @@
+cd /home/yashwanth/tools/rocket-chip && /home/yashwanth/tools/bin/mill emulator[freechips.rocketchip.system.TestHarness,freechips.rocketchip.system.DefaultSmallConfig].mfccompiler.compile
+[info] compiling 1 Scala source to /home/yashwanth/tools/rocket-chip/out/mill-build/compile.dest/classes ...
+[warn] /home/yashwanth/tools/rocket-chip/build.sc:281:155: method any2stringadd in object Predef is deprecated (since 2.13.0): Implicit injection of + is deprecated. Convert to String to call +
+[warn]          |"$${CMAKE_CXX_FLAGS} -DVERILATOR -DTEST_HARNESS=VTestHarness -include VTestHarness.h -include verilator.h -include ${generator.elaborate().path / config + ".plusArgs"}")
+[warn]                                                                                                                                                           ^
+[warn] one warning found
+[info] done compiling

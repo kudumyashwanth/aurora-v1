@@ -1,0 +1,12 @@
+# running in formal/tensor_core/tensor_core/src/
+read -formal formal/tensor_core/tensor_core_formal.sv
+read -formal rtl/tensor_cluster/tensor_core.sv
+read -formal rtl/tensor_cluster/mac_unit.sv
+read -formal rtl/tensor_cluster/systolic_array_16x16.sv
+read -formal rtl/tensor_cluster/tensor_local_buffer.sv
+prep -top tensor_core_formal
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il
