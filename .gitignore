@@ -24,3 +24,10 @@ ip/**/*.def
 ip/**/*.nl.v
 ip/**/*.pnl.v
 ip/**/*.sdf
+# Large binary layout artifacts anywhere under openlane/ (regenerable; kept on disk)
+openlane/**/*.gds
+openlane/**/*.spef
+openlane/**/*.def
+openlane/rocket/DELIVERABLES_rocket_tile/
+openlane/rocket/klayout_drc/
+openlane/pre_check/converted/
