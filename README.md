@@ -12,6 +12,10 @@
 ![DRC](https://img.shields.io/badge/DRC-1%20(fill%20waiver)-yellowgreen)
 ![LVS](https://img.shields.io/badge/LVS-device--match-success)
 
+<br>
+
+<img src="assets/chip_floorplan.png" width="70%">
+
 </div>
 
 ---
@@ -49,7 +53,19 @@ Final full-chip run, multi-corner sign-off on the routed layout:
 
 Both compute blocks are also independently signed off and packaged as reusable hard macros.
 
+<div align="center"><img src="assets/results_dashboard.png" width="85%"></div>
+
 📄 **Full specs — area, power, bandwidth, memory map & programming model: [`docs/DATASHEET.md`](docs/DATASHEET.md)**
+📊 **Report · slide deck · LinkedIn post:** [`deliverables/`](deliverables/)
+
+### Architecture & functional verification
+
+<div align="center">
+<img src="assets/architecture.png" width="49%"> <img src="assets/boot_terminal.png" width="49%">
+</div>
+
+The full SoC **boots in simulation** — the Rocket core comes up through the real fabric, drives a matrix
+multiply on the tensor core, reads the result back over AXI, and reaches its run loop with zero traps.
 
 > **On the LVS net delta:** the layout and netlist differ by 2 nets, traced to 4 deliberately-unused
 > AXI lock outputs and the standard VPB/VNB body-pin extraction convention. These are documented
