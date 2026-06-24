@@ -229,22 +229,22 @@ uart_print_hex:
 msg_banner:
     .ascii  "\r\n========================================\r\n"
     .ascii  "    AURORA v1 AI SoC BOOT\r\n"
-    .ascii  "    4x CVA6 + 1024 MAC Tensor Cores\r\n"
-    .ascii  "    204 GOPS INT8 @ 200MHz\r\n"
+    .ascii  "    1x Rocket RV64IMAC + 4x4 Tensor Core\r\n"
+    .ascii  "    Sky130B  -  CPU 33MHz / fabric 50MHz\r\n"
     .string "========================================\r\n"
 
 msg_init_matrix:
     .string "[1] Initializing matrices in SRAM...\r\n"
 
 msg_tensor_start:
-    .string "[2] Running 16x16 matrix multiply on Tensor Core 0...\r\n"
+    .string "[2] Running 4x4 matrix multiply on Tensor Core...\r\n"
 
 msg_done:
     .string "[3] DONE! C[0][0] = 0x"
 
 msg_gops:
     .ascii  "\r\n[4] Aurora Tensor Core: OPERATIONAL\r\n"
-    .ascii  "    Peak performance: 204 GOPS INT8\r\n"
+    .ascii  "    RTL-to-GDSII signed off on Sky130B\r\n"
     .string "    Aurora v1 AI SoC is ALIVE!\r\n\r\n"
 
 msg_newline:
