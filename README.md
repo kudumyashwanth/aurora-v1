@@ -118,6 +118,19 @@ docs/           Progress log + debug playbook
 
 ---
 
+## License & commercial use
+
+© 2026 Yashwanth Kudum. **All rights reserved.** This repository is published for
+**evaluation, review, and portfolio purposes** — you're welcome to read, study, and reproduce the
+flow. Commercial use, redistribution, or incorporation of the RTL / hardened macros / layouts into
+another design or tape-out requires a separate written license.
+
+**The CPU integration, tensor accelerator, and full SoC are available for commercial licensing.**
+Inquiries → **kudumyashwanth@gmail.com**. See [`LICENSE`](LICENSE) for full terms. (Upstream
+components — rocket-chip, Sky130 PDK, OpenLane/OpenROAD — retain their own open-source licenses.)
+
+---
+
 <div align="center">
 
 **Aurora v1** — designed and brought to GDSII by **Yashwanth Kudum**.

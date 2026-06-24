@@ -1,0 +1,29 @@
+Aurora v1 AI SoC — Copyright (c) 2026 Yashwanth Kudum. All rights reserved.
+
+This repository is made publicly available for evaluation, review, and
+demonstration purposes (e.g. portfolio and technical assessment).
+
+You MAY:
+  - View, read, and study the source, configurations, and documentation.
+  - Clone the repository to evaluate the design and reproduce the flow.
+
+You MAY NOT, without a separate written license from the copyright holder:
+  - Use the RTL, hardened macros, layouts, or physical-design recipes in any
+    commercial product, service, or tape-out.
+  - Redistribute, sublicense, or sell this work or derivatives of it.
+  - Incorporate any part of the hardware IP (CPU integration, tensor
+    accelerator, AXI fabric, or chip) into another design for production use.
+
+The hardened IP blocks (CPU tile, tensor accelerator, and full SoC) are
+available for commercial licensing. For licensing inquiries, contact:
+
+    Yashwanth Kudum  <kudumyashwanth@gmail.com>
+
+Third-party components retain their own licenses: the Rocket core derives from
+the RISC-V rocket-chip project (Apache-2.0 / BSD), built against the SkyWater
+Sky130 PDK and the OpenLane/OpenROAD open-source toolchain. Those upstream
+licenses govern their respective sources; this notice applies to the original
+Aurora v1 integration, configuration, and design work in this repository.
+
+THE WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND. IT IS A
+DEMONSTRATION DESIGN AND IS NOT QUALIFIED FOR PRODUCTION USE.
