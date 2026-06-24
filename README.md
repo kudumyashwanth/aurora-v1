@@ -49,6 +49,8 @@ Final full-chip run, multi-corner sign-off on the routed layout:
 
 Both compute blocks are also independently signed off and packaged as reusable hard macros.
 
+📄 **Full specs — area, power, bandwidth, memory map & programming model: [`docs/DATASHEET.md`](docs/DATASHEET.md)**
+
 > **On the LVS net delta:** the layout and netlist differ by 2 nets, traced to 4 deliberately-unused
 > AXI lock outputs and the standard VPB/VNB body-pin extraction convention. These are documented
 > waiver-class items — the kind every real tape-out ships with — not logic or connectivity defects.
