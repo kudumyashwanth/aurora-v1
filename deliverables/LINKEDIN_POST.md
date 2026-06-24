@@ -36,4 +36,25 @@ The whole thing is open and documented — RTL, the winning physical-design reci
 
 If you're into open-source silicon, RISC-V, or AI accelerators, I'd love to hear your thoughts. And the IP is available for licensing if anyone's building in this space.
 
-#OpenSourceSilicon #RISCV #ChipDesign #VLSI #ASIC #Sky130 #OpenLane #OpenROAD #SemiconductorDesign #AIhardware #TensorAccelerator #RTLtoGDSII #HardwareEngineering
+#chipdesign #semiconductors #riscv #vlsi #ai #opensourcesilicon #asic #engineering #sky130 #aihardware #technology #hardwareengineering
+
+---
+
+## Hashtag strategy (LinkedIn — quality over quantity)
+
+LinkedIn favors ~5–12 tags mixing broad reach + niche relevance. Use the set above in the post body,
+then drop these extra niche tags in your FIRST COMMENT (keeps the post clean, still indexes):
+
+    #openlane #openroad #tinytapeout #rtltogdsii #tensoraccelerator #computerarchitecture #icdesign
+
+Tactics:
+- Lead with the floorplan image (visual posts ≈ 2× reach).
+- Mention communities in the text to escape your network: OpenROAD · RISC-V International · Efabless.
+- Reply fast to early comments — engagement velocity in the first ~2 hours drives the algorithm.
+
+### Full bank to rotate from
+Broad:   #technology #engineering #innovation #artificialintelligence #electronics #stem #hardware
+Domain:  #soc #semiconductor #microelectronics #physicaldesign #digitaldesign #eda #fpga
+Open Si: #chipsalliance #siliconengineering #semiconductordesign
+AI HW:   #aichips #edgeai #mlhardware #accelerators
+Career:  #embeddedsystems #engineeringportfolio
