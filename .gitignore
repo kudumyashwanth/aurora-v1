@@ -31,3 +31,4 @@ openlane/**/*.def
 openlane/rocket/DELIVERABLES_rocket_tile/
 openlane/rocket/klayout_drc/
 openlane/pre_check/converted/
+CLAUDE.md

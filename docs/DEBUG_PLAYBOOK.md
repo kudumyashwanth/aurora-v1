@@ -2,7 +2,7 @@
 
 A reusable reference of problems hit during RTL→GDSII, how we diagnosed them, the exact fix, and
 *why* it worked. Format per entry: **Symptom → Diagnosis method → Fix → Why it worked**.
-Newest/most-important first. See also docs/PROGRESS.md (chronological log) and the .claude memory.
+Newest/most-important first. See also docs/PROGRESS.md (chronological log).
 
 Tools used throughout: Verilator 5.046, Icarus, Yosys 0.62, OpenLane 1.0.2 via Docker
 (image ghcr.io/the-openroad-project/openlane:ff5509f65b17bfa4068d5336495ab1718987ff69-amd64,
