@@ -1,0 +1,47 @@
+{
+  "DESIGN_NAME": "RocketAXITileTop",
+  "VERILOG_FILES": [
+    "/home/yashwanth/aurora_v1/openlane/rocket/syn/rocket_axitile_mem_clean.v",
+    "/home/yashwanth/aurora_v1/openlane/rocket/rocket_sram_ext.v"
+  ],
+  "PDK": "sky130B",
+  "STD_CELL_LIBRARY": "sky130_fd_sc_hd",
+  "CLOCK_PORT": "clock",
+  "CLOCK_NET": "clock",
+  "CLOCK_PERIOD": 30.0,
+  "FP_SIZING": "absolute",
+  "DIE_AREA": "0 0 7000 2600",
+  "CORE_AREA": "20 20 6980 2580",
+  "FP_CORE_UTIL": 30,
+  "PL_TARGET_DENSITY": 0.25,
+  "MACRO_PLACEMENT_CFG": "/home/yashwanth/aurora_v1/openlane/rocket/rocket_axitile/macro_placement_axitile.cfg",
+  "EXTRA_LEFS": [
+    "/home/yashwanth/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130B/libs.ref/sky130_sram_macros/lef/sky130_sram_2kbyte_1rw1r_32x512_8.lef"
+  ],
+  "EXTRA_GDS_FILES": [
+    "/home/yashwanth/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130B/libs.ref/sky130_sram_macros/gds/sky130_sram_2kbyte_1rw1r_32x512_8.gds"
+  ],
+  "EXTRA_LIBS": [
+    "/home/yashwanth/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130B/libs.ref/sky130_sram_macros/lib/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib"
+  ],
+  "SYNTH_READ_BLACKBOX_LIB": 1,
+  "QUIT_ON_SYNTH_CHECKS": 0,
+  "QUIT_ON_UNMAPPED_CELLS": 0,
+  "FP_PDN_VPITCH": 180,
+  "FP_PDN_HPITCH": 180,
+  "GRT_ADJUSTMENT": 0.1,
+  "GRT_ALLOW_CONGESTION": 0,
+  "ROUTING_CORES": 4,
+  "DIODE_INSERTION_STRATEGY": 3,
+  "RUN_LINTER": 0,
+  "RUN_CVC": 0,
+  "RUN_MAGIC_DRC": 1,
+  "RUN_KLAYOUT_DRC": 0,
+  "QUIT_ON_MAGIC_DRC": 0,
+  "QUIT_ON_LVS_ERROR": 0,
+  "QUIT_ON_SLEW_VIOLATIONS": 0,
+  "QUIT_ON_TIMING_VIOLATIONS": 0,
+  "MAGIC_DRC_USE_GDS": 0,
+  "PL_MACRO_HALO": "30 30",
+  "FP_PDN_MACRO_HOOKS": ".*u_sram VPWR VGND vccd1 vssd1"
+}

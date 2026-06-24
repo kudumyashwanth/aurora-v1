@@ -9,26 +9,17 @@
   "CLOCK_NET": "clk",
   "CLOCK_PERIOD": 20.0,
   "FP_SIZING": "absolute",
-  "DIE_AREA": "0 0 2800 2800",
-  "CORE_AREA": "20 20 2780 2780",
-  "FP_CORE_UTIL": 37,
-  "PL_TARGET_DENSITY": 0.35,
-  "EXTRA_LEFS": [
-    "/home/yashwanth/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130B/libs.ref/sky130_sram_macros/lef/sky130_sram_2kbyte_1rw1r_32x512_8.lef"
-  ],
-  "EXTRA_GDS_FILES": [
-    "/home/yashwanth/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130B/libs.ref/sky130_sram_macros/gds/sky130_sram_2kbyte_1rw1r_32x512_8.gds"
-  ],
-  "EXTRA_LIBS": [
-    "/home/yashwanth/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130B/libs.ref/sky130_sram_macros/lib/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib"
-  ],
+  "DIE_AREA": "0 0 1200 1200",
+  "CORE_AREA": "20 20 1180 1180",
+  "FP_CORE_UTIL": 35,
+  "PL_TARGET_DENSITY": 0.45,
   "SYNTH_READ_BLACKBOX_LIB": 1,
   "QUIT_ON_SYNTH_CHECKS": 0,
   "QUIT_ON_UNMAPPED_CELLS": 0,
   "FP_PDN_VPITCH": 360,
   "FP_PDN_HPITCH": 360,
   "GRT_ADJUSTMENT": 0.0,
-  "GRT_ALLOW_CONGESTION": 0,
+  "GRT_ALLOW_CONGESTION": 1,
   "ROUTING_CORES": 8,
   "DIODE_INSERTION_STRATEGY": 3,
   "RUN_LINTER": 0,
@@ -40,8 +31,5 @@
   "QUIT_ON_SLEW_VIOLATIONS": 0,
   "QUIT_ON_TIMING_VIOLATIONS": 0,
   "MAGIC_DRC_USE_GDS": 0,
-  "PL_MACRO_HALO": "30 30",
-  "FP_PDN_MACRO_HOOKS": ".*u_sram VPWR VGND vccd1 vssd1",
-  "MACRO_PLACEMENT_CFG": "/home/yashwanth/aurora_v1/openlane/tensor/tensor_cluster/macro_placement.cfg",
   "RSZ_MULTICORNER_LIB": 0
 }

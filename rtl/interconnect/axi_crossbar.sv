@@ -90,7 +90,8 @@ localparam int MW = $clog2(NUM_MASTERS);
 
 function automatic logic [2:0] decode_address(logic [ADDR_WIDTH-1:0] addr);
     // Aurora v1 address map:
-    // 0x0000_0000 - 0x000F_FFFF: Boot ROM    (Slave 0)
+    // 0x0000_0000 / 0x8000_0000: Boot ROM    (Slave 0)
+    //   (0x00 = CVA6 flat-SoC reset vector; 0x80 = Rocket reset vector — both alias to ROM)
     // 0x1000_0000 - 0x13FF_FFFF: SRAM        (Slave 1)
     // 0x2000_0000 - 0x2000_00FF: UART        (Slave 2)
     // 0x3000_0000 - 0x3000_00FF: GPIO        (Slave 3)
@@ -100,8 +101,8 @@ function automatic logic [2:0] decode_address(logic [ADDR_WIDTH-1:0] addr);
     // Default: error sink                    (Slave 7)
 
     // assignment style (no return) — Yosys-compatible
-    if (addr[31:24] == 8'h00)
-        decode_address = 3'd0;  // Boot ROM
+    if (addr[31:24] == 8'h00 || addr[31:24] == 8'h80)
+        decode_address = 3'd0;  // Boot ROM (0x00 CVA6 reset / 0x80 Rocket reset)
     else if (addr[31:24] == 8'h10 || addr[31:24] == 8'h11 ||
              addr[31:24] == 8'h12 || addr[31:24] == 8'h13)
         decode_address = 3'd1;  // SRAM

@@ -1,0 +1,64 @@
+{
+  "DESIGN_NAME": "aurora_soc_top_chip",
+  "VERILOG_FILES": [
+    "/home/yashwanth/aurora_v1/openlane/aurora_soc/src/aurora_chip_sv2v.v",
+    "/home/yashwanth/aurora_v1/openlane/aurora_soc/src/RocketAXITileTop_bb.v",
+    "/home/yashwanth/aurora_v1/openlane/aurora_soc/src/tensor_core_hard_bb.v"
+  ],
+  "PDK": "sky130B",
+  "STD_CELL_LIBRARY": "sky130_fd_sc_hd",
+
+  "CLOCK_PORT": "clk",
+  "CLOCK_NET": "clk",
+  "CLOCK_PERIOD": 30.0,
+
+  "FP_SIZING": "absolute",
+  "DIE_AREA": "0 0 7500 5500",
+  "CORE_AREA": "50 50 7450 5450",
+  "FP_CORE_UTIL": 35,
+  "PL_TARGET_DENSITY": 0.30,
+
+  "MACRO_PLACEMENT_CFG": "/home/yashwanth/aurora_v1/openlane/chip/macro_placement_chip.cfg",
+  "PL_MACRO_HALO": "30 30",
+
+  "EXTRA_LEFS": [
+    "/home/yashwanth/aurora_v1/ip/rocket_axitile_v1/lef/RocketAXITileTop.lef",
+    "/home/yashwanth/aurora_v1/ip/tensor_core_4x4_v1/lef/tensor_core_hard.lef",
+    "/home/yashwanth/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130B/libs.ref/sky130_sram_macros/lef/sky130_sram_2kbyte_1rw1r_32x512_8.lef"
+  ],
+  "EXTRA_GDS_FILES": [
+    "/home/yashwanth/aurora_v1/ip/rocket_axitile_v1/gds/RocketAXITileTop.gds",
+    "/home/yashwanth/aurora_v1/ip/tensor_core_4x4_v1/gds/tensor_core_hard.gds",
+    "/home/yashwanth/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130B/libs.ref/sky130_sram_macros/gds/sky130_sram_2kbyte_1rw1r_32x512_8.gds"
+  ],
+  "EXTRA_LIBS": [
+    "/home/yashwanth/aurora_v1/ip/rocket_axitile_v1/lib/RocketAXITileTop.lib",
+    "/home/yashwanth/aurora_v1/ip/tensor_core_4x4_v1/lib/tensor_core_hard.nom.lib"
+  ],
+
+  "SYNTH_READ_BLACKBOX_LIB": 1,
+  "QUIT_ON_SYNTH_CHECKS": 0,
+  "QUIT_ON_UNMAPPED_CELLS": 0,
+
+  "FP_PDN_MACRO_HOOKS": "u_rocket VPWR VGND VPWR VGND, u_tensor VPWR VGND VPWR VGND",
+  "FP_PDN_VPITCH": 180,
+  "FP_PDN_HPITCH": 180,
+  "FP_PDN_HORIZONTAL_HALO": 40,
+  "FP_PDN_VERTICAL_HALO": 40,
+  "FP_PDN_CHECK_NODES": 0,
+
+  "GRT_ADJUSTMENT": 0.1,
+  "GRT_ALLOW_CONGESTION": 0,
+  "ROUTING_CORES": 4,
+  "DIODE_INSERTION_STRATEGY": 3,
+
+  "RUN_LINTER": 0,
+  "RUN_CVC": 0,
+  "RUN_MAGIC_DRC": 1,
+  "RUN_KLAYOUT_DRC": 0,
+  "QUIT_ON_MAGIC_DRC": 0,
+  "QUIT_ON_LVS_ERROR": 0,
+  "QUIT_ON_SLEW_VIOLATIONS": 0,
+  "QUIT_ON_TIMING_VIOLATIONS": 0,
+  "MAGIC_DRC_USE_GDS": 0
+}

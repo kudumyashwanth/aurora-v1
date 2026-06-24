@@ -1,0 +1,14 @@
+
+========================================
+    AURORA v1 AI SoC BOOT
+    4x CVA6 + 1024 MAC Tensor Cores
+    204 GOPS INT8 @ 200MHz
+========================================
+[1] Initializing matrices in SRAM...
+[2] Running 16x16 matrix multiply on Tensor Core 0...
+[3] DONE! C[0][0] = 0x00000000
+
+[4] Aurora Tensor Core: OPERATIONAL
+    Peak performance: 204 GOPS INT8
+    Aurora v1 AI SoC is ALIVE!
+

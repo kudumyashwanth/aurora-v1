@@ -1,7 +1,7 @@
 {
   "DESIGN_NAME": "RocketTile",
   "VERILOG_FILES": [
-    "/home/yashwanth/aurora_v1/openlane/rocket/syn_default/rocket_rv64gc_mem.v",
+    "/home/yashwanth/aurora_v1/openlane/rocket/syn_default/rocket_rv64imac_mem_clean.v",
     "/home/yashwanth/aurora_v1/openlane/rocket/rocket_sram_ext.v"
   ],
   "PDK": "sky130B",

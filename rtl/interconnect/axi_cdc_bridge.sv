@@ -30,9 +30,10 @@ module axi_cdc_bridge
     output logic                   s_axi_awready,
 
     // Write Data Channel
-    input  logic [DATA_WIDTH-1:0]  s_axi_wdata,
-    input  logic                   s_axi_wvalid,
-    output logic                   s_axi_wready,
+    input  logic [DATA_WIDTH-1:0]    s_axi_wdata,
+    input  logic [DATA_WIDTH/8-1:0]  s_axi_wstrb,
+    input  logic                     s_axi_wvalid,
+    output logic                     s_axi_wready,
 
     // Write Response Channel
     output logic [ID_WIDTH-1:0]    s_axi_bid,
@@ -62,9 +63,10 @@ module axi_cdc_bridge
     input  logic                   m_axi_awready,
 
     // Write Data Channel
-    output logic [DATA_WIDTH-1:0]  m_axi_wdata,
-    output logic                   m_axi_wvalid,
-    input  logic                   m_axi_wready,
+    output logic [DATA_WIDTH-1:0]    m_axi_wdata,
+    output logic [DATA_WIDTH/8-1:0]  m_axi_wstrb,
+    output logic                     m_axi_wvalid,
+    input  logic                     m_axi_wready,
 
     // Write Response Channel
     input  logic [ID_WIDTH-1:0]    m_axi_bid,
@@ -85,69 +87,89 @@ module axi_cdc_bridge
 );
 
 /////////////////////////////////////////////////
-// AW CHANNEL CDC (CPU → Fabric)
+// COMBINED WRITE-REQUEST CDC (AW + W together, CPU → Fabric)
 /////////////////////////////////////////////////
+// AW and W are crossed as ONE atomic entry so they stay correlated on the fabric side.
+// (Separate AW/W FIFOs drain into the crossbar at independent rates; the crossbar — and the
+//  single-beat slaves — assume AW and W arrive together, so a W that races ahead of its AW
+//  deadlocks the write. One combined FIFO removes the skew entirely.)
+localparam AWW_WIDTH = ID_WIDTH + ADDR_WIDTH + DATA_WIDTH/8 + DATA_WIDTH;
 
-localparam AW_WIDTH = ID_WIDTH + ADDR_WIDTH;
+// ---- CPU side: gather AW and W (any order) into one entry, then enqueue ----
+logic                   aw_held, w_held;
+logic [ID_WIDTH-1:0]    awid_h;
+logic [ADDR_WIDTH-1:0]  awaddr_h;
+logic [DATA_WIDTH/8-1:0] wstrb_h;
+logic [DATA_WIDTH-1:0]  wdata_h;
 
-logic [AW_WIDTH-1:0] aw_wdata, aw_rdata;
-logic aw_full, aw_empty, aw_wr_en, aw_rd_en;
+logic [AWW_WIDTH-1:0]   wr_wdata, wr_rdata;
+logic wr_full, wr_empty, wr_wr_en, wr_rd_en;
 
-assign aw_wdata = {s_axi_awid, s_axi_awaddr};
-assign s_axi_awready = !aw_full;
-assign aw_wr_en = s_axi_awvalid && s_axi_awready;
+wire aw_take = s_axi_awvalid && s_axi_awready;
+wire w_take  = s_axi_wvalid  && s_axi_wready;
+wire aw_avail = aw_held || aw_take;
+wire w_avail  = w_held  || w_take;
 
-assign m_axi_awvalid = !aw_empty;
-assign aw_rd_en = m_axi_awvalid && m_axi_awready;
-assign {m_axi_awid, m_axi_awaddr} = aw_rdata;
+assign s_axi_awready = !aw_held && !wr_full;
+assign s_axi_wready  = !w_held  && !wr_full;
+assign wr_wr_en      = aw_avail && w_avail && !wr_full;
+
+always_ff @(posedge cpu_clk or negedge cpu_rst_n) begin
+    if (!cpu_rst_n) begin
+        aw_held <= 1'b0; w_held <= 1'b0;
+        awid_h <= '0; awaddr_h <= '0; wstrb_h <= '0; wdata_h <= '0;
+    end else begin
+        if (aw_take) begin awid_h <= s_axi_awid; awaddr_h <= s_axi_awaddr; end
+        if (w_take)  begin wstrb_h <= s_axi_wstrb; wdata_h <= s_axi_wdata; end
+        if (wr_wr_en) begin
+            aw_held <= 1'b0; w_held <= 1'b0;   // entry enqueued -> release holders
+        end else begin
+            if (aw_take) aw_held <= 1'b1;
+            if (w_take)  w_held  <= 1'b1;
+        end
+    end
+end
+
+// enqueue the gathered AW+W; mux live vs held fields
+assign wr_wdata = { aw_held ? awid_h   : s_axi_awid,
+                    aw_held ? awaddr_h : s_axi_awaddr,
+                    w_held  ? wstrb_h  : s_axi_wstrb,
+                    w_held  ? wdata_h  : s_axi_wdata };
+
+// ---- Fabric side: present AW and W from one entry, pop when BOTH accepted ----
+logic m_aw_done, m_w_done;
+assign {m_axi_awid, m_axi_awaddr, m_axi_wstrb, m_axi_wdata} = wr_rdata;
+assign m_axi_awvalid = !wr_empty && !m_aw_done;
+assign m_axi_wvalid  = !wr_empty && !m_w_done;
+wire m_aw_fire = m_axi_awvalid && m_axi_awready;
+wire m_w_fire  = m_axi_wvalid  && m_axi_wready;
+assign wr_rd_en = !wr_empty && (m_aw_done || m_aw_fire) && (m_w_done || m_w_fire);
+
+always_ff @(posedge fabric_clk or negedge fabric_rst_n) begin
+    if (!fabric_rst_n) begin
+        m_aw_done <= 1'b0; m_w_done <= 1'b0;
+    end else if (wr_rd_en) begin
+        m_aw_done <= 1'b0; m_w_done <= 1'b0;   // entry popped -> reset for next
+    end else begin
+        if (m_aw_fire) m_aw_done <= 1'b1;
+        if (m_w_fire)  m_w_done  <= 1'b1;
+    end
+end
 
 async_fifo #(
-    .DATA_WIDTH(AW_WIDTH),
+    .DATA_WIDTH(AWW_WIDTH),
     .ADDR_WIDTH(4)
-) aw_fifo (
+) wr_fifo (
     .wr_clk(cpu_clk),
     .wr_rst_n(cpu_rst_n),
-    .wr_en(aw_wr_en),
-    .wr_data(aw_wdata),
-    .wr_full(aw_full),
+    .wr_en(wr_wr_en),
+    .wr_data(wr_wdata),
+    .wr_full(wr_full),
     .rd_clk(fabric_clk),
     .rd_rst_n(fabric_rst_n),
-    .rd_en(aw_rd_en),
-    .rd_data(aw_rdata),
-    .rd_empty(aw_empty)
-);
-
-/////////////////////////////////////////////////
-// W CHANNEL CDC (CPU → Fabric)
-/////////////////////////////////////////////////
-
-localparam W_WIDTH = DATA_WIDTH;
-
-logic [W_WIDTH-1:0] w_wdata, w_rdata;
-logic w_full, w_empty, w_wr_en, w_rd_en;
-
-assign w_wdata = s_axi_wdata;
-assign s_axi_wready = !w_full;
-assign w_wr_en = s_axi_wvalid && s_axi_wready;
-
-assign m_axi_wvalid = !w_empty;
-assign w_rd_en = m_axi_wvalid && m_axi_wready;
-assign m_axi_wdata = w_rdata;
-
-async_fifo #(
-    .DATA_WIDTH(W_WIDTH),
-    .ADDR_WIDTH(4)
-) w_fifo (
-    .wr_clk(cpu_clk),
-    .wr_rst_n(cpu_rst_n),
-    .wr_en(w_wr_en),
-    .wr_data(w_wdata),
-    .wr_full(w_full),
-    .rd_clk(fabric_clk),
-    .rd_rst_n(fabric_rst_n),
-    .rd_en(w_rd_en),
-    .rd_data(w_rdata),
-    .rd_empty(w_empty)
+    .rd_en(wr_rd_en),
+    .rd_data(wr_rdata),
+    .rd_empty(wr_empty)
 );
 
 /////////////////////////////////////////////////

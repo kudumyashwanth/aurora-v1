@@ -65,42 +65,40 @@ assign write_bank  = (NUM_BANKS > 1) ? awaddr[WORD_OFF+IDX_W +: BANK_W] : '0;
 assign read_bank   = (NUM_BANKS > 1) ? araddr[WORD_OFF+IDX_W +: BANK_W] : '0;
 
 ////////////////////////////////////////////////////
-// WRITE LOGIC
+// WRITE LOGIC  (single-outstanding: AW+W handshake together, exactly one B per write)
 ////////////////////////////////////////////////////
+// awready/wready must NOT be unconditionally high: if a W is accepted without its AW (or a new
+// write is taken before the prior B drains), back-to-back single-beat writes (e.g. a dcache
+// line writeback) lose a beat and collapse two writes into one B -> the upstream crossbar's
+// per-slave write grant never releases -> deadlock. Gate both ready on (awvalid && wvalid) and
+// on not already holding a response, so AW and W are consumed together and B is one-per-write.
+logic bvalid_reg;
+wire  wr_accept = awvalid && wvalid && !bvalid_reg;
 
-assign awready = 1'b1;
-assign wready  = 1'b1;
+assign awready = wr_accept;
+assign wready  = wr_accept;
 
 always_ff @(posedge clk)
 begin
-
-    if (awvalid && wvalid)
+    if (wr_accept)
     begin
         for (int b = 0; b < DATA_WIDTH/8; b++)
             if (wstrb[b])
                 bank_mem[write_bank][write_index][8*b +: 8] <= wdata[8*b +: 8];
     end
-
 end
 
 ////////////////////////////////////////////////////
-// WRITE RESPONSE
+// WRITE RESPONSE  (one pulse per accepted write, held until bready)
 ////////////////////////////////////////////////////
-
-logic bvalid_reg;
-
 always_ff @(posedge clk or negedge rst_n)
 begin
-
     if (!rst_n)
         bvalid_reg <= 0;
-
-    else if (awvalid && wvalid)
+    else if (wr_accept)
         bvalid_reg <= 1;
-
-    else if (bready)
+    else if (bvalid_reg && bready)
         bvalid_reg <= 0;
-
 end
 
 assign bvalid = bvalid_reg;

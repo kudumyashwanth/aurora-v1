@@ -7,3 +7,20 @@ obj_tensor/
 sim_run*.log
 # OpenLane run outputs (large, regenerable) — keep configs/drivers/RTL
 openlane/**/runs/
+# Verilator/sim build dirs (regenerable)
+build_chip/
+build_iso/
+build_iso_chk/
+build_rsys/
+# OpenLane stage logs (regenerable)
+openlane/**/*.log
+openlane/**/gen_*.log
+# Large binary IP-package artifacts — kept on disk + regenerable from the committed recipe;
+# the package READMEs, LEF, lib, and SDC ARE tracked. (git stays clonable)
+ip/**/*.gds
+ip/**/*.spef
+ip/**/*.spice
+ip/**/*.def
+ip/**/*.nl.v
+ip/**/*.pnl.v
+ip/**/*.sdf
